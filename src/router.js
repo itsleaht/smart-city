@@ -19,4 +19,7 @@ export default new Router({
       component: List,
     },
   ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 });
