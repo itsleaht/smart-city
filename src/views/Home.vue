@@ -178,7 +178,7 @@ export default {
         &.active {
           background: #fff;
           border-color: #B8FFD0;
-          transform: scale(1.3)
+          transform: scale(1.5)
         }
       }
     }

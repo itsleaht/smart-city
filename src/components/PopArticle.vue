@@ -7,12 +7,8 @@
     </div>
     <div class="content">
         <h1 class="uppercase">{{article.name}}</h1>
-        <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, iure earum perferendis sed eum facere itaque repellendus autem, quasi quae numquam, quidem quod laboriosam. Fugit eos maiores minus praesentium eligendi.
-        </p>
-        <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, iure earum perferendis sed eum facere itaque repellendus autem, quasi quae numquam, quidem quod laboriosam. Fugit eos maiores minus praesentium eligendi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, iure earum perferendis sed eum facere itaque repellendus autem, quasi quae numquam, quidem quod laboriosam. Fugit eos maiores minus praesentium eligendi.
+        <p class="description" v-for="(description, index) in article.description" :key="'description'+index">
+            {{description}}
         </p>
     </div>
   </div>

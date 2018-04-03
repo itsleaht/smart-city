@@ -13,7 +13,11 @@
                     "month" : "09",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : [
+                    "Dijon City plans to be the smart city reference in France by the end of 2018. The maire goal is to become the 3.0 city. It is the first time in France that a smart plan is created for a whole city.",
+                    "It will be about multiple connected objects that will analyze traffic jam, parking, air quality, bad weather, accidents, protest and so on to make the city more attractive and pleasurable for its inhabitants. Along, the maire plan to reduce energy waste by improving city lighting.",
+                    "Unfortunately, the project involves CCTV which goes against the principle of not controlling people. "
+                ],
                 "links" : [
                     {
                         "href" : "http://www.lemonde.fr/economie/article/2017/09/08/dijon-s-invente-en-metropole-connectee-et-vitrine-francaise-des-smart-cities_5182745_3234.html",
@@ -37,7 +41,9 @@
                     "month" : "09",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : [
+                    "Olympics will take place in Paris in 2024, which causes the city to rethink totally its urbanism. To host this event, the governement has decided to use multiple projects for its citizens good.", "For instance, Placemeter, will estimate and anticipate people flow. Urgentix, an app will allow people to call for emergencies and localize them during an accident. Finally, autonomous electric car will drive athletes to their Olympic village of their choice thanks to voice control."
+                ],
                 "links" : [
                     {
                         "href" : "https://www.journaldunet.com/economie/services/1197182-paris-2024-jeux-olympiques-smart-city/",
@@ -68,8 +74,8 @@
             },
             {
                 "name" : "Blockchain and smart cities",
-                "place" : "Pune, Inde",
-                "company" : "DigitalTown",
+                "place" : "New York, USA",
+                "company" : "LO3 Energy & Siemens",
                 "stringDate" : "27 September 2017",
                 "outDate" : "2018",
                 "date" : {
@@ -77,7 +83,10 @@
                     "month" : "09",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : [
+                    "In New York, about fifty Brooklyn’s President Street inhabitants have organized a production, exchange and a resale network of photovoltaics between neighbours.", 
+                    "They used the emerging technology of blockchain that permits a decentralized database that secures and authenticates exchanges between people. This technology is at the base of multiple projects as it guaranties transparency. It gave Newyorkers more power in their streets."
+                ],
                 "links" : [
                     {
                         "href" : "https://smartcitiesworld.net/news/news/blockchain-for-smart-cities-2109",
@@ -107,7 +116,12 @@
                     "month" : "10",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : [
+                    "In Champs-Sur-Marne a beta miny city was created in 400m2 to evaluate energetic performance and sanitary quality of the buildings.", 
+                    "It will allow to observe plants impact on its environment, analyse urban networks quality and durability in terms of transports and flow, but also analyse air, water, and soil quality…",
+                    "It will also evaluates heatwaves weeks impact on pollution, plants and sensors resistance.", 
+                    "This fake city aims at being an attempt for the real smart city of tomorrow."
+                ],
                 "links" : [
                     {
                         "href" : "http://www.lemonde.fr/citynnovation/article/2017/10/02/a-champs-sur-marne-la-smart-city-durable-testee-sur-une-mini-ville_5195142_4811669.html",
@@ -145,7 +159,7 @@
                 ]
             },
             {
-                "name" : "Oyster Card and Facial Recognition",
+                "name" : "Oyster Card and Digital Recognition",
                 "place" : "London, UK",
                 "company" : "FasTrack & Cubic Transportation System",
                 "stringDate" : "25 October 2017",
@@ -155,7 +169,7 @@
                     "month" : "10",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : ["Fastrack Company is aiming at developing a digital recognition system to replace the Oyster Card, the London transport card. It will recognize hand vains and users will only to have to synchronize its hand with its account and the system will recognize it. "],
                 "links" : [
                     {
                         "href" : "https://usbeketrica.com/article/le-visage-ticket-de-metro-du-futur",
