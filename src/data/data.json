@@ -361,9 +361,9 @@
         "month" : "January",
         "articles": [
             {
-                "name" : "Transport app",
-                "place" : "",
-                "company" : "Coord, Alphabet",
+                "name" : "Transport app of the future",
+                "place" : "Toronto",
+                "company" : "Coord, Alphabet, Google",
                 "stringDate" : "2 January 2018",
                 "outDate" : "",
                 "date" : {
@@ -371,7 +371,9 @@
                     "month" : "01",
                     "year" : "2018"
                 },
-                "description" : "",
+                "description" : [
+                    "Imagine 10 years of thinking about how technology can improve people’s lives. Sidewalk Labs is working on a new app, a cloud-based platform specializing in the many mobility services around the world's cities like bike-sharing, car-sharing, and ride-hailing and others like public transit. Because if you want to optimize the city streets and transport, you have to know your people by observing them and measuring how they live. Such new apps give access to local, standardized data on things like tolls, parking, and curb space. Critically, info can be shared across cities. Coordination is the goal. Get it?"
+                ],
                 "links" : [
                     {
                         "href" : "https://www.wired.com/story/alphabet-sidewalk-labs-coord-city-of-tomorrow/",
