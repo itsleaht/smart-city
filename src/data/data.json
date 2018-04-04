@@ -336,7 +336,7 @@
         "month" : "December",
         "articles": [
             {
-                "name" : "Climate control",
+                "name" : "A hotel will soon generate its own microclimate",
                 "place" : "Vancouver, Canada",
                 "company" : "Vertical Micro-climate Resort",
                 "stringDate" : "9 November 2017",
@@ -346,7 +346,9 @@
                     "month" : "12",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : [
+                    "In the future, controlling the heat of a building could turn out precious to make bearable the increase of the temperatures due to the global warming. Based in Vancouver, an architect’s cabinet imagined a building who generates its own custom-made climate, without polluting. But how do the hotel regulate its temperature? To create a microclimate in the outside periphery of the hotel, the architects equipped the rails with reflective panels sending the heat and the light towards the ground by concentrating them at the most. These eco-responsible constructions are designed to store a maximum of energy. The tours distribute massively heat and light in each part of the complex."
+                ],
                 "links" : [
                     {
                         "href" : "https://usbeketrica.com/article/a-vancouver-un-hotel-de-luxe-genere-son-propre-micro-climat",
