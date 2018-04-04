@@ -564,22 +564,156 @@
                 ]
             },
             {
-                "name" : "Flying Cabs",
-                "place" : "",
-                "company" : "Apple",
+                "name" : "Flying Taxis are becoming a reality",
+                "place" : "Dubaï and Dallas",
+                "company" : "Uber",
                 "stringDate" : "March 2018",
                 "outDate" : "",
                 "date" : {
-                    "day" : "-",
+                    "day" : "21",
                     "month" : "03",
                     "year" : "2018"
                 },
-                "description" : "",
+                "description" : [
+                    "Small autonomous, electric aircrafts who take-off and can land in a vertical way, seem now ready to take on board up to three passengers for a short route through the urban cities. Imagine a 90 minutes road trip by car, who would take 8 minutes with an Uber air. The company already plans spreading between 500 and 1000 of these flying taxis in the congested megalopolises. To do this, Uber partners with NASA and the industrialists. They complete their first demonstrations in Dallas and in Dubai before 2020, and the first commercial flights before 2030."
+                ],
                 "links" : [
                     {
-                        "href" : "",
-                        "from": "",
-                        "by" : "Hugo Lerouxy"
+                        "href" : "https://drive.google.com/file/d/15B7GVpkRD-VwXSF_yHm4SfHkAUtNrJI1/view?usp=sharing",
+                        "from": "Science & Vie",
+                        "by" : "Hugo Leroux"
+                    }
+                ]
+            },
+            {
+                "name" : "Offices/farm tower is in progress",
+                "place" : "Sweden",
+                "company" : "Linköping",
+                "stringDate" : "March 2018",
+                "outDate" : "",
+                "date" : {
+                    "day" : "21",
+                    "month" : "03",
+                    "year" : "2018"
+                },
+                "description" : [
+                    "A Swedish tower of 60m of height intended to welcome offices (desks) and farms. Those towers will produce food for 5000 people. The construction should end in 2020."
+                ],
+                "links" : [
+                    {
+                        "href" : "https://drive.google.com/file/d/1WfA9-wdFvpFSCqnY9enEXGDskhwgyOzO/view",
+                        "from": "Science & Vie",
+                        "by" : "S.F."
+                    }
+                ]
+            },
+            {
+                "name" : "Mood walkr",
+                "place" : "France, Toulouse et Nantes",
+                "company" : "Makina Corpus",
+                "stringDate" : "March 2018",
+                "outDate" : "",
+                "date" : {
+                    "day" : "26",
+                    "month" : "03",
+                    "year" : "2018"
+                },
+                "description" : [
+                    "Her name is MoodWalkr. A new application made in France, which according to your desires suggests you visiting special places in town. The app is collaborative, free and analyze the data and maps them."
+                ],
+                "links" : [
+                    {
+                        "href" : "https://rcf.fr/la-matinale/moodwalkr-une-appli-pour-se-promener-la-carte",
+                        "from": "RCF Radio",
+                        "by" : ""
+                    }
+                ]
+            },
+            {
+                "name" : "Mini drones will replace security cameras and road transport",
+                "place" : "Worldwide",
+                "company" : "Intel",
+                "stringDate" : "April 2018",
+                "outDate" : "",
+                "date" : {
+                    "day" : "30",
+                    "month" : "03",
+                    "year" : "2018"
+                },
+                "description" : [
+                    "Drones who specializes in parcel delivery, could make their appearance soon. These drones are greener than the classical road transport, especially for light packages in the capitals.But that's not all. Thanks to the progress of the miniaturization of drones, drones no bigger than a hummingbird can soon replace security cameras: watch and inform the traffic, keep an eye on hostile acts … This questions a permanent under surveillance society, especially if these drones can soon see through walls thanks to a high-tech scanner using simple Wi-Fi waves."
+                ],
+                "links" : [
+                    {
+                        "href" : "https://drive.google.com/file/d/1OBiF4G02VGpPNHzZEENYielbKRVqtO08/view?usp=sharing",
+                        "from": "Science & Vie",
+                        "by" : ""
+                    }
+                ]
+            },
+            {
+                "name" : "Bioluminescence: the new lights of the city",
+                "place" : "France, Nantes",
+                "company" : "Not specified",
+                "stringDate" : "April 2018",
+                "outDate" : "",
+                "date" : {
+                    "day" : "30",
+                    "month" : "03",
+                    "year" : "2018"
+                },
+                "description" : [
+                    "Do you know bioluminescence? It is that special capacity from some living beings such as fireflies, to create some light. Several laboratories managed to transform vegetables into new lights of the city! It is soft, it is beautiful, and it consumes no electricity. If so, the lights of our cities as those from our interiors will be revolutionized."
+                ],
+                "links" : [
+                    {
+                        "href" : "https://drive.google.com/file/d/1CI63xXu18nCQWOu0QmrfC6BL-JVAr4Cw/view",
+                        "from": "Science & Vie",
+                        "by" : ""
+                    }
+                ]
+            },
+            {
+                "name" : "Printed houses",
+                "place" : "France",
+                "company" : "Not specified",
+                "stringDate" : "April 2018",
+                "outDate" : "",
+                "date" : {
+                    "day" : "30",
+                    "month" : "03",
+                    "year" : "2018"
+                },
+                "description" : [
+                    "Imagine houses with the most complex forms requiring no human labour and livable in short deadlines? Last September, a first house of 95m height was built in France by 3D printers. In 10 years, 3D printing is expected to revolutionize the sector of the building: robots will also be able to print the electric wiring, the insulation, the plumbing, and many more."
+                ],
+                "links" : [
+                    {
+                        "href" : "https://drive.google.com/file/d/1IU_FokfPu7iyqKEO7XezQlKqVcWFpJ1f/view?usp=sharing",
+                        "from": "Science & Vie",
+                        "by" : ""
+                    }
+                ]
+            },
+            {
+                "name" : "Autonomous cars",
+                "place" : "US",
+                "company" : "Google",
+                "stringDate" : "April 2018",
+                "outDate" : "",
+                "date" : {
+                    "day" : "30",
+                    "month" : "03",
+                    "year" : "2018"
+                },
+                "description" : [
+                    "The Tesla accidents showed us that, even the most ultra-sophisticated algorithms, cannot guarantee a zero risk. A car behaves according to examples of which it was fed. Yet, at the moment, it is almost impossible to plan all the situations. This is the way Google simulate one thousand accidents to plan algorithms which, in 2030, shall pilot totally our cars."
+                ],
+                "links" : [
+                    {
+                        "href" : "https://drive.google.com/file/d/1PaQgwzeAYM1EeRg8PFt1m0C6oEjqDIvt/view?usp=sharing",
+                        "from": "Science & Vie",
+                        "by" : ""
                     }
                 ]
             }
