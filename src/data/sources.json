@@ -3,17 +3,24 @@
         "month" : "September",
         "articles": [
             {
-                    
+                "place" : "Dijon, France",
                 "stringDate" : "September 8, 2017",
-                "title" : "Dijon s’invente en métropole connectée et vitrine française des « smart cities »",
-                "translation" : "Dijon invents itself as connected metropolis and french model of smart cities",
+                "tags" : ["Cities"],
+                "title" : "Dijon invents itself as connected metropolis and french model of smart cities",
                 "href" : "http://www.lemonde.fr/economie/article/2017/09/08/dijon-s-invente-en-metropole-connectee-et-vitrine-francaise-des-smart-cities_5182745_3234.html",
                 "from" : "Le monde Économie",
-                "by" : "Grégoire Allix"
+                "by" : "Grégoire Allix",
+                "description" : 
+                [
+                    "Dijon City plans to be the smart city reference in France by the end of 2018. The maire goal is to become the 3.0 city.", 
+                    "It is the first time in France that a smart plan is created for a whole city. It will be about multiple connected objects that will analyze traffic jam, parking, air quality, bad weather, accidents, protest and so on to make the city more attractive and pleasurable for its inhabitants. Along, the maire plan to reduce energy waste by improving city lighting.",
+                    "Unfortunately, the project involves CCTV which goes against the principle of not controlling people. "
+                ]
             },
             {
-                    
+                "place" : "France",
                 "stringDate" : "September 11, 2017",
+                "tags" : ["Cities"],
                 "title" : "Ville et territoire intelligents, une ambition française ?",
                 "translation" : "Smart zones and cities, a french ambition ?",
                 "href" : "http://les-smartgrids.fr/ville-territoire-intelligents-francaise/",
@@ -21,8 +28,8 @@
                 "by" : "Thierry Legrand"
             },
             {
-                    
                 "stringDate" : "September 13, 2017",
+                "tags" : ["Apps"],
                 "title" : "Apps mobiles urbaines : comment elles nous facilitent la vie",
                 "translation" : "Urban mobile apps : How they ease our life",
                 "href" : "https://www.linformaticien.com/dossiers/apps-mobiles-urbaines-comment-elles-nous-facilitent-la-vie.aspx",
@@ -30,8 +37,9 @@
                 "by" : "Jérôme Cartegini"
             },
             {
-                    
+                "place" : "Paris, France",   
                 "stringDate" : "September 23, 2017",
+                "tags" : ["Cities", "Future"],
                 "title" : "Un Paris du futur est né en 48h",
                 "translation" : "A Paris of future was born in 48 hours",
                 "href" : "https://usbeketrica.com/galerie/un-paris-du-futur-est-ne-en-48h",
@@ -39,15 +47,18 @@
                 "by" : "Maylis Haegel"
             },
             {
-                    
+                "place" : "USA",
                 "stringDate" : "September 20, 2017",
+                "tags" : ["Apps"],
                 "title" : "Prepare For A New Kind Of Ad To Take Over Your City",
                 "href" : "https://www.fastcodesign.com/90143464/prepare-for-a-new-kind-of-ad-to-take-over-your-city",
                 "from" : "Fastco Design",
                 "by" : "Mark Wilson"
             },
             { 
+                "place" : "New York, USA",
                 "stringDate" : "September 22, 2017",
+                "tags" : ["Apps", "Control"],
                 "title" : "Citizen : l’appli qui vous permet de dénoncer un criminel",
                 "translation" : "Citizen, the app that allows you to denounce a criminal",
                 "href" : "http://www.ladn.eu/tech-a-suivre/data-big-et-smart/citizen-lappli-qui-vous-permet-de-denoncer-un-criminel/",
@@ -55,108 +66,124 @@
                 "by" : "Mélanie Roosen"
             },
             {
-                "stringDate" : "September 25, 2017",
-                "title" : "Comment Dijon veut devenir la première Smart City de France",
-                "translation" : "How Dijon plans to become France's first Smart City",
-                "href" : "http://les-smartgrids.fr/dijon-premiere-smart-city-france/",
-                "from" : "Les Smart Grids",
-                "by" : " Amandine Perrault"
-            }, 
-            {
-                "title" : "Comment Paris va profiter des JO 2024 pour devenir une smart city",
-                "translation" : "How Paris will benefit from the 2024 JO to become a smart city",
+                "title" : "How Paris will benefit from the 2024 JO to become a smart city",
+                "tags" : ["Transports", "Health", "Autonomous cars", "Smart roads", "Anticipation", "Sensors"],
                 "stringDate" : "September 13, 2017",
                 "href" : "https://www.journaldunet.com/economie/services/1197182-paris-2024-jeux-olympiques-smart-city/",
                 "from" : "Journal du Net",
-                "by" : "Jamal El Hassani"
+                "by" : "Jamal El Hassani",
+                "description" : [
+                    "Olympics will take place in Paris in 2024, which causes the city to rethink totally its urbanism. To host this event, the governement has decided to use multiple projects for its citizens good.","For instance, Placemeter, will estimate and anticipate people flow.",
+                    "Urgentix, an app will allow people to call for emergencies and localize them during an accident.","Finally, autonomous electric car will drive athletes to their Olympic village of their choice thanks to voice control."
+                ]
             },
             {
+                "place": "Pune, India",
                 "title" : "The Quest To Use Big Data And Community Toilets To Create A Model For Building Urban Sanitation",
                 "stringDate" : "September 13, 2017",
+                "tags" : ["Health", "Network"],
                 "href" : "https://www.fastcompany.com/40466766/the-quest-to-use-big-data-and-community-toilets-to-create-a-model-for-building-urban-sanitation",
                 "from" : "Fast Company",
                 "by" : "Eillie Anzilotti"
             },
             {
+                "place" : "New-York, USA",
                 "title" : "Blockchain for smart cities",
+                "tags" : ["Data", "Sharing"],
                 "stringDate" : "September 14, 2017",
                 "href" : "https://smartcitiesworld.net/news/news/blockchain-for-smart-cities-2109",
-                "from" : "Smart cities World"
+                "from" : "Smart cities World",
+                "description" : [
+                    "In New York, about fifty Brooklyn’s President Street inhabitants have organized a production, exchange and a resale network of photovoltaics between neighbours.", 
+                    "They used the emerging technology of blockchain that permits a decentralized database that secures and authenticates exchanges between people. This technology is at the base of multiple projects as it guaranties transparency. It gave Newyorkers more power in their streets."
+                ]
             }, 
             {
-                "title" : "La « blockchain » ouvre le champ des possibles pour la « smart city »",
-                "translation": "Blockchain opens new doors for smart cities",
+                "place" : "-",
+                "title" : "Blockchain opens new doors for smart cities",
+                "tags" : ["Data", "Sharing"],
                 "stringDate" : "September 27, 2017",
                 "href" : "http://www.lemonde.fr/smart-cities/article/2017/09/27/la-blockchain-ouvre-le-champ-des-possibles-pour-la-smart-city_5192463_4811534.html",
                 "from" : "Le Monde",
                 "by" : "Jessica Gourdon"
-            }
-            
+            }      
         ]
     },
     {
         "month" : "October",
         "articles": [
             {
+                "place" : "Champs-sur-Marne, France",
                 "stringDate" : "October 2, 2017",
-                "title" : "A Champs-sur-Marne, la « smart city » durable testée sur une mini-ville",
-                "translation" : "A smart city tested on a mini city in Champs sur Marne",
+                "title" : "A smart city tested on a mini city in Champs sur Marne",
+                "tags" : ["Sensors", "Environment", "Health", "Test"],
                 "href" : "http://www.lemonde.fr/citynnovation/article/2017/10/02/a-champs-sur-marne-la-smart-city-durable-testee-sur-une-mini-ville_5195142_4811669.html",
                 "from" : "Le monde",
-                "by" : "Laetitia Van Eeckhout"
+                "by" : "Laetitia Van Eeckhout",
+                "description": [
+                    "In Champs-Sur-Marne a beta miny city was created in 400m2 to evaluate energetic performance and sanitary quality of the buildings. It will allow to observe plants impact on its environment, analyse urban networks quality and durability in terms of transports and flow, but also analyse air, water, and soil quality…",
+                    "It will also evaluates heatwaves weeks impact on pollution, plants and sensors resistance."
+                ]
             },
             {
+                "place" : "-",
                 "stringDate" : "October 2, 2017",
                 "translation" : "What Will the City of the Future Look Like?",
+                "tags" : ["Cities", "Future"],
                 "href" : "https://www.nationalgeographic.com/magazine/2017/10/editors-note-sustainability-dubai-green-cities/",
                 "from" : "National Geographic",
                 "by" : "Susan Goldberg"
             },
             {
+                "place" : "-",
                 "stringDate" : "October 12, 2017",
                 "title" : "Smart city et données personnelles : quels enjeux de politiques publiques et de vie privée ?",
                 "translation": "Smart City and personal datas : what are the public political and private life issues ?",
+                "tags" : ["Data", "Sharing", "Debate"],
                 "href" : "https://www.cnil.fr/fr/smart-city-et-donnees-personnelles-quels-enjeux-de-politiques-publiques-et-de-vie-privee",
                 "from" : "CNIL"
             },
             {
+                "place" : "-",
                 "stringDate" : "October 13, 2017",
-                "title" : "Les libertés individuelles, oubliées de la smart city",
-                "translation": "Individual liberties are forgotten in smart cities",
+                "title" : "Individual liberties are forgotten in smart cities",
+                "tags" : ["Data", "Sharing", "Debate", "Privacy"],
                 "href" : "http://www.lemonde.fr/smart-cities/article/2017/10/13/les-libertes-individuelles-oubliees-de-la-smart-city_5200742_4811534.html",
                 "from" : "CNIL"
             },
             {
-                "title" : "Le visage, ticket de métro du futur ?",
-                "translation" : "Face might be the future metro ticket",
+                "place" : "London, UK",
+                "title" : "Face might be the future metro ticket",
+                "tags" : ["Transports", "Ethics"],
                 "stringDate": "October 25, 2017",
                 "href" : "https://usbeketrica.com/article/le-visage-ticket-de-metro-du-futur",
                 "from" : "Usbek et Rica",
-                "by" : "Benjamin Hourcade"
+                "by" : "Benjamin Hourcade",
+                "description" : [
+                    "Fastrack Company is aiming at developing a digital recognition system to replace the Oyster Card, the London transport card. It will recognize hand vains and users will only to have to synchronize its hand with its account and the system will recognize it. "
+                ]
             },
             {
-                "title" : "Une filiale de Google construit un quartier entier à Toronto",
-                "translation" : "A google branch build a entire neighbourhood in Toronto",
+                "place" : "Toronto, Canada",
+                "title" : "A google branch build a entire neighbourhood in Toronto",
+                "tags" : ["Future", "Cities", "Environment"],
                 "stringDate" : "October 12, 2017",
                 "href" : "https://usbeketrica.com/article/sidewalk-labs-quartier-google-toronto",
                 "from" : "Usbek et Rica",
                 "by" : "Benjamin Hourcade"
             },
             {
-                "title" : "Introducing Sidewalk Toronto",
-                "stringDate" : "October 17, 2017",
-                "href" : "https://www.youtube.com/watch?v=xQYSy8w9j5c",
-                "from" : "Youtube",
-                "by" : "Sidewalk Toronto"
-            },
-            {
+                "place" : "-",
                 "stringDate" : "October 23, 2017",
+                "tags" : ["AI", "Cities", "Environment"],
                 "translation" : "In These Small Cities, AI Advances Could Be Costly",
                 "href" : "https://www.technologyreview.com/s/609076/in-these-small-cities-ai-advances-could-be-costly/",
                 "from" : "Technology review",
                 "by" : "Elizabeth Woyke"
             },
             {
+                "place" : "Huangzhou, China",
+                "tags" : ["Control", "Debate"],
                 "title" : "A smart city in China tracks every citizen and yours could too",
                 "stringDate" : "October 24, 2017",
                 "href" : "https://www.newscientist.com/article/2151297-a-smart-city-in-china-tracks-every-citizen-and-yours-could-too/",
@@ -168,69 +195,69 @@
         "month" : "November", 
         "articles" : [
             {
+                "place" : "Las Vegas, USA",
                 "stringDate" : "November 9, 2017",
-                "title" : "Las Vegas : dès sa mise en service, le bus autonome français a un accident",
-                "translation" : "Las Vegas, right after its being put in service, a french autonomous bus has an accident.",
+                "tags" : ["Autonomous cars", "Transports"],
+                "title" : "Right after its being put in service, a french autonomous bus has an accident",
                 "href" : "http://www.leparisien.fr/economie/las-vegas-des-sa-mise-en-service-le-bus-autonome-francais-a-un-accident-09-11-2017-7383093.php",
                 "from" : "Le Parisien",
                 "by" : "M. Pf."
             }, 
             {
+                "place" : "Ile-de-France, France",
                 "stringDate" : "November 14, 2017",
+                "tags" : [],
                 "title" : "L’Ile-de-France en force au Smart city expo world congress de Barcelone",
                 "translation" : "Ile-de-france strongly there for the Smart city expo world congress in Barcelone.",
                 "href" : "https://www.lejournaldugrandparis.fr/lile-de-france-force-smart-city-expo-world-forum-de-barcelone/",
                 "from" : "Le journal du Grand Paris"
             }, 
             {
-                "title" : "Huawei crée un système nerveux pour ville intelligente pour plus de 100 villes avec ses nouvelles TIC",
-                "translation" : "Huawei creates a brain for a smart city for more than 100 cities with its new technologies",
+                "place" : "Barcelona, Spain",
+                "title" : "Huawei creates a brain for a smart city for more than 100 cities with its new technologies",
+                "tags" : ["Data", "Events"],
                 "stringDate" : "November 15, 2017",
                 "href" : "https://www.prnewswire.com/news-releases/huawei-cree-un-systeme-nerveux-pour-ville-intelligente-pour-plus-de-100-villes-avec-ses-nouvelles-tic-657784163.html",
-                "from" : "Cision"
+                "from" : "Cision",
+                "description" : [
+                    "During the Smart City Expo World Congress in Barcelona, several companies presented their system of Smart City Command of Control. Huawei revealed his intelligent Center of operation, which acts as the brain of the smart city.",
+                    "Its a real time, very complex interface which combines on the same screen a map of the city, fully informed on the latest changes such as: information on the traffic and from phone data, all the network of video surveillance, security evolving directly according to the events which occur, a supervision of the state of gas and water, the alerts in case of fire and floods.",
+                    "Such powerful systems can be controlled at distance.",
+                    "In every district are added: fixed data, economic information on the community and the companies, dangerous products, flood-risk areas, places with strong concentration of population."
+                ]
             }, 
             {
-                "title" : "Huawei releases the “brain” of smart city at SCEWC 2017",
-                "stringDate" : "November 15, 2017",
-                "href" : "http://www.itnewsafrica.com/2017/11/huawei-releases-the-brain-of-smart-city-at-scewc-2017/",
-                "from" : "IT News Africa",
-                "by" : "Dean Workman"
-            }, 
-            {
-                "title" : "À la Smart City Expo, le centre de commande devient le cerveau de la ville",
-                "translation" : "The control center becomes the brain of cities in The Smart City Expo",
-                "stringDate" : "November 15, 2017",
-                "href" : "https://www.journaldunet.com/economie/services/1204959-a-smart-city-expo-le-centre-de-commande-devient-le-cerveau-de-la-ville/",
-                "from" : "Journal Du Net",
-                "by" : "Jamal El Hassani"
-            },
-            {
-                "title" : "La smart city est-elle inconciliable avec la vie privée ?",
-                "translation" : "Are smart cities incompatible with private life ?",
+                "place" : "-",
+                "title" : "Are smart cities incompatible with private life ?",
+                "tags" : ["Data", "Privacy"],
                 "stringDate" : "November 16, 2017",
                 "href" : "https://usbeketrica.com/article/smart-city-inconciliable-vie-privee",
                 "from" : "Usbek & Rica",
                 "by" : "Demain la ville"
             },
             {
-                "title" : "Bill Gates va construire une smart city dans le désert",
-                "translation" : "Bill Gates is going to build a smart city in the desert",
+                "place" : "Belmont, USA",
+                "title" : "Bill Gates is going to build a smart city in the desert",
+                "tags" : ["Future", "Cities", "Project"],
                 "stringDate": "November 15, 2017",
                 "href" : "https://usbeketrica.com/article/bill-gates-va-construire-une-smart-city-dans-un-desert",
                 "from" : "Usbek et Rica",
                 "by" : "Maylis Haegel"
             },
             {
+                "place" : "-",
                 "title" : "Les smart cities sont-elles vraiment intelligentes ?",
                 "translation" : "Are smart cities trully smart ?",
+                "tags" : ["Debate"],
                 "stringDate": "November 27, 2017",
                 "href" : "http://www.ladn.eu/tech-a-suivre/habitat-et-villes-connectes/les-smart-cities-sont-elles-vraiment-intelligentes/",
                 "from" : "L'ADN",
                 "by" : "Mélanie Roosen"
             },
             {
-                "title" : "Paris : les Sea Bubbles de nouveau espérés en 2018 sur la Seine",
-                "translation" : "Paris : Sea Bubbles are expected for 2018 on Seine",
+                "place" : "Paris, France",
+                "title" : "Paris : Sea Bubbles are expected for 2018 on Seine",
+                "tags" : ["Transports"],
                 "stringDate" : "November 29, 2017",
                 "href" : "http://www.leparisien.fr/info-paris-ile-de-france-oise/transports/les-sea-bubbles-de-nouveau-esperes-en-2018-sur-la-seine-29-11-2017-7422840.php",
                 "from" : "Le Parisien",
@@ -242,12 +269,49 @@
         "month" : "December",
         "articles" : [
             {
-                "title" : "À Vancouver, un hôtel de luxe génèrera bientôt son propre micro-climat",
+                "place" : "Vancouver, Canada",
                 "translation" : "In Vancouver, a luxury hostel will soon handle its own micro climate",
+                "tags" : ["Environment"],
                 "stringDate" : "December 22, 2017",
                 "href" : "https://usbeketrica.com/article/a-vancouver-un-hotel-de-luxe-genere-son-propre-micro-climat",
                 "from" : "Usbek et Rica",
                 "by" : "Arnaud Pagès"
+            },
+            {
+                "place" : "France",
+                "title" : "French are asking for online administration & smart cities",
+                "tags" : ["Online services", "Citizens"],
+                "stringDate" : "December 4, 2017",
+                "href" : "http://www.lagazettedescommunes.com/538783/les-francais-plebiscitent-ladministration-en-ligne-et-la-smart-city/ ",
+                "from" : "Usbek et Rica",
+                "by" : "Arnaud Pagès"
+            },
+            {
+                "place" : "Montgenèvre, France",
+                "title" : "Montgenèvre, the first mountain smart station",
+                "tags" : ["Environment"],
+                "stringDate" : "December 3, 2017",
+                "href" : "https://www.tourmag.com/Montgenevre-premiere-smart-station-de-montagne_a90394.html",
+                "from" : "Tour mag",
+                "by" : "Juliette Pic"
+            },
+            {
+                "place" : "-",
+                "title" : "Smart City is looking for graduates",
+                "tags" : ["Education"],
+                "stringDate" : "December 12, 2017",
+                "href" : "http://www.lemonde.fr/campus/article/2017/12/12/la-smart-city-cherche-des-diplomes_5228407_4401467.html",
+                "from" : "Le monde Campus",
+                "by" : "Jessica Gourdon"
+            },
+            {
+                "place" : "-",
+                "title" : "World Smart City Awards 2017 : le Cameroun récompensé",
+                "tags" : ["Rankings"],
+                "stringDate" : "December 19, 2017",
+                "href" : "https://happyinafrica.com/societe/world-smart-city-awards-2017-cameroun-recompense ",
+                "from" : "Happy In Africa",
+                "by" : " Miguel Godonou"
             }
         ]
     },
@@ -255,11 +319,57 @@
         "month" : "January",
         "articles": [
             {
+                "place" : "-",
                 "title" : "Alphabet's sidewalk labs launches a platform for making the city of tomorrow",
+                "tags" : ["Transports", "App"],
                 "stringDate" : "January 1, 2018",
                 "href" : "https://www.wired.com/story/alphabet-sidewalk-labs-coord-city-of-tomorrow/",
                 "from" : "Wired",
                 "by" : "Aarian Marshall"
+            },
+            {
+                "place" : "-",
+                "title" : "What 100 Cities Are Learning From Each Other By Sharing Their Data",
+                "tags" : ["Data", "Sharing"],
+                "stringDate" : "January 18, 2018",
+                "href" : "https://www.fastcompany.com/40518004/what-100-cities-are-learning-from-each-other-by-sharing-their-data ",
+                "from" : "Fast Company",
+                "by" : "Ben Paynter"
+            },
+            {
+                "place" : "Arizona, USA",
+                "title" : "Bill Gates smart City is controversial",
+                "tags" : ["Debate"],
+                "stringDate" : "January 4, 2018",
+                "href" : "https://www.letemps.ch/economie/smart-city-bill-gates-larizona-polemique",
+                "from" : "Le Temps",
+                "by" : "Loïc Pialatr"
+            },
+            {
+                "place" : "-",
+                "title" : "Average cities have a right to smart cities, too",
+                "tags" : ["Cities"],
+                "stringDate" : "January 11, 2018",
+                "href" : "http://www.lagazettedescommunes.com/544166/les-villes-moyennes-aussi-ont-droit-a-la-smart-city/ ",
+                "from" : "La gazette des communes",
+                "by" : "Martine Courgnaud - Del Ry"
+            },
+            {
+                "place" : "Shenzen, China",
+                "title" : "Shenzen : when China awakes as a Smart City",
+                "tags" : ["Cities"],
+                "stringDate" : "January 30, 2018",
+                "href" : "https://www.villeintelligente-mag.fr/Shenzhen%C2%A0-quand-la-Chine-s-eveille-a-la-Smart-City_a422.html",
+                "from" : "Ville Intelligente",
+                "by" : "Yannick Sourisseau"
+            },
+            {
+                "place" : "Shenzen, China",
+                "title" : "9 more cities added to Smart City Mission, total now 99",
+                "tags" : ["Cities", "Rankings"],
+                "stringDate" : "January 19, 2018",
+                "href" : "https://timesofindia.indiatimes.com/india/9-more-cities-added-to-smart-city-mission-total-now-99/articleshow/62570828.cms",
+                "from" : "The times of India"
             }
         ]
     },
@@ -267,11 +377,17 @@
         "month" : "February",
         "articles" : [
             {
-                "title" : "La police chinoise est désormais dotée de lunettes à reconnaissance faciale",
-                "translation" : "Chinese police now uses facial recognition glasses",
-                "stringDate": "February 8, 2018",
-                "href" : "https://www.journaldugeek.com/2018/02/08/police-chinoise-desormais-dotee-de-lunettes-a-reconnaissance-faciale/",
-                "from" : "Journal du Geek"
+                "place" : "China",
+                "title" : "Chinese police now uses facial recognition glasses",
+                "tags" : ["Control", "Ethics"],
+                "stringDate": "February 17, 2018",
+                "href" : "https://pix-geeks.com/police-chinoise-lunettes-connectees-reconnaissance-faciale/ ",
+                "from" : "Journal du Geek",
+                "by" : "Anthony Brogat",
+                "description" : [
+                    "In China, the police do not give a single chance to the fugitives to run away. Connected glasses with facial recognition scan the faces and allow a real time identification.",
+                    "But could those glasses also strengthen the power of the Chinese government? China has set up the biggest network of surveillance in the world with its 170 million security cameras. For information, 400 million cameras will be added in the next 3 years."
+                ]
             },
             {
                 "title" : "INFO-PARTENAIRE - Orange: 6 prévisions technologiques pour 2018",
@@ -282,28 +398,35 @@
                 "by" : "Innovation et technologie avec Orange"
             },
             {
+                "place" : "-",
                 "title" : "What Self-Driving Cars Could Learn From Air Traffic Control",
-                "stringDate":"February 9, 2018",
+                "stringDate": "February 9, 2018",
+                "transports" : ["AI", "Transports", "Autonomous cars"],
                 "href" : "https://www.fastcodesign.com/90159998/what-self-driving-cars-could-learn-from-air-traffic-control",
                 "from" : "FastcoDesign",
-                "by" : "Katharine Schwab"
+                "by" : "Katharine Schwab",
+                "description" : [
+                    "Connected digital safety grid, where infrastructure sensors, pedestrians’ devices, and the whole network of self-driving cars work together as a system to ensure that the cars themselves never have to make any kind of moral decision at all.",
+                    "AI can then coordinate all the data, communicate it back out to the system, and ensure that if someone even veers toward the street unexpectedly, the entire system is aware of it and can react in such a way that no one gets hurt"
+                ]
             },
             {
+                "place" : "-",
                 "title" : "5 Ways Artificial Intelligence Can Help Save The Planet",
-                "stringDate":"February 12, 2018",
+                "stringDate": "February 12, 2018",
+                "tags" : ["AI"],
                 "href" : "https://www.fastcompany.com/40528469/5-ways-artificial-intelligence-can-help-save-the-planet",
                 "from" : "FastCompany",
-                "by" : "Katharine Schwab"
+                "by" : "Katharine Schwab",
+                "description" : [
+                    "Imagine ways AI can help save the planet? The idea is to manage oceans and forests more effectively. Artificial Intelligence can sense, think, learn, and act on their own. Why should we use AI? First of all, AI systems are flexible and they can do more work, be in more places, than humans.",
+                    "Sources are disparate. That’s where autonomous systems come in.",
+                    "Imagine, renewable energies such as solar and wind, which have the advantage of being carbon-free and ubiquitous. Situated in villages and towns, those energies are situated just where local people needs them the most. AI can optimize those energies, and make them decentralized, autonomous. Similarly, AI will allow for a more decentralized water system, driven by sensors and new technologies like blockchain.",
+                    "In short, AI can deal with the intermittency of renewables, optimize them an make them autonomous. "     
+                ]
             },
             {
-                "title" : "La police chinoise utilise des lunettes connectées à reconnaissance faciale",
-                "translation" : "Chinese police uses facial recognition connected glasses",
-                "stringDate" : "February 12, 2018",
-                "href" : "https://pix-geeks.com/police-chinoise-lunettes-connectees-reconnaissance-faciale/",
-                "from" : "Pix Geeks",
-                "by" : "Anthony Brogat"
-            },
-            {
+                "place" : "-",
                 "title" : "A smarter smart city",
                 "stringDate" : "February 21, 2018",
                 "href" : "https://www.technologyreview.com/s/610249/a-smarter-smart-city/",
@@ -311,27 +434,49 @@
                 "by" : "Elizabeth Woyke"
             },
             {
-                "title" : "« Nous percevons une réelle volonté de voir émerger la ville durable à la française », Valérie David, Eiffage",
-                "translation" : "We are perceiving a real willness to give birth to a french sustainable city.",
-                "stringDate" : "February 22, 2018",
-                "href" : "https://www.lemoniteur.fr/article/nous-percevons-une-reelle-volonte-de-voir-emerger-la-ville-durable-a-la-francaise-valerie-david-eiff-35355864",
-                "from" : "Le Moniteur",
-                "by" : "Jessica Ibelaïdene"
-            },
-            {
+                "place" : "USA",
                 "title" : "Smart Roads Could Protect Us From Self-Driving Car Crashes",
                 "stringDate" : "February 23, 2018",
+                "tags" : ["Smart roads"],
                 "href" : "https://www.fastcodesign.com/90160958/smart-roads-could-protect-us-from-self-driving-car-crashes",
                 "from" : "FastcoDesign",
-                "by" : "Katharine Schwab"
+                "by" : "Katharine Schwab",
+                "description" : [
+                    "What happens if a pedestrian unexpectedly jumps out in front of a self-driving car? Designers in San Fransisco have find a way to solve this problem by creating a smart infrastructure system with warning lights, street illumination, and a fully reactive road (fully magnetized). With the belief that self-driving cars will be fully dedicated to protecting their passengers.",
+                    "Even if the cars are smart and connected, doesn’t mean the people are smart and connected. This is why a laser projection from the car acts as a warning sign for cyclist and walkers. The roads will be illuminated as well and they will react to where people or cars are going to."
+                ]
             },
             {
-                "title" : "Départ de Gobee.bike : «Le résultat d'un civisme à la française...»",
-                "translation" : "Gobee.bike leaving, the result of a french civism",
+                "place" : "France",
+                "title" : "Gobee.bike leaving, the result of a french civism",
+                "tags" : ["Transports", "Sharing", "App"],
                 "stringDate" : "February 26, 2018",
                 "href" : "http://www.lefigaro.fr/conso/2018/02/26/20010-20180226ARTFIG00091-depart-de-gobeebike-le-resultat-d-un-civisme-a-la-francaise.php",
                 "from" : "Le Figaro",
-                "by" : " Juliette Singeot"
+                "by" : " Juliette Singeot",
+                "description" : [
+                    "The Hong-Kong company of self-service bikes stops its activity in France. In cause: the  robbery and the damages of his bicycles. But what exactly does it mean?",
+                    "First of all, this behavior is rather revealing of the French society. There is no respect anymore. Secondly, poor quality together with an application that did not work well, causes frustration and bad user experiences.",
+                    "Together, those connected bikes were a real disaster in Europe. While in Hong-Kong they work great. Some things just work better in their city of origin."
+                ]
+            },
+            {
+                "place" : "-",
+                "title" : "These Savvy Cities Are Using Tech To Spark Citizen Engagement",
+                "tags" : ["Citizen", "Cities"],
+                "stringDate" : "February 7, 2018",
+                "href" : "https://www.fastcompany.com/40526644/these-savvy-cities-are-using-tech-to-spark-citizen-engagement",
+                "from" : "Fast Company",
+                "by" : " FastCo Works "
+            },
+            {
+                "place" : "-",
+                "title" : "These 9 Cities Are Certified Government Data Pioneers",
+                "tags" : ["Cities", "Data", "Rankings"],
+                "stringDate" : "February 2, 2018",
+                "href" : "https://www.fastcompany.com/40525068/these-9-cities-are-certified-government-data-pioneers",
+                "from" : "Fast Company",
+                "by" : "Ben Paynter"
             }
         ]
     },
@@ -339,103 +484,175 @@
         "month" : "March", 
         "articles" : [
             {
-                "title" : "Lyon: Pourquoi Indigo est persuadé de réussir là où Gobee.Bike s'est planté",
-                "translation" : "Lyon : Why Indigo thinks it should succeed while Gobee.Bike failed",
+                "place" : "Lyon, France",
+                "title" : "Lyon : Why Indigo thinks it should succeed while Gobee.Bike failed",
+                "tags" : ["Transports", "Sharing"],
                 "stringDate" : "March 13, 2018",
                 "href" : "https://www.20minutes.fr/lyon/2236367-20180312-lyon-pourquoi-indigo-persuade-reussir-o-gobeebike-plante",
                 "from" : "20 minutes",
                 "by" : "Caroline Girardon"
             },
             {
+                "place" : "-",
                 "title" : "This Smart Paint Talks To Canes To Help People Who Are Blind Navigate",
+                "tags" : ["Smart roads", "Transports"],
                 "stringDate" : "7 March 2018",
                 "href" : "https://www.fastcompany.com/40537928/this-smart-paint-talks-to-canes-to-help-people-who-are-blind-navigate",
                 "from" : "Fast Company",
                 "by" : "Adele Peters"
             },
             {
-                "title" : "Apple Maps just added bike-sharing data for 175 cities",
-                "stringDate" : "March 22, 2018",
-                "href" : "https://www.fastcompany.com/40543224/apple-maps-just-added-bike-sharing-data-for-175-cities",
-                "from" : "Fast Company"
+                "place" : "-",
+                "title" : "Flying taxis are becoming a reality",
+                "tags" : ["Transports"],
+                "stringDate" : "March 21, 2018",
+                "from" : "Science et vie",
+                "description" : [
+                    "Small autonomous, electric aircrafts who take-off and can land in a vertical way, seem now ready to take on board up to three passengers for a short route through the urban cities.",
+                    "Imagine a 90 minutes road trip by car, who would take 8 minutes with an Uber air. The company already plans spreading between 500 and 1000 of these flying taxis in the congested megalopolises. To do this, Uber partners with NASA and the industrialists. They complete their first demonstrations in Dallas and in Dubai before 2020, and the first commercial flights before 2030."
+                ]
             },
             {
+                "place" : "-",
                 "title" : "Apple Maps just added bike-sharing data for 175 cities",
+                "tags" : ["Transports", "Data", "Sharing"],
                 "stringDate" : "March 21, 2018",
                 "from" : "Science et vie",
                 "by" : "Hugo Leroux"
             },
             {
+                "place" : "-",
+                "title" : "Offices/farm tower is in progress",
+                "tags" : ["Environment"],
+                "stringDate" : "March 21, 2018",
+                "from" : "Science et vie",
+                "description" : [
+                    "DA Swedish tower of 60m of height intended to welcome offices (desks) and farms. Those towers will produce food for 5000 people. The construction should end in 2020."
+                ]
+            },
+            {
+                "place": "France",
                 "title" : "MoodWalkr, une appli pour se promener à la carte",
+                "tags" : ["Apps"],
                 "translation" : "Moodwalker, an app to get personnalized walks",
                 "stringDate" : "March 26, 2018",
                 "href" : "https://rcf.fr/la-matinale/moodwalkr-une-appli-pour-se-promener-la-carte",
                 "from" : "RCF La matinale",
-                "by" : "Vincent Belotti"
+                "by" : "Vincent Belotti",
+                "description" : [
+                    "Its name is MoodWalkr : A new application made in France, which according to your desires suggests you visiting special places in town. The app is collaborative, free and analyze the data and maps them."
+                ]
             },
             {
-                "title" : " Des mini drones remplaceront les caméras de surveillance",
-                "translation" : "Mini drones will replace CCTV",
+                "place" : "-",
+                "title" : " Mini drones will replace CCTV",
+                "tags" : ["Control", "IOT"],
                 "stringDate" : "March 30, 2018",
-                "from" : "Science et vie"
+                "from" : "Science et vie",
+                "description" : [
+                    "Drones who specializes in parcel delivery, could make their appearance soon. These drones are greener than the classical road transport, especially for light packages in the capitals.", 
+                    "But that's not all. Thanks to the progress of the miniaturization of drones, drones no bigger than a hummingbird can soon replace security cameras: watch and inform the traffic, keep an eye on hostile acts … This questions a permanent under surveillance society, especially if these drones can soon see through walls thanks to a high-tech scanner using simple Wi-Fi waves."
+                ]
             },
             {
-                "title" : "Bioluminescence donnera vie aux lumières de la ville",
-                "translation" : "Bioluminescence will give life to city lights",
+                "place" : "-",
+                "title" : "Bioluminescence will give life to city lights",
+                "tags" : ["Environment", "Energy"],
                 "stringDate" : "March 30, 2018",
-                "from" : "Science et vie"
+                "from" : "Science et vie",
+                "description" : [
+                    "Do you know bioluminescence? It is that special capacity from some living beings such as fireflies, to create some light. Several laboratories managed to transform vegetables into new lights of the city! It is soft, it is beautiful, and it consumes no electricity. If so, the lights of our cities as those from our interiors will be revolutionized."
+                ]
             },
             {
-                "title" : "Des maisons seront complètement imprimées",
-                "translation" : "Houses will be entirely printed",
+                "place" : "-",
+                "title" : "Houses will be entirely printed",
+                "tags" : ["Environment", "Houses"],
                 "stringDate" : "March 30, 2018",
-                "from" : "Science et vie"
+                "from" : "Science et vie",
+                "description" : [
+                    "Imagine houses with the most complex forms requiring no human labour and livable in short deadlines?",
+                    "Last September, a first house of 95m height was built in France by 3D printers. In 10 years, 3D printing is expected to revolutionize the sector of the building: robots will also be able to print the electric wiring, the insulation, the plumbing, and many more."
+                ]
             },
             {
-                "title" : "Les voitures autonomes prendront réellement le relai",
-                "translation" : "Autonomous car will actually replace normal cars",
+                "place" : "-",
+                "title" : "Autonomous car will actually replace normal cars",
+                "tags" : ["Transports", "Autonomous cars"],
                 "stringDate" : "March 30, 2018",
-                "from" : "Science et vie"
+                "from" : "Science et vie",
+                "description" : [
+                    "The Tesla accidents showed us that, even the most ultra-sophisticated algorithms, cannot guarantee a zero risk. A car behaves according to examples of which it was fed.", 
+                    "Yet, at the moment, it is almost impossible to plan all the situations. This is the way Google simulate one thousand accidents to plan algorithms which, in 2030, shall pilot totally our cars."
+                ]
             },
             {
-                "title" : "Ces projets qui feront de Casa une véritable « Smart city »",
-                "translation" : "These projects that will make Case a true Smart City",
-                "href" : "http://www.lesiteinfo.com/maroc/ces-projets-qui-feront-de-casa-une-veritable-smart-city/",
-                "stringDate" : "March 31, 2018",
-                "from" : "Le site info"
-            },
-            {
-                "title" : "« Alger Smart city»: mise en place de deux laboratoires à « ciel ouvert» pour tester les solutions innovantes",
-                "translation" : "These projects that will make Case a true Smart City",
+                "place" : "Alger, Algérie",
+                "title" : "These projects that will make Casa a true Smart City",
+                "tags" : ["Test"],
                 "href" : "http://www.aps.dz/sante-science-technologie/71824-alger-smart-city-mise-en-place-de-deux-laboratoires-a-ciel-ouvert-pour-tester-les-solutions-innovantes",
                 "stringDate" : "March 31, 2018",
                 "from" : "Algérie Presse Service"
             },
             {
-                "title" : "Les données numériques contribuent à l'intelligence de la ville",
-                "translation" : "Datas contribute to the smart city",
+                "place" : "-",
+                "title" : "Datas contribute to the smart city",
+                "tags" : ["Data"],
                 "href" : "https://www.villeintelligente-mag.fr/Les-donnees-numeriques-contribuent-a-l-intelligence-de-la-ville_a475.html",
                 "stringDate" : "March 28, 2018",
                 "from" : "Ville intelligente - Mag",
                 "by" : "Tony Cavadas"
             },
             {
-                "title" : "[Paiement sans contact] À Dijon, la carte bancaire devient pour la première fois en France un titre de transport",
-                "translation" : "In Dijon, the debit card becomes a transport card for the first time in France",
+                "title" : "In Dijon, the debit card becomes a transport card for the first time in France",
+                "tags" : ["Transports"],
                 "href" : "https://www.usine-digitale.fr/article/paiement-sans-contact-a-dijon-la-carte-bancaire-devient-pour-la-premiere-fois-en-france-un-titre-de-transport.N672569",
                 "stringDate" : "March 27, 2018",
                 "from" : "L'usine Digitale",
                 "by" : "Antonin Tabard"
             },
             {
-                "title" : "Smart City Bordeaux : le programme du 4 avril se précise",
-                "translation" : "Smart City Bordeaux : the 4 avril programme is precising",
+                "place" : "Bordeaux, France",
+                "title" : "Smart City Bordeaux : the 4 avril programme is precising",
+                "tags" : ["Events"],
                 "href" : "https://objectifaquitaine.latribune.fr/evenements/2018-03-13/smart-city-bordeaux-le-programme-du-4-avril-se-precise-771683.html",
                 "stringDate" : "March 13, 2018",
                 "from" : "La tribune",
                 "by" : "Mikaël Lozano"
+            },
+            {
+                "place" : "China",
+                "title" : "China is using AI and facial recognition to fine jaywalkers via text",
+                "tags" : ["Control", "Ethics"],
+                "href" : "https://www.fastcompany.com/40550856/china-is-using-ai-and-facial-recognition-to-fine-jaywalkers-via-text",
+                "stringDate" : "March 28, 2018",
+                "from" : "Fast Company",
+                "by" : "Michael Groatus"
+            },
+            {
+                "place" : "France",
+                "title" : "Consumer Concerns About Self-Driving Cars",
+                "tags" : ["Autonomous cars", "Ethics", "Transports", "Citizens"],
+                "href" : "https://www.statista.com/chart/5950/concerns-about-self-driving-cars/ ",
+                "stringDate" : "March 20, 2018",
+                "from" : "Statista",
+                "by" : "Felix Ritcher"
             }
            
+        ]
+    },
+    {
+        "month" : "April",
+        "articles": [
+            {
+                "place" : "Paris, France",
+                "title" : "Paris and (is) the french late : the capital isn’t on the smart city mondial rankings.",
+                "tags" : ["Cities", "Rankings"],
+                "stringDate" : "April 3, 2018",
+                "href" : "http://www.atlantico.fr/decryptage/paris-et-est-retard-francais-capitale-ne-figure-meme-pas-dans-classement-mondial-villes-intelligentes-jean-marc-sylvestre-3351897.html",
+                "from" : "Atlantico Business",
+                "by" : "Jean-Marc Sylvestre"
+            }
         ]
     },
     {

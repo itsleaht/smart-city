@@ -8,10 +8,6 @@
       </div>
     </transition>
     <section>
-      <header>
-        <h1 class="uppercase">Smart City</h1>
-        <router-link to="/list" id="moreInfo" class="black">+</router-link>
-      </header>
       <ul class="timeline">
         <li v-for="n in 10" :key="n"></li>
       </ul>
@@ -115,34 +111,6 @@ export default {
     }
     section {
       position: absolute;
-
-      header {
-        position: fixed;
-        width: 100%;
-        height: 5vh;
-        background: #fff;
-        line-height: 1.7;
-
-        h1 {
-          padding: 0;
-          margin: 0 50px 0;
-          text-align: left;
-          float: left;
-          font-size: 20px;
-          color: #959595;
-        }
-        #moreInfo {
-          float: right;
-          width: 60px;
-          height: 5vh;
-          border: none;
-          font-size: 40px;
-          background: #8f8f8f;
-          color: #fff;
-          text-decoration: none;
-          line-height: 0.8;
-        }
-      }
 
       .timeline {
         position: fixed;

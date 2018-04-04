@@ -10,18 +10,18 @@
 </template>
 
 <script>
-import articles from '@/data/data.json';
-import popArticle from '@/components/PopArticle.vue';
+  import articles from '@/data/data.json';
+  import popArticle from '@/components/PopArticle.vue';
 
-export default {
-  name: 'home',
-  components: {popArticle},
-  data () {
-      return {
-        articles
-      }
-    },
-};
+  export default {
+    name: 'home',
+    components: {popArticle},
+    data () {
+        return {
+          articles
+        }
+      },
+  };
 </script>
 
 <style lang="scss">
@@ -30,11 +30,9 @@ export default {
     margin: 100px auto 0;
     padding: 20px 0;
     text-transform: uppercase;
-    border-bottom: 1px solid grey;
   }
   article {
     width: 300px;
     margin: 0 auto;
-    border-bottom: 1px solid #ccced1;
   }
 </style>
