@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <h1 class="uppercase">Smart City - </h1>
-      <router-link to="/list" id="moreInfo" class="black">+</router-link>
+      <router-link :to="{name: 'sources'}" id="moreInfo" class="black">+</router-link>
     </header>
     <transition name="fade" mode="out-in">
       <router-view/>
@@ -11,10 +11,6 @@
 </template>
 
 <style lang="scss">
-
-  $darkBlue: #126FB7;
-  $lightBlue: #C3E5F4;
-
   body, html {
     margin: 0;
     padding: 0;

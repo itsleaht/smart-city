@@ -10,18 +10,18 @@
 </template>
 
 <script>
-  import articles from '@/data/data.json';
-  import popArticle from '@/components/PopArticle.vue';
+import articles from '@/data/data.json'
+import popArticle from '@/components/PopArticle'
 
-  export default {
-    name: 'home',
-    components: {popArticle},
-    data () {
-        return {
-          articles
-        }
-      },
-  };
+export default {
+  name: 'home',
+  components: {popArticle},
+  data () {
+    return {
+      articles
+    }
+  }
+}
 </script>
 
 <style lang="scss">

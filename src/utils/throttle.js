@@ -1,11 +1,9 @@
-export default function debounce(callback, delay){
-    var timer;
-    return function(){
-        var args = arguments;
-        var context = this;
-        clearTimeout(timer);
-        timer = setTimeout(function(){
-            callback.apply(context, args);
-        }, delay)
-    }
+export default function debounce (callback, delay) {
+  let timer
+  return () => {
+    const args = arguments
+    const context = this
+    clearTimeout(timer)
+    timer = setTimeout(callback.apply(context, args), delay)
+  }
 }
