@@ -214,7 +214,7 @@
         "month" : "November",
         "articles": [
             {
-                "name" : "Autonom Cab",
+                "name" : "An autonomous bus has an accident",
                 "place" : "Saint-Denis, France & Las Vegas, USA",
                 "company" : "Navya",
                 "stringDate" : "9 November 2017",
@@ -224,7 +224,9 @@
                     "month" : "11",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : [
+                    "An autonomous bus just had an accident with a delivery truck one hour after its release. Eight passengers were aboard the vehicle at the time of the collision. None of them were hurt. The small autonomous bus would not be responsible for the accident. The bus did what it had to do, it stopped to avoid the accident. Unfortunately, the delivery truck didn’t stop. Those kind of accidents with smart technologies worries a lot the travelers of Las-Vegas."
+                ],
                 "links" : [
                     {
                         "href" : "http://www.leparisien.fr/economie/las-vegas-des-sa-mise-en-service-le-bus-autonome-francais-a-un-accident-09-11-2017-7383093.php",
@@ -267,9 +269,9 @@
                 ]
             },
             {
-                "name" : "Social networks",
-                "place" : "",
-                "company" : "Cisco",
+                "name" : "A real time, very complex interface that controls the smart city networks",
+                "place" : "Barcelona and China",
+                "company" : "Huawei",
                 "stringDate" : "15 November 2017",
                 "outDate" : "",
                 "date" : {
@@ -277,7 +279,9 @@
                     "month" : "11",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : [
+                    "During the Smart City Expo World Congress in Barcelona, several companies presented their system of Smart City Command of Control. Huawei revealed his intelligent Center of operation, which acts as the brain of the smart city. Its a real time, very complex interface which combines on the same screen a map of the city, fully informed on the latest changes such as: information on the traffic and from phone data, all the network of video surveillance, security evolving directly according to the events which occur, a supervision of the state of gas and water, the alerts in case of fire and floods. Such powerful systems can be controlled at distance. In every district are added: fixed data, economic information on the community and the companies, dangerous products, flood-risk areas, places with strong concentration of population."
+                ],
                 "links" : [
                     {
                         "href" : "https://www.journaldunet.com/economie/services/1204959-a-smart-city-expo-le-centre-de-commande-devient-le-cerveau-de-la-ville/",
@@ -287,9 +291,9 @@
                 ]
             },
             {
-                "name" : "Bill Gates Smart City in Desert",
-                "place" : "Arizona, USA",
-                "company" : "Belmont Partners",
+                "name" : "Bill Gates wants to create a Smart City in the Desert",
+                "place" : "Desert of Arizona, USA",
+                "company" : "Belmont Partners, Bill Gates",
                 "stringDate" : "15 November 2017",
                 "outDate" : "2050",
                 "date" : {
@@ -297,7 +301,9 @@
                     "month" : "11",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : [
+                    "As an answer to overpopulation in the cities, such as expected in 2050, Bill Gates wants to build a futuristic city somewhere in the in the desert of Arizona. We know that 70% of the world population will live in cities or urban areas in thirty years. The city has to serve as a model for the development of future sustainable cities."
+                ],
                 "links" : [
                     {
                         "href" : "https://usbeketrica.com/article/bill-gates-va-construire-une-smart-city-dans-un-desert",
@@ -307,7 +313,7 @@
                 ]
             },
             {
-                "name" : "Flying cabs on water",
+                "name" : "Flying taxis on water",
                 "place" : "Paris, France",
                 "company" : "SeaBubbles",
                 "stringDate" : "29 November 2017",
@@ -317,7 +323,9 @@
                     "month" : "11",
                     "year" : "2017"
                 },
-                "description" : "",
+                "description" : [
+                    "Flying taxis called « sea bubbles » have just been tested on the Seine in Paris. They will have the right to navigate up to 30 km/h. These electrical bubbles store a lot of energy and are floating approximately 50 cm over the water."
+                ],
                 "links" : [
                     {
                         "href" : "http://www.leparisien.fr/info-paris-ile-de-france-oise/transports/les-sea-bubbles-de-nouveau-esperes-en-2018-sur-la-seine-29-11-2017-7422840.php",
