@@ -3,10 +3,10 @@
     <div class="tags-list">
       <p class="filters uppercase" v-on:click="panelOpened = !panelOpened">Filters<span class="icon-filters" ></span></p>
       <div class="tags-list-panel" v-bind:class="{'panel-opened': panelOpened}">
-        <tag v-for="(tagEl, indexTag) in tagsList" :key="'tag'+indexTag" :tag=tagEl :clickable=true></tag>
+        <tag v-for="(tagEl, indexTag) in tagsList" :key="'tag'+indexTag" :tag=tagEl :active="false" :clickable="true" @activateTag="updateActiveTagList"></tag>
       </div>
     </div>
-    <div v-for="(month, index) in articles" :key="'month'+index">
+    <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length">
         <h2>{{month.month}} </h2>
         <div id="sources-list">
           <source-articles  v-for="(article, indexArt) in month.articles"  :key="'article'+indexArt" :article="article"></source-articles>
@@ -28,7 +28,36 @@ export default {
     return {
       articles,
       tagsList,
-      panelOpened: false
+      panelOpened: false,
+      sources: articles,
+      activeTags : []
+    }
+  },
+  methods: {
+    updateActiveTagList (tag) {
+      tag = tag.tag
+      const pos = this.activeTags.indexOf(tag)
+      if (pos != -1) {
+        this.activeTags.splice(pos, 1);
+      } else {
+        this.activeTags.push(tag);
+      }
+      this.updateSourcesList();
+    },
+    updateSourcesList () {
+      var temps = articles;
+      var test = [];
+      test = temps.map( (temp) => {
+        const newArticlesList = temp.articles.filter( (article) => {
+          for (let i = 0; i < this.activeTags.length; i++) {
+            if (article.tags && article.tags.indexOf(this.activeTags[i]) != -1) {
+              return true
+            }
+          }
+        })
+        return {month: temp.month, articles: newArticlesList}
+      })
+      this.sources = test;
     }
   }
 }

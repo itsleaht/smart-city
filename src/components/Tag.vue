@@ -1,11 +1,24 @@
 <template>
-  <span v-bind:class="{ 'active': active, 'clickable': clickable }">{{tag}}</span>
+  <span v-bind:class="{ 'active': activeTag, 'clickable': clickable }" v-on:click="activateTag">{{tag}}</span>
 </template>
 
 <script>
 export default {
   name: 'tag',
-  props: ['tag', 'active', 'clickable']
+  props: ['tag', 'active', 'clickable'],
+  data () {
+    return {
+      activeTag: this.active
+    }
+  },
+  methods: {
+    activateTag () {
+      if (this.clickable) {
+        this.activeTag = !this.activeTag;
+        this.$emit('activateTag', {'tag': this.tag});
+      }
+    }
+  }
 }
 </script>
 
@@ -26,10 +39,23 @@ export default {
     }
 
     &.clickable {
-      padding: 5px 10px;
+      padding: 5px 16px 5px 12px;
       font-size: 15px;
       margin: 10px;
       cursor: pointer;
+
+      &.active {
+        position: relative;
+
+        &::after {
+          content: "x";
+          position: absolute;
+          right: 5px;
+          top: 7px;
+          font-size: 12px;
+          color: #c3dcf1;
+      }
+    }
     }
   }
 </style>
