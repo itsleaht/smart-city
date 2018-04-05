@@ -2,13 +2,27 @@
   <div id="app">
     <header>
       <h1 class="uppercase">Smart City - </h1>
-      <router-link :to="{name: 'sources'}" id="moreInfo" class="black">+</router-link>
+      <a v-on:click="showMenu = !showMenu" href="#" id="moreInfo" class="black">+</a>
     </header>
     <transition name="fade" mode="out-in">
-      <router-view/>
+      <navigation v-if="showMenu" @closeMenu="showMenu = !showMenu"></navigation>
+      <router-view v-else />
     </transition>
   </div>
 </template>
+<script>
+import Navigation from '@/components/Navigation'
+
+export default {
+  name: 'App',
+  components: {Navigation},
+  data () {
+    return {
+      showMenu: false
+    }
+  }
+}
+</script>
 
 <style lang="scss">
   body, html {
@@ -27,6 +41,7 @@
 
     header {
       position: fixed;
+      top: 0;
       width: 100%;
       height: 5vh;
       background: #fff;
@@ -34,6 +49,7 @@
       font-family: 'Roboto Mono', monospace;
       color: $darkBlue;
       font-size: 20px;
+      z-index: 10;
 
       h1 {
         padding: 0;
