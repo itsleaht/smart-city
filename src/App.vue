@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <h1 class="uppercase">Smart City - </h1>
-      <a v-on:click="showMenu = !showMenu" href="#" id="moreInfo" class="black">+</a>
+      <a v-on:click="showMenu = !showMenu" v-bind:class="{ 'open-menu': showMenu }" href="#" id="moreInfo" class="black"><span>+</span></a>
     </header>
     <transition name="fade" mode="out-in">
       <navigation v-if="showMenu" @closeMenu="showMenu = !showMenu"></navigation>
@@ -68,6 +68,17 @@ export default {
         color: #fff;
         text-decoration: none;
         line-height: 0.8;
+
+        span {
+          display: block;
+          transition: transform .3s;
+        }
+
+        &.open-menu {
+          span {
+            transform: rotate(45deg);
+          }
+        }
       }
     }
   }
