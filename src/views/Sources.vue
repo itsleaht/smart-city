@@ -1,6 +1,11 @@
 <template>
   <div class="list">
-    <router-link to="/">Retour</router-link>
+    <div class="tags-list">
+      <p class="filters uppercase" v-on:click="panelOpened = !panelOpened">Filters<span class="icon-filters" ></span></p>
+      <div class="tags-list-panel" v-bind:class="{'panel-opened': panelOpened}">
+        <tag v-for="(tagEl, indexTag) in tagsList" :key="'tag'+indexTag" :tag=tagEl :clickable=true></tag>
+      </div>
+    </div>
     <div v-for="(month, index) in articles" :key="'month'+index">
         <h2>{{month.month}} </h2>
         <div id="sources-list">
@@ -12,14 +17,18 @@
 
 <script>
 import articles from '@/data/sources.json'
+import tagsList from '@/data/tags.json'
 import sourceArticles from '@/components/SourceArticle'
+import Tag from '@/components/Tag'
 
 export default {
   name: 'home',
-  components: {sourceArticles},
+  components: {sourceArticles, Tag},
   data () {
     return {
-      articles
+      articles,
+      tagsList,
+      panelOpened: false
     }
   }
 }
@@ -27,8 +36,73 @@ export default {
 
 <style lang="scss">
   .list {
-
+    padding-top: 5vh;
     background: $lightBlue;
+
+    .tags-list {
+      position: fixed;
+      top: 5vh;
+      width: 100%;
+
+      .tags-list-panel {
+        position: absolute;
+        padding-top: 100px;
+        height: 95vh;
+        right: -25vw;
+        width: 25vw;
+        background: #fff;
+        transition: transform .3s;
+        box-shadow: 0px 0 6px 0px rgba(83, 82, 82, 0.4);
+
+        &.panel-opened {
+          transform: translateX(-25vw);
+        }
+      }
+
+      .filters {
+        position: absolute;
+        right: 0;
+        margin: 50px;
+        text-align: right;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 2px;
+        font-size: 10px;
+        cursor: pointer;
+        color: $darkBlue;
+        z-index: 5;
+
+        .icon-filters {
+          position: relative;
+          margin: 0 10px;
+          display: inline-block;
+          width: 15px;
+          height: 3px;
+          background: $darkBlue;
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 3px;
+            background: $darkBlue;
+          }
+
+          &::before {
+            top: -7px;
+            width: 20px;
+          }
+
+          &::after {
+            top: 7px;
+            width: 10px;
+          }
+        }
+      }
+
+    }
+
+
 
     h1 {
       text-transform: uppercase;

@@ -1,11 +1,11 @@
 <template>
-  <span>{{tag}}</span>
+  <span v-bind:class="{ 'active': active, 'clickable': clickable }">{{tag}}</span>
 </template>
 
 <script>
 export default {
   name: 'tag',
-  props: ['tag']
+  props: ['tag', 'active', 'clickable']
 }
 </script>
 
@@ -13,10 +13,23 @@ export default {
   span {
     display: inline-block;
     border-radius: 20px;
-    background: #62a7db;
+    background: #373737;
     color: #fff;
     font-size: 8px;
     padding: 5px;
     margin: 0 5px;
+    transition: background .3s;
+
+    &.active,
+    &:hover {
+      background: #62a7db;
+    }
+
+    &.clickable {
+      padding: 5px 10px;
+      font-size: 15px;
+      margin: 10px;
+      cursor: pointer;
+    }
   }
 </style>

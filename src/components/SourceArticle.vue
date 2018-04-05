@@ -7,7 +7,7 @@
     <h3>{{article.title}}</h3>
     <h4 v-if="article.translation">"{{article.translation}}"</h4>
     <p  class="description" v-for="(description, indexDesc) in article.description"  :key="'description'+indexDesc">{{description}}</p>
-    <tag v-for="(tag, indexTag) in article.tags"  :key="'article'+indexTag" :tag="tag"></tag>
+    <tag v-for="(tag, indexTag) in article.tags"  :key="'article'+indexTag" :tag="tag" :active="true"></tag>
     <span class="footer">
         <p v-if="article.by">By {{article.by}}</p>
         <p>From <a :href="article.href">{{article.from}}</a></p>

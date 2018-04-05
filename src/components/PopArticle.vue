@@ -1,15 +1,13 @@
 <template>
   <div class="pop-article">
-    <button id="closePop" v-bind:class="{ 'topOriented': topOriented }"
-    v-on:click="closePop" >+</button>
+    <button id="closePop" v-bind:class="{ 'topOriented': topOriented }" v-on:click="closePop" >+</button>
     <div class="header">
         <span class="place">{{article.place}}</span>
         <span class="date">{{article.date.day}}.{{article.date.month}}.{{article.date.year}}</span>
     </div>
     <div class="content">
         <h1 class="uppercase">{{article.name}}</h1>
-        <p class="description" v-for="(description, index) in article.description"
-        :key="'description'+index">
+        <p class="description" v-for="(description, index) in article.description" :key="'description'+index">
             {{description}}
         </p>
     </div>
