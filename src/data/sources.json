@@ -10,9 +10,9 @@
                 "href" : "http://www.lemonde.fr/economie/article/2017/09/08/dijon-s-invente-en-metropole-connectee-et-vitrine-francaise-des-smart-cities_5182745_3234.html",
                 "from" : "Le monde Économie",
                 "by" : "Grégoire Allix",
-                "description" : 
+                "description" :
                 [
-                    "Dijon City plans to be the smart city reference in France by the end of 2018. The maire goal is to become the 3.0 city.", 
+                    "Dijon City plans to be the smart city reference in France by the end of 2018. The maire goal is to become the 3.0 city.",
                     "It is the first time in France that a smart plan is created for a whole city. It will be about multiple connected objects that will analyze traffic jam, parking, air quality, bad weather, accidents, protest and so on to make the city more attractive and pleasurable for its inhabitants. Along, the maire plan to reduce energy waste by improving city lighting.",
                     "Unfortunately, the project involves CCTV which goes against the principle of not controlling people. "
                 ]
@@ -21,11 +21,15 @@
                 "place" : "France",
                 "stringDate" : "September 11, 2017",
                 "tags" : ["Cities"],
-                "title" : "Ville et territoire intelligents, une ambition française ?",
-                "translation" : "Smart zones and cities, a french ambition ?",
+                "title" : "Smart zones and smart cities, a french ambition ?",
                 "href" : "http://les-smartgrids.fr/ville-territoire-intelligents-francaise/",
                 "from" : "Les smart grids",
-                "by" : "Thierry Legrand"
+                "by" : "Thierry Legrand",
+                "description" : [
+                  "Multiples french projects are rising, but instead of talking about “smart cities”, the  term “smart territory” is being used. There’s a willness to  overcome cities that might be isolated and  include them in a big connected territories. Even so, French territories are still not very “smart” except Strasbourg which received a price for smart mobility.",
+                  "The term “smart city” or “smart territory” is still unknown to most of citizens. Only one third of citizens have heard about it but are not sure of what it actually is about. and 35% of them are under 35 years old. More than half of the people surveyed think that technology must be used to ease their routine : such as in  administrative services, environment, internet, waste sorting and sustainable buildings.",
+                  "As for territorial collectivities, they want to invest  in transports, economical development, online services, cybersecurity energy. This is to answer to actual needs : handling energy  needs, planing territories energy distribution and growing consuming."
+                ]
             },
             {
                 "stringDate" : "September 13, 2017",
@@ -37,16 +41,6 @@
                 "by" : "Jérôme Cartegini"
             },
             {
-                "place" : "Paris, France",   
-                "stringDate" : "September 23, 2017",
-                "tags" : ["Cities", "Future"],
-                "title" : "Un Paris du futur est né en 48h",
-                "translation" : "A Paris of future was born in 48 hours",
-                "href" : "https://usbeketrica.com/galerie/un-paris-du-futur-est-ne-en-48h",
-                "from" : "Le monde Économie",
-                "by" : "Maylis Haegel"
-            },
-            {
                 "place" : "USA",
                 "stringDate" : "September 20, 2017",
                 "tags" : ["Apps"],
@@ -55,7 +49,7 @@
                 "from" : "Fastco Design",
                 "by" : "Mark Wilson"
             },
-            { 
+            {
                 "place" : "New York, USA",
                 "stringDate" : "September 22, 2017",
                 "tags" : ["Apps", "Control"],
@@ -94,10 +88,10 @@
                 "href" : "https://smartcitiesworld.net/news/news/blockchain-for-smart-cities-2109",
                 "from" : "Smart cities World",
                 "description" : [
-                    "In New York, about fifty Brooklyn’s President Street inhabitants have organized a production, exchange and a resale network of photovoltaics between neighbours.", 
+                    "In New York, about fifty Brooklyn’s President Street inhabitants have organized a production, exchange and a resale network of photovoltaics between neighbours.",
                     "They used the emerging technology of blockchain that permits a decentralized database that secures and authenticates exchanges between people. This technology is at the base of multiple projects as it guaranties transparency. It gave Newyorkers more power in their streets."
                 ]
-            }, 
+            },
             {
                 "place" : "-",
                 "title" : "Blockchain opens new doors for smart cities",
@@ -106,7 +100,7 @@
                 "href" : "http://www.lemonde.fr/smart-cities/article/2017/09/27/la-blockchain-ouvre-le-champ-des-possibles-pour-la-smart-city_5192463_4811534.html",
                 "from" : "Le Monde",
                 "by" : "Jessica Gourdon"
-            }      
+            }
         ]
     },
     {
@@ -137,11 +131,14 @@
             {
                 "place" : "-",
                 "stringDate" : "October 12, 2017",
-                "title" : "Smart city et données personnelles : quels enjeux de politiques publiques et de vie privée ?",
-                "translation": "Smart City and personal datas : what are the public political and private life issues ?",
-                "tags" : ["Data", "Sharing", "Debate"],
+                "title" : "Smart City and personal datas : what are the public political and private life issues ?",
+                "tags" : ["Data", "Sharing", "Debate", "Citizens"],
                 "href" : "https://www.cnil.fr/fr/smart-city-et-donnees-personnelles-quels-enjeux-de-politiques-publiques-et-de-vie-privee",
-                "from" : "CNIL"
+                "from" : "CNIL",
+                "description" : [
+                  "The involvement of big IT actors in urban services raises the question about what real compensation are asked to citizens for public services that are shown as free. It is followed by a question: Who does this services benefit to ? ",
+                  "Also, the matter of a connected city in public spaces must be followed by allowing people to keep their anonymity towards city services and company services. For all these reasons, the CNIL recommends a “private mandatory open data”, “augmented data for common good”, platforms to access those datas and citizens portability."
+                ]
             },
             {
                 "place" : "-",
@@ -192,7 +189,7 @@
         ]
     },
     {
-        "month" : "November", 
+        "month" : "November",
         "articles" : [
             {
                 "place" : "Las Vegas, USA",
@@ -202,7 +199,7 @@
                 "href" : "http://www.leparisien.fr/economie/las-vegas-des-sa-mise-en-service-le-bus-autonome-francais-a-un-accident-09-11-2017-7383093.php",
                 "from" : "Le Parisien",
                 "by" : "M. Pf."
-            }, 
+            },
             {
                 "place" : "Ile-de-France, France",
                 "stringDate" : "November 14, 2017",
@@ -211,7 +208,7 @@
                 "translation" : "Ile-de-france strongly there for the Smart city expo world congress in Barcelone.",
                 "href" : "https://www.lejournaldugrandparis.fr/lile-de-france-force-smart-city-expo-world-forum-de-barcelone/",
                 "from" : "Le journal du Grand Paris"
-            }, 
+            },
             {
                 "place" : "Barcelona, Spain",
                 "title" : "Huawei creates a brain for a smart city for more than 100 cities with its new technologies",
@@ -225,7 +222,7 @@
                     "Such powerful systems can be controlled at distance.",
                     "In every district are added: fixed data, economic information on the community and the companies, dangerous products, flood-risk areas, places with strong concentration of population."
                 ]
-            }, 
+            },
             {
                 "place" : "-",
                 "title" : "Are smart cities incompatible with private life ?",
@@ -321,7 +318,7 @@
             {
                 "place" : "-",
                 "title" : "Alphabet's sidewalk labs launches a platform for making the city of tomorrow",
-                "tags" : ["Transports", "App"],
+                "tags" : ["Transports", "Apps"],
                 "stringDate" : "January 1, 2018",
                 "href" : "https://www.wired.com/story/alphabet-sidewalk-labs-coord-city-of-tomorrow/",
                 "from" : "Wired",
@@ -390,12 +387,15 @@
                 ]
             },
             {
-                "title" : "INFO-PARTENAIRE - Orange: 6 prévisions technologiques pour 2018",
-                "translation" : "6 technological forecast for 2018",
+                "title" : "6 technologies forecast for 2018",
                 "stringDate": "February 4, 2018",
+                "transports" : ["AI", "Transports", "Autonomous cars", "IOT"],
                 "href" : "https://lepetitjournal.com/bucarest/actualites/info-partenaire-orange-6-previsions-technologiques-pour-2018-227216",
                 "from" : "Le petit journal",
-                "by" : "Innovation et technologie avec Orange"
+                "by" : "Innovation et technologie avec Orange",
+                "description" : [
+                  "The company Orange forecast technologies for 2018 : Digital identity (by biometric recognition), drones to protect the environment, augmented reality used in other fields that games, smart houses, smart cities to reduce pollution and water and energy consumption and AI in self-driving cars."
+                ]
             },
             {
                 "place" : "-",
@@ -422,7 +422,7 @@
                     "Imagine ways AI can help save the planet? The idea is to manage oceans and forests more effectively. Artificial Intelligence can sense, think, learn, and act on their own. Why should we use AI? First of all, AI systems are flexible and they can do more work, be in more places, than humans.",
                     "Sources are disparate. That’s where autonomous systems come in.",
                     "Imagine, renewable energies such as solar and wind, which have the advantage of being carbon-free and ubiquitous. Situated in villages and towns, those energies are situated just where local people needs them the most. AI can optimize those energies, and make them decentralized, autonomous. Similarly, AI will allow for a more decentralized water system, driven by sensors and new technologies like blockchain.",
-                    "In short, AI can deal with the intermittency of renewables, optimize them an make them autonomous. "     
+                    "In short, AI can deal with the intermittency of renewables, optimize them an make them autonomous. "
                 ]
             },
             {
@@ -449,7 +449,7 @@
             {
                 "place" : "France",
                 "title" : "Gobee.bike leaving, the result of a french civism",
-                "tags" : ["Transports", "Sharing", "App"],
+                "tags" : ["Transports", "Sharing", "Apps"],
                 "stringDate" : "February 26, 2018",
                 "href" : "http://www.lefigaro.fr/conso/2018/02/26/20010-20180226ARTFIG00091-depart-de-gobeebike-le-resultat-d-un-civisme-a-la-francaise.php",
                 "from" : "Le Figaro",
@@ -463,7 +463,7 @@
             {
                 "place" : "-",
                 "title" : "These Savvy Cities Are Using Tech To Spark Citizen Engagement",
-                "tags" : ["Citizen", "Cities"],
+                "tags" : ["Citizens", "Cities"],
                 "stringDate" : "February 7, 2018",
                 "href" : "https://www.fastcompany.com/40526644/these-savvy-cities-are-using-tech-to-spark-citizen-engagement",
                 "from" : "Fast Company",
@@ -476,30 +476,46 @@
                 "stringDate" : "February 2, 2018",
                 "href" : "https://www.fastcompany.com/40525068/these-9-cities-are-certified-government-data-pioneers",
                 "from" : "Fast Company",
-                "by" : "Ben Paynter"
+                "by" : "Ben Paynter",
+                "description" : [
+                  "In 2016, Los Angeles decide to create a better waste sorting by analysing first the biggest problem areas. The result “Clean Streets Index” an accessible map that has encouraged the city to stay accountable and make progress.",
+                  "Boston’s CityScore system deploys an online scoreboard that charts city responses times for fixing potholes and cleaning up graffiti, as well as ambulance response times, and whether the homicide rate is improving. Kansas City, Missouri, meanwhile deploys quarterly public satisfaction surveys that have led the city toward multimillion dollar projects that battle blight and are aiming to fix its roads and bridges.",
+                  "All of these places are among the first nine cities to earn Bloomberg Philanthropies’ What Works Cities Certification, a national standard honoring metros that have launched excellent data collection policies and use evidence-backed strategies in governance. Bloomberg’s goal has always been for each place to test new theories of better governance, and then share the results with others to speed change.",
+                  "Smart-Data City Solutions, a Harvard initiative that’s also affiliated with Bloomberg, has also released a case study with more examples of what top achievement should look like."
+                ]
             }
         ]
     },
     {
-        "month" : "March", 
+        "month" : "March",
         "articles" : [
             {
                 "place" : "Lyon, France",
                 "title" : "Lyon : Why Indigo thinks it should succeed while Gobee.Bike failed",
-                "tags" : ["Transports", "Sharing"],
+                "tags" : ["Transports", "Sharing", "Apps", "Citizens"],
                 "stringDate" : "March 13, 2018",
                 "href" : "https://www.20minutes.fr/lyon/2236367-20180312-lyon-pourquoi-indigo-persuade-reussir-o-gobeebike-plante",
                 "from" : "20 minutes",
-                "by" : "Caroline Girardon"
+                "by" : "Caroline Girardon",
+                "description" : [
+                  "After the failure of GobeeBike, a shared bike self-service and without parking, further to damaging and robberies, Indigo tries out to get into this field in Lyon by improving the service.",
+                  "Working in tandem with local authorities they choosed to forbid the bikes dropping on sidewalks and public places. Those who do not respect this critieria will be black listed after the 4th for at least few months. Finally, they put together a participative gaming system based on positive and negative point to raise awareness about using correctly the service. It will also allow them to swap those points for gifts for vouchers if they report a bike badly parked or damaged or if they park in a safe area.",
+                  "As GoBee.bike, users must donwload and subscribe on the app Indigo Weel, then they can unlock a bike by scanning its QR Code, which is not secured as some have found a way to break the system to unlock lockers and get free bikes. Indigo app creators believe in human civism : they think that if they give them good bikes in the right place they will use them the right way."
+                ]
             },
             {
-                "place" : "-",
+                "place" : "Ohio, USA",
                 "title" : "This Smart Paint Talks To Canes To Help People Who Are Blind Navigate",
-                "tags" : ["Smart roads", "Transports"],
+                "tags" : ["Smart roads", "Transports", "IOT"],
                 "stringDate" : "7 March 2018",
                 "href" : "https://www.fastcompany.com/40537928/this-smart-paint-talks-to-canes-to-help-people-who-are-blind-navigate",
                 "from" : "Fast Company",
-                "by" : "Adele Peters"
+                "by" : "Adele Peters",
+                "description" : [
+                  "The Ohio State School for the Blind is pioneering new technology that causes canes to vibrate when it touches lines of traffic paint. As the company explored how the paint could be used with autonomous cars–the paint could, for example, help a car recognize an intersection or lane, or provide markers that make GPS much more accurate–they realized that the paint could also be useful for people who are blind. The lines will be made of smart paint : nanocrystals that can emit a unique light signature, which a sensor added to the tip of a cane can activate and then read. ",
+                  "The University is also thinking about providing blind people with guidance as they move down a sidewalk or guidance about whether or not they’ve arrived at a bus stop or at a certain destination. The paint could help someone identify, for example, if they are standing on the northwest or southwest corner of an intersection, or the exact location of an entrance to a building. The paint could also be used with other navigation tools. There may be even a point where a smartphone (with Google maps) is connected to the paint speaks to the user.",
+                  "The smart pain would be affordable as it wouldn’t cost much more than actual paints and the tip added to a cane, too, would be cheap to produce."
+                ]
             },
             {
                 "place" : "-",
@@ -515,10 +531,16 @@
             {
                 "place" : "-",
                 "title" : "Apple Maps just added bike-sharing data for 175 cities",
-                "tags" : ["Transports", "Data", "Sharing"],
+                "tags" : ["Transports", "Data", "Sharing", "Apps"],
                 "stringDate" : "March 21, 2018",
-                "from" : "Science et vie",
-                "by" : "Hugo Leroux"
+                "from" : "Fast Company",
+                "href" : "https://www.fastcompany.com/40543224/apple-maps-just-added-bike-sharing-data-for-175-cities",
+                "by" : "Mark Sullivan",
+                "description" : [
+                  "An Apple Maps feature went live on March 12, 2018 with bike-sharing data for more than 175 cities in 36 countries. The feature is not complete yet as the list of supported bikes isn’t definitive but Apple may add more in the future.",
+                  "The maps app lists Citi Bike in NYC, Divvy in Chicago, Biketown in Portland, BIXI in Montreal, and Velib in Paris.",
+                  "The new feature could be very useful for people visiting strange cities who want to bike around to see the sites. This goes with the idea of connecting transports into a city and sharing datas for the citizens good."
+                ]
             },
             {
                 "place" : "-",
@@ -550,7 +572,7 @@
                 "stringDate" : "March 30, 2018",
                 "from" : "Science et vie",
                 "description" : [
-                    "Drones who specializes in parcel delivery, could make their appearance soon. These drones are greener than the classical road transport, especially for light packages in the capitals.", 
+                    "Drones who specializes in parcel delivery, could make their appearance soon. These drones are greener than the classical road transport, especially for light packages in the capitals.",
                     "But that's not all. Thanks to the progress of the miniaturization of drones, drones no bigger than a hummingbird can soon replace security cameras: watch and inform the traffic, keep an eye on hostile acts … This questions a permanent under surveillance society, especially if these drones can soon see through walls thanks to a high-tech scanner using simple Wi-Fi waves."
                 ]
             },
@@ -582,7 +604,7 @@
                 "stringDate" : "March 30, 2018",
                 "from" : "Science et vie",
                 "description" : [
-                    "The Tesla accidents showed us that, even the most ultra-sophisticated algorithms, cannot guarantee a zero risk. A car behaves according to examples of which it was fed.", 
+                    "The Tesla accidents showed us that, even the most ultra-sophisticated algorithms, cannot guarantee a zero risk. A car behaves according to examples of which it was fed.",
                     "Yet, at the moment, it is almost impossible to plan all the situations. This is the way Google simulate one thousand accidents to plan algorithms which, in 2030, shall pilot totally our cars."
                 ]
             },
@@ -627,18 +649,24 @@
                 "href" : "https://www.fastcompany.com/40550856/china-is-using-ai-and-facial-recognition-to-fine-jaywalkers-via-text",
                 "stringDate" : "March 28, 2018",
                 "from" : "Fast Company",
-                "by" : "Michael Groatus"
+                "by" : "Michael Groatus",
+                "description" : [
+                  "Traffic authorities in the Chinese city of Shenzhen have teamed up with an AI firm named Intellifusion to carry out the rather dystopian policing. Already traffic police in the city have been using cameras to identify passing jaywalkers and project their faces and identifying information on large screens located near intersections for all to see, but now Intellifusion is taking its surveillance a step further. The company is partnering with social media platforms including WeChat and Sina Weibo and local mobile phone carriers so it can text jaywalkers the second they offend. Police will also have the option of delivering a ticket and fine on the spot for people who are picked up by the AI system for repeat offenses."
+                ]
             },
             {
                 "place" : "France",
                 "title" : "Consumer Concerns About Self-Driving Cars",
-                "tags" : ["Autonomous cars", "Ethics", "Transports", "Citizens"],
+                "tags" : ["Autonomous cars", "Ethics", "Transports", "Citizens", "Debate"],
                 "href" : "https://www.statista.com/chart/5950/concerns-about-self-driving-cars/ ",
                 "stringDate" : "March 20, 2018",
                 "from" : "Statista",
-                "by" : "Felix Ritcher"
+                "by" : "Felix Ritcher",
+                "description" : [
+                  "Recent events about an autonomous car killing a pedestrian in Arizona have been rising up the debate about whether it’s safe or not to have self driving cars. This tragic event must reinforce people opinion about not being comfortable with the idea as already in 2016, 50% of people assumed they wouldn’t feel safe being driven by a self driving car."
+                ]
             }
-           
+
         ]
     },
     {
@@ -646,12 +674,18 @@
         "articles": [
             {
                 "place" : "Paris, France",
-                "title" : "Paris and (is) the french late : the capital isn’t on the smart city mondial rankings.",
+                "title" : "Paris and (or is ?) the french lateness : the capital isn’t even on the smart city mondial rankings.",
                 "tags" : ["Cities", "Rankings"],
                 "stringDate" : "April 3, 2018",
                 "href" : "http://www.atlantico.fr/decryptage/paris-et-est-retard-francais-capitale-ne-figure-meme-pas-dans-classement-mondial-villes-intelligentes-jean-marc-sylvestre-3351897.html",
                 "from" : "Atlantico Business",
-                "by" : "Jean-Marc Sylvestre"
+                "by" : "Jean-Marc Sylvestre",
+                "description"  : [
+                  "While Emmanuel Macron is looking for revitalize the AI field, municipal councillors are analysing the mondial rankings of smart cities. This one explains the french lateness.",
+                  "Singapour, Barcelona,  London, San Francisco and Oslo, these cities are in the top 5 of the most smart cities in the world. The ranking is only based on data analysis : firstly on their quality.",
+                  "Singapour shines through its tranport plan, its hygiene and its technologies that allow to harvest a lot of data, Barcelona through its sustainable plans as well as London, San Fransisco and Oslo.",
+                  "Smart cities are requiring sophisticated computing equipments, collective equipments and an adapted urban planning, and it is the first time that the french investment is that much considerable (1.5 billions euros until 2022)."
+                ]
             }
         ]
     },

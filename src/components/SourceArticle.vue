@@ -6,11 +6,13 @@
     </span>
     <h3>{{article.title}}</h3>
     <h4 v-if="article.translation">"{{article.translation}}"</h4>
-    <p  class="description" v-for="(description, indexDesc) in article.description"  :key="'description'+indexDesc">{{description}}</p>
+    <div class="descriptions">
+      <p  class="description" v-for="(description, indexDesc) in article.description"  :key="'description'+indexDesc">{{description}}</p>
+    </div>
     <tag v-for="(tag, indexTag) in article.tags"  :key="'article'+indexTag" :tag="tag" :active="true"></tag>
     <span class="footer">
         <p v-if="article.by">By {{article.by}}</p>
-        <p>From <a :href="article.href">{{article.from}}</a></p>
+        <p>From <a :href="article.href" target="_blank">{{article.from}}</a></p>
     </span>
   </article>
 </template>
@@ -38,11 +40,12 @@ export default {
     margin: 30px auto;
     text-align: left;
     color: #126FB7;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $montserrat;
+     z-index: 1;
 
     .header {
       text-transform: uppercase;
-      font-family: 'Roboto Mono', monospace;
+      font-family: $roboto;
       font-size: 10px;
       text-align: left;
 

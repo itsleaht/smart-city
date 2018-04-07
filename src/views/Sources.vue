@@ -1,17 +1,24 @@
 <template>
   <div class="list">
     <div class="tags-list">
-      <p class="filters uppercase" v-on:click="panelOpened = !panelOpened">Filters<span class="icon-filters" ></span></p>
+      <div class="tags-options">
+        <p class="filters uppercase" v-on:click="panelOpened = !panelOpened">Filters<span class="icon-filters" ></span></p>
+        <p class="clearFilters" v-on:click="clearFilters" v-bind:class="{ 'show': activeTags.length }">X Clear filters</p>
+      </div>
       <div class="tags-list-panel" v-bind:class="{'panel-opened': panelOpened}">
-        <tag v-for="(tagEl, indexTag) in tagsList" :key="'tag'+indexTag" :tag=tagEl :active="false" :clickable="true" @activateTag="updateActiveTagList"></tag>
+        <div class="tags-list-panel-el">
+          <tag v-for="(tagEl, indexTag) in tagsList" :key="'tag'+indexTag" :tag=tagEl :active="false" :clickable="true" @activateTag="updateActiveTagList"></tag>
+        </div>
       </div>
     </div>
-    <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length">
-        <h2>{{month.month}} </h2>
-        <div id="sources-list">
-          <source-articles  v-for="(article, indexArt) in month.articles"  :key="'article'+indexArt" :article="article"></source-articles>
-        </div>
-    </div>
+    <transition-group name="list-fade" tag="div">
+      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item">
+          <h2>{{month.month}} </h2>
+          <transition-group name="list-fade" tag="div" id="sources-list">
+            <source-articles  v-for="(article, indexArt) in month.articles"  :key="'article'+indexArt" :article="article" class="list-fade-item"></source-articles>
+          </transition-group>
+      </div>
+    </transition-group>
   </div>
 </template>
 
@@ -30,40 +37,58 @@ export default {
       tagsList,
       panelOpened: false,
       sources: articles,
-      activeTags : []
+      activeTags: []
     }
   },
   methods: {
     updateActiveTagList (tag) {
-      tag = tag.tag
-      const pos = this.activeTags.indexOf(tag)
-      if (pos != -1) {
-        this.activeTags.splice(pos, 1);
+      const pos = this.activeTags.indexOf(tag.tag)
+      if (pos !== -1) {
+        this.activeTags.splice(pos, 1)
       } else {
-        this.activeTags.push(tag);
+        this.activeTags.push(tag.tag)
       }
-      this.updateSourcesList();
+      this.updateSourcesList()
     },
     updateSourcesList () {
-      var temps = articles;
-      var test = [];
-      test = temps.map( (temp) => {
-        const newArticlesList = temp.articles.filter( (article) => {
-          for (let i = 0; i < this.activeTags.length; i++) {
-            if (article.tags && article.tags.indexOf(this.activeTags[i]) != -1) {
-              return true
+      const temps = articles.map((temp) => {
+        const newArticlesList = temp.articles.filter((article) => {
+          if (this.activeTags.length) {
+            for (let i = 0; i < this.activeTags.length; i++) {
+              if (article.tags && article.tags.indexOf(this.activeTags[i]) !== -1) {
+                return true
+              }
             }
+          } else {
+            return true
           }
         })
         return {month: temp.month, articles: newArticlesList}
       })
-      this.sources = test;
+      this.sources = temps
+    },
+    clearFilters () {
+      this.activeTags = []
+      this.updateSourcesList()
     }
   }
 }
 </script>
 
 <style lang="scss">
+.list-fade-item {
+  transition: all 0.5s;
+}
+
+.list-fade-enter, .list-fade-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.list-fade-leave-active {
+  position: absolute;
+}
+
   .list {
     padding-top: 5vh;
     background: $lightBlue;
@@ -72,66 +97,83 @@ export default {
       position: fixed;
       top: 5vh;
       width: 100%;
+      z-index: 30;
 
       .tags-list-panel {
         position: absolute;
-        padding-top: 100px;
         height: 95vh;
-        right: -25vw;
-        width: 25vw;
+        right: -30vw;
+        width: 30vw;
         background: #fff;
         transition: transform .3s;
-        box-shadow: 0px 0 6px 0px rgba(83, 82, 82, 0.4);
+        box-shadow: 0px 0 6px 0px rgba(100, 62, 62, 0.4);
 
         &.panel-opened {
-          transform: translateX(-25vw);
+          transform: translateX(-30vw);
+        }
+
+        .tags-list-panel-el {
+          position: relative;
+          top: 150px;
+          overflow: auto;
         }
       }
 
-      .filters {
+      .tags-options {
         position: absolute;
         right: 0;
         margin: 50px;
         text-align: right;
-        font-family: "Montserrat", sans-serif;
         letter-spacing: 2px;
         font-size: 10px;
         cursor: pointer;
         color: $darkBlue;
         z-index: 5;
 
-        .icon-filters {
-          position: relative;
-          margin: 0 10px;
-          display: inline-block;
-          width: 15px;
-          height: 3px;
-          background: $darkBlue;
-
-          &::before,
-          &::after {
-            content: "";
-            position: absolute;
-            left: 0;
+        .filters {
+          font-family: $montserrat;
+          .icon-filters {
+            position: relative;
+            margin: 0 10px;
+            display: inline-block;
+            width: 15px;
             height: 3px;
             background: $darkBlue;
-          }
 
-          &::before {
-            top: -7px;
-            width: 20px;
-          }
+            &::before,
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              height: 3px;
+              background: $darkBlue;
+            }
 
-          &::after {
-            top: 7px;
-            width: 10px;
+            &::before {
+              top: -7px;
+              width: 20px;
+            }
+
+            &::after {
+              top: 7px;
+              width: 10px;
+            }
+          }
+        }
+        .clearFilters {
+          padding-top: 20px;
+          font-family: $roboto;
+          opacity: 0;
+          transform: translateX(100%);
+          transition: opacity .3s, transform .3s;
+
+          &.show {
+            transform: translateX(0);
+            opacity: 1;
           }
         }
       }
-
     }
-
-
 
     h1 {
       text-transform: uppercase;
@@ -146,7 +188,7 @@ export default {
       text-transform: uppercase;
       letter-spacing: 3px;
       color: $darkBlue;
-      font-family: "Montserrat";
+      font-family: $montserrat;
     }
 
     #sources-list {
@@ -157,5 +199,4 @@ export default {
       justify-content: space-between;
     }
   }
-
 </style>

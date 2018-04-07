@@ -11,7 +11,7 @@
       </li>
       <li>
         <router-link :to="{name: 'sources'}"><span v-on:click="closeMenu">Sources</span></router-link>
-        <p>List of all sources</p>
+        <p>Access informations about smart cities through a lot of datas.</p>
       </li>
     </ul>
     <p>Pauline Stichelbau,<br> Léa Tanda,<br> Fany Thourain,<br> Clara Vigourous,<br> Xindi Yang</p>

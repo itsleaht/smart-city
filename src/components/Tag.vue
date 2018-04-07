@@ -14,8 +14,8 @@ export default {
   methods: {
     activateTag () {
       if (this.clickable) {
-        this.activeTag = !this.activeTag;
-        this.$emit('activateTag', {'tag': this.tag});
+        this.activeTag = !this.activeTag
+        this.$emit('activateTag', {'tag': this.tag})
       }
     }
   }
@@ -26,16 +26,27 @@ export default {
   span {
     display: inline-block;
     border-radius: 20px;
-    background: #373737;
-    color: #fff;
+    background: #fff;
+    border: 2px solid #373737;
+    color: #373737;
     font-size: 8px;
     padding: 5px;
     margin: 0 5px;
-    transition: background .3s;
+    transition: background .3s, border .3s, color .3s;
 
-    &.active,
+    &.active {
+      background: $midBlue;
+      border-color: $midBlue;
+      color: #fff;
+    }
+
     &:hover {
-      background: #62a7db;
+      border-color: $midBlue;
+      color: $midBlue;
+
+      &.active {
+        color: #fff;
+      }
     }
 
     &.clickable {
