@@ -47,17 +47,28 @@
                 "title" : "Prepare For A New Kind Of Ad To Take Over Your City",
                 "href" : "https://www.fastcodesign.com/90143464/prepare-for-a-new-kind-of-ad-to-take-over-your-city",
                 "from" : "Fastco Design",
-                "by" : "Mark Wilson"
+                "by" : "Mark Wilson",
+                "description" : [
+                  "Verizon and Snapchat has launched an AR based scavenger hunt in 9 major cities in the US.",
+                  "By following clues throughout the day, users will travel from point to point in the city. After they find the last clue, a special Snapchat iPhone 8 Lens will be unlocked. They’ll be prompted to take a selfie with a big 8, send it to Verizon, and maybe win the real thing.",
+                  "The game is not only playing with geolocation, it also takes into account  like weather conditions, and many other real-time events.",
+                  "The game is now mainly targeted to the teenagers (the main users of Snapchat), but if it goes well, it can probably become a new popular form of ads. Especially after Pokemon Go has already proved how people are willing to travel across their cities to find some virtual treasure."
+                ]
             },
             {
                 "place" : "New York, USA",
                 "stringDate" : "September 22, 2017",
                 "tags" : ["Apps", "Control"],
-                "title" : "Citizen : l’appli qui vous permet de dénoncer un criminel",
-                "translation" : "Citizen, the app that allows you to denounce a criminal",
+                "title" : "Citizen, the app that allows you to denounce a criminal",
                 "href" : "http://www.ladn.eu/tech-a-suivre/data-big-et-smart/citizen-lappli-qui-vous-permet-de-denoncer-un-criminel/",
                 "from" : "L'ADN",
-                "by" : "Mélanie Roosen"
+                "by" : "Mélanie Roosen",
+                "description" : [
+                  "Is it probably kind of strange to report a criminal case with an app instead of calling the police?",
+                  "Do you remember the App “Vigilante”? It’s a controversial  App that encourages people to “report” any suspicious people or things in their city. Sounds alright? But the problem is that it could be a lot of prejudice and even discrimination when we just ask people to “report strange people in town”. This App is kicked out of AppStore because Apple believed it encouraged private citizens to engage in, well…vigilantism",
+                  "Now the App is coming back with a brand-new name called “Citizen”. It sends you real-time criminal reports based on 911 calls and encourage you to live-stream and to comment on them.",
+                  "To avoid for being banned again, this new App tells people not to approach any danger or get into the way of the police officer, but just to document the scene and be a witness of what happened."
+                ]
             },
             {
                 "title" : "How Paris will benefit from the 2024 JO to become a smart city",

@@ -1,50 +1,85 @@
 <template>
-  <section>
-    <ul>
+  <section id="navigation">
+    <overlay :show="show" @closingAnimationEnded="closeMenu"></overlay>
+    <ul v-bind:class="{ 'slideOut': slideOut }">
       <li>
-        <router-link :to="{name: 'home'}"><span v-on:click="closeMenu">Innovations</span></router-link>
+        <router-link :to="{name: 'home'}"><span v-on:click="animateCloseMenu">Innovations</span></router-link>
         <p>Discover the last smart cities innovations, from September 2017 to April 2018.</p>
       </li>
       <li>
-        <router-link :to="{name: 'info'}"><span v-on:click="closeMenu">Smart cities</span></router-link>
+        <router-link :to="{name: 'info'}"><span v-on:click="animateCloseMenu">Smart cities</span></router-link>
         <p>Learn more about smart cities</p>
       </li>
       <li>
-        <router-link :to="{name: 'sources'}"><span v-on:click="closeMenu">Sources</span></router-link>
+        <router-link :to="{name: 'sources'}"><span v-on:click="animateCloseMenu">Sources</span></router-link>
         <p>Access informations about smart cities through a lot of datas.</p>
       </li>
       <li>
-        <router-link :to="{name: 'about'}"><span v-on:click="closeMenu">About</span></router-link>
+        <router-link :to="{name: 'about'}"><span v-on:click="animateCloseMenu">About</span></router-link>
       </li>
     </ul>
-    <p>Pauline Stichelbau,<br> Léa Tanda,<br> Fany Thourain,<br> Clara Vigourous,<br> Xindi Yang</p>
+    <p v-bind:class="{ 'slideDown': slideOut }">Pauline Stichelbau,<br> Léa Tanda,<br> Fany Thourain,<br> Clara Vigourous,<br> Xindi Yang</p>
   </section>
 </template>
 
 <script>
+import overlay from '@/components/Overlay'
+
 export default {
   name: 'menu',
-  methods: {
-    closeMenu () {
-      this.$emit('closeMenu')
+  components: { overlay },
+  props: ['showClosingAnimation'],
+  data () {
+    return {
+      show: true,
+      slideOut: false
     }
+  },
+  methods: {
+    animateCloseMenu () {
+      this.show = false
+    },
+    closeMenu () {
+      this.$emit('closeNavigation')
+    }
+  },
+  watch: {
+    showClosingAnimation () {
+      this.slideOut = true
+    }
+  },
+  mounted () {
+    document.querySelector('#navigation ul').addEventListener('animationend', () => {
+      if (this.slideOut) {
+        this.animateCloseMenu()
+      }
+    })
   }
 }
 </script>
 
 <style scoped lang="scss">
 section {
-  position: relative;
+  position: fixed;
   padding-top: 5vh;
-  background: $yellow;
   width: 100vw;
   height: 95vh;
   z-index: 5;
   display: flex;
   align-items: center;
+  background: none;
+  z-index: 31;
 
   ul {
     vertical-align: middle;
+    transition: transform 0.7s;
+    animation-duration:  0.7s;
+    animation-fill-mode: forwards;
+
+    &.slideOut {
+      animation-name: slideOut;
+    }
+
     li {
       margin: 50px;
       text-align: left;
@@ -98,17 +133,29 @@ section {
     text-align: left;
     letter-spacing: 2px;
     animation-name: slideUp;
+    animation-delay: .7s;
     animation-duration:  0.7s;
     animation-fill-mode: forwards;
     transition: transform 0.7s;
     transform: translateY(150%) rotate(-90deg);
     opacity: 0;
 
+    &.slideDown {
+      animation-name: slideDown;
+      animation-delay: 0;
+    }
   }
 
   @keyframes slidein {
     to {
       transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+   @keyframes slideOut {
+    to {
+      transform: translateX(100%);
       opacity: 1;
     }
   }
@@ -119,5 +166,13 @@ section {
       opacity: 1;
     }
   }
+
+  @keyframes slideDown {
+    to {
+      transform: translateY(100%) rotate(-90deg);
+      opacity: 1;
+    }
+  }
+
 }
 </style>

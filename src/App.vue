@@ -2,12 +2,12 @@
   <div id="app">
     <header>
       <h1 class="uppercase"><router-link :to="{name: 'home'}">Smart City</router-link> - </h1>
-      <a v-on:click="showMenu = !showMenu" v-bind:class="{ 'open-menu': showMenu }" href="#" id="moreInfo" class="black"><span>+</span></a>
+      <a v-on:click="updateMenu" v-bind:class="{ 'open-menu': showMenu }" href="#" id="moreInfo" class="black"><span>+</span></a>
     </header>
-    <transition name="fade" mode="out-in">
-      <navigation v-if="showMenu" @closeMenu="showMenu = !showMenu"></navigation>
-      <router-view v-else />
-    </transition>
+      <navigation v-if="showMenu" @closeMenu="showMenu = !showMenu" :showClosingAnimation="showClosingMenuAnimation" @closeNavigation="closeNavigation"></navigation>
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
   </div>
 </template>
 <script>
@@ -18,7 +18,21 @@ export default {
   components: {Navigation},
   data () {
     return {
-      showMenu: false
+      showMenu: false,
+      showClosingMenuAnimation: false
+    }
+  },
+  methods: {
+    updateMenu () {
+      if (this.showMenu) {
+        this.showClosingMenuAnimation = true
+      } else {
+        this.showClosingMenuAnimation = false
+        this.showMenu = !this.showMenu
+      }
+    },
+    closeNavigation () {
+      this.showMenu = false
     }
   }
 }
