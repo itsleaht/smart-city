@@ -26,9 +26,9 @@
                 "from" : "Les smart grids",
                 "by" : "Thierry Legrand",
                 "description" : [
-                  "Multiples french projects are rising, but instead of talking about “smart cities”, the  term “smart territory” is being used. There’s a willness to  overcome cities that might be isolated and  include them in a big connected territories. Even so, French territories are still not very “smart” except Strasbourg which received a price for smart mobility.",
-                  "The term “smart city” or “smart territory” is still unknown to most of citizens. Only one third of citizens have heard about it but are not sure of what it actually is about. and 35% of them are under 35 years old. More than half of the people surveyed think that technology must be used to ease their routine : such as in  administrative services, environment, internet, waste sorting and sustainable buildings.",
-                  "As for territorial collectivities, they want to invest  in transports, economical development, online services, cybersecurity energy. This is to answer to actual needs : handling energy  needs, planing territories energy distribution and growing consuming."
+                  "Multiples french projects are rising, but instead of talking about “smart cities”, the term “smart territory” is being used. There’s a willingness to overcome cities that might be isolated and include them in big connected territories. Even so, French territories are still not very “smart” except Strasbourg which received a price for smart mobility.",
+                  "The term “smart city” or “smart territory” is still unknown to most of the citizens. Only one-third of citizens have heard about it but are not sure of what it actually is about. and 35% of them are under 35 years old. More than half of the people surveyed think that technology must be used to ease their routine: such as in administrative services, environment, internet, the waste sorting and sustainable buildings.",
+                  "As for territorial collectivities, they want to invest in transports, economic development, online services, cybersecurity energy. This is to answer to actual needs: handling energy needs, planing territories energy distribution and growing consuming."
                 ]
             },
             {
@@ -136,8 +136,8 @@
                 "href" : "https://www.cnil.fr/fr/smart-city-et-donnees-personnelles-quels-enjeux-de-politiques-publiques-et-de-vie-privee",
                 "from" : "CNIL",
                 "description" : [
-                  "The involvement of big IT actors in urban services raises the question about what real compensation are asked to citizens for public services that are shown as free. It is followed by a question: Who does this services benefit to ? ",
-                  "Also, the matter of a connected city in public spaces must be followed by allowing people to keep their anonymity towards city services and company services. For all these reasons, the CNIL recommends a “private mandatory open data”, “augmented data for common good”, platforms to access those datas and citizens portability."
+                  "The involvment of big IT actors in urban services raises the question about what real compensation is asked to citizens for public services that are shown as free. It is followed by a question of who does this services benefit to? ",
+                  "Also, the question of a connected city in public space must be followed by allowing people to keep their anonymity towards city services and company services. The CNIL then recommend a “private mandatory open data”, “augmented data for common good”, platforms to access those data and citizen portability."
                 ]
             },
             {
@@ -157,7 +157,7 @@
                 "from" : "Usbek et Rica",
                 "by" : "Benjamin Hourcade",
                 "description" : [
-                    "Fastrack Company is aiming at developing a digital recognition system to replace the Oyster Card, the London transport card. It will recognize hand vains and users will only to have to synchronize its hand with its account and the system will recognize it. "
+                    "Fastrack Company is aiming at developing a digital recognition system to replace the Oyster Card, the London transport card. It will recognize hand veins and users will only to have to synchronize its hand with its account and the system will recognize it."
                 ]
             },
             {
@@ -499,8 +499,8 @@
                 "by" : "Caroline Girardon",
                 "description" : [
                   "After the failure of GobeeBike, a shared bike self-service and without parking, further to damaging and robberies, Indigo tries out to get into this field in Lyon by improving the service.",
-                  "Working in tandem with local authorities they choosed to forbid the bikes dropping on sidewalks and public places. Those who do not respect this critieria will be black listed after the 4th for at least few months. Finally, they put together a participative gaming system based on positive and negative point to raise awareness about using correctly the service. It will also allow them to swap those points for gifts for vouchers if they report a bike badly parked or damaged or if they park in a safe area.",
-                  "As GoBee.bike, users must donwload and subscribe on the app Indigo Weel, then they can unlock a bike by scanning its QR Code, which is not secured as some have found a way to break the system to unlock lockers and get free bikes. Indigo app creators believe in human civism : they think that if they give them good bikes in the right place they will use them the right way."
+                  "Working in tandem with local authorities they chose to forbid the bikes dropping on sidewalks and public places. Those who do not respect this criterion will be blacklisted after the 4th for at least few months. Finally, they put together a participative gaming system based on positive and negative point to raise awareness about using correctly the service. It will also allow them to swap those points for gifts for vouchers if they report a bike badly parked or damaged or if they park in a safe area.",
+                  "As GoBee.bike, users must download and subscribe on the app Indigo Weel, then they can unlock a bike by scanning its QR Code, which is not secured as some have found a way to break the system to unlock lockers and get free bikes. Indigo app creators believe in human civism: they think that if they give them good bikes in the right place they will use them the right way."
                 ]
             },
             {
@@ -537,9 +537,9 @@
                 "href" : "https://www.fastcompany.com/40543224/apple-maps-just-added-bike-sharing-data-for-175-cities",
                 "by" : "Mark Sullivan",
                 "description" : [
-                  "An Apple Maps feature went live on March 12, 2018 with bike-sharing data for more than 175 cities in 36 countries. The feature is not complete yet as the list of supported bikes isn’t definitive but Apple may add more in the future.",
+                  "An Apple Maps feature went live on March 12, 2018, with bike-sharing data for more than 175 cities in 36 countries. The feature is not complete yet as the list of supported bikes isn’t definitive but Apple may add more in the future.",
                   "The maps app lists Citi Bike in NYC, Divvy in Chicago, Biketown in Portland, BIXI in Montreal, and Velib in Paris.",
-                  "The new feature could be very useful for people visiting strange cities who want to bike around to see the sites. This goes with the idea of connecting transports into a city and sharing datas for the citizens good."
+                  "The new feature could be very useful for people visiting strange cities who want to bike around to see the sites. This goes with the idea of connecting transports into a city and sharing data for the citizens good."
                 ]
             },
             {
@@ -663,7 +663,7 @@
                 "from" : "Statista",
                 "by" : "Felix Ritcher",
                 "description" : [
-                  "Recent events about an autonomous car killing a pedestrian in Arizona have been rising up the debate about whether it’s safe or not to have self driving cars. This tragic event must reinforce people opinion about not being comfortable with the idea as already in 2016, 50% of people assumed they wouldn’t feel safe being driven by a self driving car."
+                  "Recent events about an autonomous car killing a pedestrian in Arizona have been rising up the debate about whether it’s safe or not to have self-driving cars. This tragic event must reinforce people opinion about not being comfortable with the idea as already in 2016, 50% of people assumed they wouldn’t feel safe being driven by a self-driving car. "
                 ]
             }
 

@@ -92,6 +92,7 @@ export default {
   .list {
     padding-top: 5vh;
     background: $lightBlue;
+    min-height: 95vh;
 
     .tags-list {
       position: fixed;

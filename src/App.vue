@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1 class="uppercase">Smart City - </h1>
+      <h1 class="uppercase"><router-link :to="{name: 'home'}">Smart City</router-link> - </h1>
       <a v-on:click="showMenu = !showMenu" v-bind:class="{ 'open-menu': showMenu }" href="#" id="moreInfo" class="black"><span>+</span></a>
     </header>
     <transition name="fade" mode="out-in">
@@ -57,6 +57,11 @@ export default {
         text-align: left;
         float: left;
         font-size: 20px;
+
+        a {
+          text-decoration: none;
+          color: $darkBlue;
+        }
       }
       #moreInfo {
         float: right;
