@@ -8,19 +8,23 @@
       </div>
     </transition>
     <section>
-      <ul class="timeline">
-        <li v-for="n in 10" :key="n"></li>
-      </ul>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis ea officia tenetur alias. Similique laborum doloribus sit quod commodi, dolores perspiciatis vitae assumenda reprehenderit asperiores dolorum, eligendi porro aliquam.</p>
+      <object :data="require('@/assets/scenes/scene1.svg')" type="image/svg+xml"></object>
+      <object :data="require('@/assets/scenes/scene2.svg')" type="image/svg+xml"></object>
+      <object :data="require('@/assets/scenes/scene3.svg')" type="image/svg+xml"></object>
+      <object :data="require('@/assets/scenes/scene4.svg')" type="image/svg+xml"></object>
+      <object :data="require('@/assets/scenes/scene5.svg')" type="image/svg+xml"></object>
     </section>
+    <timeline :nbPoints="10"></timeline>
   </div>
 </template>
 
 <script>
 import {TweenMax, Power2, TimelineLite} from 'gsap'
+import timeline from '@/components/Timeline'
 
 export default {
   name: 'home',
+  components: {timeline},
   data () {
     return {
       showLanding: true,
@@ -66,7 +70,6 @@ export default {
   .home {
     width: 100%;
     height: 450vh;
-    background: url('../assets/images/homeBg.png');
 
     .landing {
       position: fixed;
@@ -109,44 +112,13 @@ export default {
       }
     }
     section {
-      position: absolute;
+      // position: absolute;
 
-      .timeline {
-        position: fixed;
-        top: 5vh;
-        right: 0;
-        padding: 0;
-        margin: 0;
-        width: 60px;
-        height: 95vh;
-        background: #fff;
-        list-style: none;
-
-        &::before {
-          content: "";
-          position: absolute;
-          width: 1px;
-          height: 100%;
-          background: #8F8F8F;
-          z-index: -1;
-        }
-      }
-
-      li {
+      object {
         display: block;
-        margin: 50px auto;
-        width: 12px;
-        height: 12px;
-        background: #B8FFD0;
-        border: 3px solid #B8FFD0;
-        border-radius: 50%;
-        transition: background .3s, transform .3s;
-
-        &.active {
-          background: #fff;
-          border-color: #B8FFD0;
-          transform: scale(1.5)
-        }
+        width: 100vw;
+        height: auto;
+        margin: 0;
       }
     }
   }

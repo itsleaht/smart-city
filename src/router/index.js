@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home'
-import List from '@/views/List'
+import Info from '@/views/Info'
 import Sources from '@/views/Sources'
+import About from '@/views/About'
 
 Vue.use(Router)
 
@@ -16,14 +17,19 @@ export default new Router({
       component: Home
     },
     {
-      path: '/list',
-      name: 'list',
-      component: List
+      path: '/smartCities',
+      name: 'info',
+      component: Info
     },
     {
       path: '/sources',
       name: 'sources',
       component: Sources
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
     }
   ],
   scrollBehavior () {

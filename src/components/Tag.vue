@@ -27,7 +27,7 @@ export default {
     display: inline-block;
     border-radius: 20px;
     background: #fff;
-    border: 2px solid #373737;
+    border: 2px solid $lightBlue;
     color: #373737;
     font-size: 8px;
     padding: 5px;
@@ -35,14 +35,14 @@ export default {
     transition: background .3s, border .3s, color .3s;
 
     &.active {
-      background: $midBlue;
-      border-color: $midBlue;
+      background: $yellow;
+      border-color: $yellow;
       color: #fff;
     }
 
     &:hover {
-      border-color: $midBlue;
-      color: $midBlue;
+      border-color: $yellow;
+      color: $yellow;
 
       &.active {
         color: #fff;
@@ -64,7 +64,7 @@ export default {
           right: 5px;
           top: 7px;
           font-size: 12px;
-          color: #c3dcf1;
+          color: hsl(47, 96%, 81%);
       }
     }
     }

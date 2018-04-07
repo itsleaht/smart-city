@@ -49,7 +49,7 @@ export default {
       font-family: 'Roboto Mono', monospace;
       color: $darkBlue;
       font-size: 20px;
-      z-index: 10;
+      z-index: 35;
 
       h1 {
         padding: 0;
@@ -64,7 +64,7 @@ export default {
         height: 5vh;
         border: none;
         font-size: 40px;
-        background: #8f8f8f;
+        background: $darkBlue;
         color: #fff;
         text-decoration: none;
         line-height: 0.8;
