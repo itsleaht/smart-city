@@ -3,19 +3,19 @@
     <overlay :show="show" @closingAnimationEnded="closeMenu"></overlay>
     <ul v-bind:class="{ 'slideOut': slideOut }">
       <li>
-        <router-link :to="{name: 'home'}"><span v-on:click="animateCloseMenu">Innovations</span></router-link>
+        <router-link :to="{name: 'home'}"><span v-on:click="animateSlideOut">Innovations</span></router-link>
         <p>Discover the last smart cities innovations, from September 2017 to April 2018.</p>
       </li>
       <li>
-        <router-link :to="{name: 'info'}"><span v-on:click="animateCloseMenu">Smart cities</span></router-link>
+        <router-link :to="{name: 'info'}"><span v-on:click="animateSlideOut">Smart cities</span></router-link>
         <p>Learn more about smart cities</p>
       </li>
       <li>
-        <router-link :to="{name: 'sources'}"><span v-on:click="animateCloseMenu">Sources</span></router-link>
+        <router-link :to="{name: 'sources'}"><span v-on:click="animateSlideOut">Sources</span></router-link>
         <p>Access informations about smart cities through a lot of datas.</p>
       </li>
       <li>
-        <router-link :to="{name: 'about'}"><span v-on:click="animateCloseMenu">About</span></router-link>
+        <router-link :to="{name: 'about'}"><span v-on:click="animateSlideOut">About</span></router-link>
       </li>
     </ul>
     <p v-bind:class="{ 'slideDown': slideOut }">Pauline Stichelbau,<br> Léa Tanda,<br> Fany Thourain,<br> Clara Vigourous,<br> Xindi Yang</p>
@@ -41,11 +41,14 @@ export default {
     },
     closeMenu () {
       this.$emit('closeNavigation')
+    },
+    animateSlideOut () {
+      this.slideOut = true
     }
   },
   watch: {
     showClosingAnimation () {
-      this.slideOut = true
+      this.animateSlideOut()
     }
   },
   mounted () {
@@ -155,7 +158,7 @@ section {
 
    @keyframes slideOut {
     to {
-      transform: translateX(100%);
+      transform: translateX(100vw);
       opacity: 1;
     }
   }
@@ -169,8 +172,8 @@ section {
 
   @keyframes slideDown {
     to {
-      transform: translateY(100%) rotate(-90deg);
-      opacity: 1;
+      transform: translateY(100vw) rotate(-90deg);
+      opacity: 0;
     }
   }
 
