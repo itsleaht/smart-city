@@ -110,7 +110,14 @@
                 "stringDate" : "September 27, 2017",
                 "href" : "http://www.lemonde.fr/smart-cities/article/2017/09/27/la-blockchain-ouvre-le-champ-des-possibles-pour-la-smart-city_5192463_4811534.html",
                 "from" : "Le Monde",
-                "by" : "Jessica Gourdon"
+                "by" : "Jessica Gourdon",
+                "description" : [
+                  "Blockchain, the new technology which is originally used for crypto-currency, is now playing an important role in Smart Cities.",
+                  "The major advantage of Blockchain is that it builds a bridge between everyone and every paid service, without any third-party service.",
+                  "Now in Europe, Blockchain is being applied to several services in energy. From the French start-up Sunchain and Enedis to the telecom giant Bouygues, many actors bring new ideas into this field.",
+                  "The business of the automobile is being innovated by the Blockchain, too. The Share and Charge web service lets people charge their electric cars at their neighbors' and directly pay the price that their neighbors fixed. Another service called tesseract offers opportunities for big groups and business users to share their vehicles.",
+                  "Generally speaking, Blockchain helps people to establish a micro-contract from the peer-to-peer scale, and it may give birth to a new generation the pro-summers (producers & consumers) in our cities. Maybe one-day blockchain is going to reshape our society in a more democratic and ecological way, who knows?"
+                ]
             }
         ]
     },
@@ -184,10 +191,17 @@
                 "place" : "-",
                 "stringDate" : "October 23, 2017",
                 "tags" : ["AI", "Cities", "Environment"],
-                "translation" : "In These Small Cities, AI Advances Could Be Costly",
+                "title" : "In These Small Cities, AI Advances Could Be Costly",
                 "href" : "https://www.technologyreview.com/s/609076/in-these-small-cities-ai-advances-could-be-costly/",
                 "from" : "Technology review",
-                "by" : "Elizabeth Woyke"
+                "by" : "Elizabeth Woyke",
+                "description" : [
+                  "A new study from MIT's Media Lab says that small cities are more likely to be impacted by the automation.",
+                  "Big cities like New York, San Jose, Washington D.C. have more technical and managerial occupations, for example, like software engineers and financial analytics. These occupations are less likely to be replaced by the automation. On the contrary, small cities have more routine clerical jobs such as cashier and food service jobs which are more in danger of being replaced.",
+                  "In add of that, big cities are more attractive for people who do cognitive and analytical work because they have more opportunity, therefore small cities are losing these talents because they don't have enough job for them.",
+                  "Of cause, there're some outliers like Warner Robins, Georgia. These cities are less in danger because of housing (or and least being near to) major institutions like an Air Force base, who hire many skilled workers.",
+                  "Automation is reducing the number and the wages of people who do routine jobs, but that's not all. With the development of algorithms, machine learning and many other technologies, people in white-collars could also be in danger of being replaced. How could we anticipate it, and eventually live with it? It's the next big question for us."
+                ]
             },
             {
                 "place" : "Huangzhou, China",
@@ -195,7 +209,10 @@
                 "title" : "A smart city in China tracks every citizen and yours could too",
                 "stringDate" : "October 24, 2017",
                 "href" : "https://www.newscientist.com/article/2151297-a-smart-city-in-china-tracks-every-citizen-and-yours-could-too/",
-                "from" : "New scientist"
+                "from" : "New scientist",
+                "description" : [
+                  "Hangzhou has teamed up with Alibaba Cloud to develop its smart city vision for traffic management. Using the company's cloud, the city is able to implement real-time traffic management for its citizens.Using hundreds of thousands of cameras dotted throughout the city, Alibaba can track almost every car on every road. It can instantly detect crashes, blockages or parking violations, and automatically notify the police to deal with them. The system can predict the traffic flow 10 minutes ahead of time with 90 per cent accuracy, and responds by changing traffic light patterns to even out congestion. It can even send text messages to people to help them plan different routes."
+                ]
             }
         ]
     },
@@ -377,7 +394,11 @@
                 "tags" : ["Cities", "Rankings"],
                 "stringDate" : "January 19, 2018",
                 "href" : "https://timesofindia.indiatimes.com/india/9-more-cities-added-to-smart-city-mission-total-now-99/articleshow/62570828.cms",
-                "from" : "The times of India"
+                "from" : "The times of India",
+                "description": [
+                  "Three cities of Uttar Pradesh are among nine chosen in the latest round of the Centre's flagship Smart City Mission, Union minister of housing and urban affairs Hardeep Singh Puri said on Friday.",
+                  "The nine cities chosen in the fourth round are - Bareilly, Moradabad and Saharanpur in Uttar Pradesh, Erode in Tamil Nadu, Bihar Sharif in Bihar, Silvasa in Dadra and Nagar Haveli, Diu in Daman and Diu, Kavarati in Lakshdweep and Itanagar in Arunachal Pradesh."
+                ]
             }
         ]
     },
@@ -442,7 +463,15 @@
                 "stringDate" : "February 21, 2018",
                 "href" : "https://www.technologyreview.com/s/610249/a-smarter-smart-city/",
                 "from" : "MIT Technology Review",
-                "by" : "Elizabeth Woyke"
+                "by" : "Elizabeth Woyke",
+                "description" : [
+                  "Alphabet's Sidewalk Lab is going to transform an underutilized part of Toronto into one of the most innovative city neighborhood, called Quayside.",
+                  "In this new smart city, driverless cars, smart road controls, robots and many other new technologies are going to replace what we've known today in our city.",
+                  "The project will start with a 12 acres plot owned by a Canadian local development agency called Waterfront, it is expected to house 5,000 people. If everything goes well, it would be expanded to more than 700-acres. There's also the possibility to replicate this city in other Canadian cities.",
+                  "Sidewalk thinks this city rather like a smartphone: it's just a platform that provides basic tools. Users can configure it and it will reflect people's personality.",
+                  "For instance, Sidewalk hasn't yet figured out the business of Quayside. The data they gathered will not be able to be traced back to the individuals, those data will all be stored on a collective repository that entrepreneurs and companies could draw on to make their own product or services for Quayside.",
+                  "The project will only succeed if it convinces Torontonians that it can offer solutions to many urban problems."
+                ]
             },
             {
                 "place" : "USA",
@@ -478,7 +507,14 @@
                 "stringDate" : "February 7, 2018",
                 "href" : "https://www.fastcompany.com/40526644/these-savvy-cities-are-using-tech-to-spark-citizen-engagement",
                 "from" : "Fast Company",
-                "by" : " FastCo Works "
+                "by" : " FastCo Works",
+                "description" : [
+                  "As a non-profit organization, City of Service is seeking the new way of citizen engagement. They help to bring up digital and analog services to improve the local project on a worldwide scale.",
+                  "After the global financial crisis, the Greek economy was a true disaster. Most Greeks don't trust their government anymore due to the severe corruption problem. Unable to count on the government for even basic services, Athenians developed a platform Synthia. It helps citizen groups to submit/communicate their project with their government corresponding agencies, and all the results are trackable for the public.",
+                  "In San Jose, citizen volunteers use a texting-based system to help solve the housing issues for its poorer residents. With the help of the City of Service, this system is based on the Citizen Sourced Data toolkit, which is simple for other cities to replicate San Jose's initiative.",
+                  "In Anchorage, Alaska, the Mayon Ethan Berkowitz launched the city's Open Data Portal to share the work of local government agencies. It helps people to become more informed about their local services and gives citizens insight into the efficacy of government and community efforts.",
+                  "City of service is always looking for the next great idea of changing citizens' participation in their local community."
+                ]
             },
             {
                 "place" : "-",
