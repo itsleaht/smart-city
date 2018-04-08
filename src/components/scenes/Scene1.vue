@@ -61,7 +61,7 @@ export default {
       const tlSatelite = new TimelineMax({repeat: -1, yoyo: true})
       const tlTrees = new TimelineMax()
       const tlTreesWaving = new TimelineMax({repeat: -1, yoyo: true})
-      const tlCar = new TimelineMax()
+      const tlCar = new TimelineMax({repeat: -1, repeatDelay: 10})
 
       tlBuildings
         .fromTo(secondBuildingBlue, 2.3, {y: 50}, {y: 0, ease: SteppedEase.config(12)}, 0.2)
