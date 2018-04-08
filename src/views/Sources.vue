@@ -132,19 +132,19 @@ export default {
       .tags-list-panel {
         position: absolute;
         height: 95vh;
-        right: -30vw;
-        width: 30vw;
+        right: -350px;
+        width: 350px;
         background: #fff;
         transition: transform .3s;
         box-shadow: 0px 0 6px 0px rgba(100, 62, 62, 0.4);
 
         &.panel-opened {
-          transform: translateX(-30vw);
+          transform: translateX(-350px);
         }
 
         .tags-list-panel-el {
           position: relative;
-          top: 100px;
+          top: 130px;
           overflow: auto;
         }
       }
@@ -211,6 +211,7 @@ export default {
         }
         .clearFilters {
           padding-top: 20px;
+          margin-right: 10px;
           font-family: $roboto;
           opacity: 0;
           transform: translateX(100%);

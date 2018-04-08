@@ -14,7 +14,7 @@
       <scene4></scene4>
       <scene5></scene5>
     </section>
-    <timeline :nbPoints="10" :preventScroll="true"></timeline>
+    <timeline :nbPoints="4" :arrayOfEvents="arrayOfEventsTimeLine"></timeline>
   </div>
 </template>
 
@@ -30,7 +30,8 @@ export default {
   components: {timeline, scene1, scene2, scene4, scene5},
   data () {
     return {
-      showLanding: true
+      showLanding: true,
+      arrayOfEventsTimeLine: []
     }
   },
   methods: {
@@ -43,6 +44,14 @@ export default {
   },
   mounted () {
     window.addEventListener('scroll', this.hideLanding)
+    const scenes = document.querySelectorAll('.home section object')
+    for (let i = 0; i < scenes.length; i++) {
+      const scene = scenes[i]
+      this.arrayOfEventsTimeLine[i] = {
+        top: scene.getBoundingClientRect().top,
+        height: scene.offsetHeight
+      }
+    }
   }
 }
 </script>
@@ -50,7 +59,6 @@ export default {
 <style lang="scss">
   .home {
     width: 100%;
-    height: 450vh;
 
     .landing {
       position: fixed;
@@ -128,10 +136,10 @@ export default {
     section {
       // position: absolute;
 
-      iframe {
+      object {
         display: block;
         width: 100vw;
-        height: 120vh;
+        // height: 120vh;
         margin: 0;
         padding: 0;
         border: none;
