@@ -9,32 +9,36 @@
       </div>
     </transition>
     <section>
-      <object :data="require('@/assets/scenes/scene1.svg')" type="image/svg+xml"></object>
-      <object :data="require('@/assets/scenes/scene2.svg')" type="image/svg+xml"></object>
-      <object :data="require('@/assets/scenes/scene3.svg')" type="image/svg+xml"></object>
-      <object :data="require('@/assets/scenes/scene4.svg')" type="image/svg+xml"></object>
-      <object :data="require('@/assets/scenes/scene5.svg')" type="image/svg+xml"></object>
+      <scene1></scene1>
     </section>
-    <timeline :nbPoints="10"></timeline>
+    <timeline :nbPoints="10" :preventScroll="true"></timeline>
   </div>
 </template>
 
 <script>
 import {TweenMax, Power2, TimelineLite} from 'gsap'
 import timeline from '@/components/Timeline'
+import scene1 from '@/components/scenes/Scene1'
+// var test = require('/static/libs/easings.js')
 
 export default {
   name: 'home',
-  components: {timeline},
+  components: {timeline, scene1},
   data () {
     return {
-      showLanding: true,
-      // lastScrollTop: 0,
-      // activeElTimeline: 0
+      showLanding: true
+    }
+  },
+  methods: {
+    hideLanding () {
+      if (window.pageYOffset > 10) {
+        this.showLanding = false
+        window.removeEventListener('scroll', this.hideLanding)
+      }
     }
   },
   mounted () {
-    // todo : Automatic scroll top on load page
+    window.addEventListener('scroll', this.hideLanding)
   }
 }
 </script>
@@ -120,11 +124,13 @@ export default {
     section {
       // position: absolute;
 
-      object {
+      iframe {
         display: block;
         width: 100vw;
-        height: auto;
+        height: 120vh;
         margin: 0;
+        padding: 0;
+        border: none;
       }
     }
   }

@@ -14,7 +14,6 @@ export default {
     return {
       activePoint : 0,
       lastScrollTop: 0,
-      jump: -1
     }
   },
   methods: {
@@ -40,8 +39,10 @@ export default {
     }
   },
   mounted () {
-    this.timelineEls = document.querySelectorAll('.timeline li')
-    window.addEventListener('scroll', throttle(this.onScroll, 100))
+    if(!this.preventScroll) {
+      this.timelineEls = document.querySelectorAll('.timeline li')
+      window.addEventListener('scroll', throttle(this.onScroll, 100))
+    }
   }
 }
 </script>
