@@ -139,15 +139,6 @@
             },
             {
                 "place" : "-",
-                "stringDate" : "October 2, 2017",
-                "translation" : "What Will the City of the Future Look Like?",
-                "tags" : ["Cities", "Future"],
-                "href" : "https://www.nationalgeographic.com/magazine/2017/10/editors-note-sustainability-dubai-green-cities/",
-                "from" : "National Geographic",
-                "by" : "Susan Goldberg"
-            },
-            {
-                "place" : "-",
                 "stringDate" : "October 12, 2017",
                 "title" : "Smart City and personal datas : what are the public political and private life issues ?",
                 "tags" : ["Data", "Sharing", "Debate", "Citizens"],
@@ -162,9 +153,16 @@
                 "place" : "-",
                 "stringDate" : "October 13, 2017",
                 "title" : "Individual liberties are forgotten in smart cities",
-                "tags" : ["Data", "Sharing", "Debate", "Privacy"],
+                "tags" : ["Data", "Sharing", "Debate", "Privacy", "Citizens"],
                 "href" : "http://www.lemonde.fr/smart-cities/article/2017/10/13/les-libertes-individuelles-oubliees-de-la-smart-city_5200742_4811534.html",
-                "from" : "CNIL"
+                "from" : "Le monde",
+                "description": [
+                  "With smart cities, there’s a promise of a fluid, optimized, healthier, more secured city through discrete captors hidden in all places, neighborhoods, buildings and even in our pockets, but is that connected city stills guarantees people rights and freedom?",
+                  "The CNIL recently released a report towards that matter. Firstly, they noticed that few researchers were made about private lives in smart cities: “Individuals are still a matter to fix, or at best, a traveling smartphone whose data would be essentials to the good of the city.”",
+                  "People are already in a weakness position towards big companies such as Google, Facebook, Uber, Airbnb and their pieces of information are already gathered…  But those companies now need to respect the new general European legacy about data protection (RGPD) that plans bigger sanctions and new rights or citizens.",
+                  "CNIL suggests open data systems, even for private companies, to share all the treasure (data) they keep getting a balance between private and public actors. Also, every citizen should be able to, if they want to, access their data in an open and clear format.",
+                  "All these measures should help the citizen to gain back power on its personal information."
+                ]
             },
             {
                 "place" : "London, UK",
@@ -213,6 +211,17 @@
                 "description" : [
                   "Hangzhou has teamed up with Alibaba Cloud to develop its smart city vision for traffic management. Using the company's cloud, the city is able to implement real-time traffic management for its citizens.Using hundreds of thousands of cameras dotted throughout the city, Alibaba can track almost every car on every road. It can instantly detect crashes, blockages or parking violations, and automatically notify the police to deal with them. The system can predict the traffic flow 10 minutes ahead of time with 90 per cent accuracy, and responds by changing traffic light patterns to even out congestion. It can even send text messages to people to help them plan different routes."
                 ]
+            },
+            {
+                "place" : "Saudi Arabia",
+                "tags" : ["Future", "AI"],
+                "title" : "A Saudi Arabia citizen robot, why ?",
+                "stringDate" : "October 27, 2017",
+                "href" : "https://usbeketrica.com/article/un-robot-citoyen-de-l-arabie-saoudite-pour-quoi-faire",
+                "from" : "Usbek et rica",
+                "description" : [
+                  "Mohammed ben Salmane Saudi Arabia prince recently came up with a project: a smart city of 24 000m2 along the Red Sea, named Neom that will be a symbol of technologic innovation in the area. This city will be sustainable, connected, cosmopolitan and will put AI and robots at heart of its operation, robots like Sophia, the new Saudi Arabia AI robot that is able to read, understand and answer while keeping its gaze towards the person it's talking to."
+                ]
             }
         ]
     },
@@ -226,7 +235,12 @@
                 "title" : "Right after its being put in service, a french autonomous bus has an accident",
                 "href" : "http://www.leparisien.fr/economie/las-vegas-des-sa-mise-en-service-le-bus-autonome-francais-a-un-accident-09-11-2017-7383093.php",
                 "from" : "Le Parisien",
-                "by" : "M. Pf."
+                "by" : "M. Pf.",
+                "description": [
+                  "Navya’s company self-driving car “Arma” test crashed into a delivery truck just an hour after being put on service. 8 people were on board during the collision but thankfully no one got hurt. The company representants claim that the car did what it had to do: stop, but the truck didn’t do the same.",
+                  "Despite the accident, Arma will keep being tested and guarantee free drives for a year. At the same time, in France, Navya tested its electric autonomous cab in Saint-Denis. It is the first taxi robot that can drive up to 6 people to their demand.",
+                  "Navya announces that it will be a revolution in French transports."
+                ]
             },
             {
                 "place" : "Ile-de-France, France",
@@ -286,7 +300,11 @@
                 "stringDate" : "November 29, 2017",
                 "href" : "http://www.leparisien.fr/info-paris-ile-de-france-oise/transports/les-sea-bubbles-de-nouveau-esperes-en-2018-sur-la-seine-29-11-2017-7422840.php",
                 "from" : "Le Parisien",
-                "by" : "J.-G.B."
+                "by" : "J.-G.B.",
+                "description" : [
+                  "Last year, Sea bubbles producers, electric energy bubbles that can float on the water were to abandon their project because of speed limits on the Seine (12km/h) and home port price. However, in November, they got an agreement to experiment sea Bubbles in Paris with a max speed of 30 km/h by the end of Summer 2018.",
+                  "Nevertheless, there’s still an issue about charging-up, which might be solved with a drop-minute system on houseboats."
+                ]
             }
         ]
     },
@@ -368,7 +386,10 @@
                 "stringDate" : "January 4, 2018",
                 "href" : "https://www.letemps.ch/economie/smart-city-bill-gates-larizona-polemique",
                 "from" : "Le Temps",
-                "by" : "Loïc Pialatr"
+                "by" : "Loïc Pialatr",
+                "description" : [
+                  "Bill Gates, the Microsoft co-founder, just bought a 10 000 hectares field in Arizona desert to build a futuristic city. This smart city will be named Belmont, after the real estate developer that pilots the project: Belmont Partners. This city must serve as a model for future sustainable city development and shows itself as an answer to urban overpopulation that will be seen around 2050."
+                ]
             },
             {
                 "place" : "-",
