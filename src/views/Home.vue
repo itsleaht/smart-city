@@ -12,6 +12,7 @@
       <scene1></scene1>
       <scene2></scene2>
       <scene4></scene4>
+      <scene5></scene5>
     </section>
     <timeline :nbPoints="10" :preventScroll="true"></timeline>
   </div>
@@ -22,10 +23,11 @@ import timeline from '@/components/Timeline'
 import scene1 from '@/components/scenes/Scene1'
 import scene2 from '@/components/scenes/Scene2'
 import scene4 from '@/components/scenes/Scene4'
+import scene5 from '@/components/scenes/Scene5'
 
 export default {
   name: 'home',
-  components: {timeline, scene1, scene2, scene4},
+  components: {timeline, scene1, scene2, scene4, scene5},
   data () {
     return {
       showLanding: true
