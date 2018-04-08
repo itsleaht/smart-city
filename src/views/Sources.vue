@@ -7,7 +7,7 @@
       </div>
       <div class="tags-list-panel" v-bind:class="{'panel-opened': panelOpened}">
         <div class="tags-list-panel-el">
-          <tag v-for="(tagEl, indexTag) in tagsList" :key="'tag'+indexTag" :tag=tagEl :active="false" :clickable="true" @activateTag="updateActiveTagList"></tag>
+          <tag v-for="(tagEl, indexTag) in tagsList" :key="'tag'+indexTag" :tag=tagEl :active="isActiveTag[indexTag]" :clickable="true" @activateTag="updateActiveTagList" :index="indexTag"></tag>
         </div>
       </div>
     </div>
@@ -37,16 +37,28 @@ export default {
       tagsList,
       panelOpened: false,
       sources: articles,
-      activeTags: []
+      activeTags: [],
+      activeTag: false
+    }
+  },
+  computed: {
+    isActiveTag () {
+      let array = new Array((tagsList.length - 1))
+      for (let i = 0; i < array.length; i++) {
+        array[i] = false
+      }
+      return array
     }
   },
   methods: {
     updateActiveTagList (tag) {
-      const pos = this.activeTags.indexOf(tag.tag)
+      const pos = this.activeTags.indexOf(tag.name)
       if (pos !== -1) {
         this.activeTags.splice(pos, 1)
+        this.isActiveTag[tag.index] = false
       } else {
-        this.activeTags.push(tag.tag)
+        this.activeTags.push(tag.name)
+        this.isActiveTag[tag.index] = true
       }
       this.updateSourcesList()
     },
@@ -69,6 +81,9 @@ export default {
     },
     clearFilters () {
       this.activeTags = []
+      for (let i = 0; i < this.isActiveTag.length; i++) {
+        this.isActiveTag[i] = false
+      }
       this.updateSourcesList()
     }
   }
@@ -140,6 +155,7 @@ export default {
             width: 15px;
             height: 3px;
             background: $darkBlue;
+            transition: width .3s;
 
             &::before,
             &::after {
@@ -148,6 +164,7 @@ export default {
               left: 0;
               height: 3px;
               background: $darkBlue;
+              transition: width .3s;
             }
 
             &::before {
@@ -159,6 +176,23 @@ export default {
               top: 7px;
               width: 10px;
             }
+
+          }
+
+          &:hover {
+            color: $yellow;
+
+            .icon-filters {
+              width: 20px;
+
+              &::before {
+                width: 10px;
+              }
+
+              &::after {
+                width: 15px;
+              }
+            }
           }
         }
         .clearFilters {
@@ -166,11 +200,15 @@ export default {
           font-family: $roboto;
           opacity: 0;
           transform: translateX(100%);
-          transition: opacity .3s, transform .3s;
+          transition: opacity .3s, transform .3s, color .3s;
 
           &.show {
             transform: translateX(0);
             opacity: 1;
+          }
+
+          &:hover {
+            color: $yellow;
           }
         }
       }

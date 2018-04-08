@@ -110,12 +110,20 @@ section {
 
       a {
         position: relative;
+        width: auto;
+        height: auto;
         color: $lightBlue;
         font-weight: 400;
         font-size: 34px;
         text-decoration: none;
         letter-spacing: 3px;
         color: $darkBlue;
+        transition: color .3s;
+        overflow: hidden;
+
+        &:hover {
+          color: $lightBlue;
+        }
       }
 
       p {

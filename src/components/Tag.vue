@@ -1,11 +1,11 @@
 <template>
-  <span v-bind:class="{ 'active': activeTag, 'clickable': clickable }" v-on:click="activateTag">{{tag}}</span>
+  <span v-bind:class="{ 'active': active, 'clickable': clickable }" v-on:click="activateTag">{{tag}}</span>
 </template>
 
 <script>
 export default {
   name: 'tag',
-  props: ['tag', 'active', 'clickable'],
+  props: ['tag', 'active', 'clickable', 'index'],
   data () {
     return {
       activeTag: this.active
@@ -15,7 +15,7 @@ export default {
     activateTag () {
       if (this.clickable) {
         this.activeTag = !this.activeTag
-        this.$emit('activateTag', {'tag': this.tag})
+        this.$emit('activateTag', { 'name': this.tag, 'index': this.index })
       }
     }
   }
@@ -31,7 +31,7 @@ export default {
     color: #373737;
     font-size: 8px;
     padding: 5px;
-    margin: 0 5px;
+    margin: 2px 5px;
     transition: background .3s, border .3s, color .3s;
 
     &.active {
