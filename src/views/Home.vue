@@ -29,40 +29,12 @@ export default {
   data () {
     return {
       showLanding: true,
-      lastScrollTop: 0,
-      activeElTimeline: 0
-    }
-  },
-  methods: {
-
-    onScroll () {
-      const gap = 200
-      if (this.showLanding) {
-        this.showLanding = false
-        this.timelineEls[0].classList.add('active')
-      } else {
-        const currentScrollTop = window.pageYOffset
-        if (currentScrollTop >= (this.lastScrollTop + gap) &&
-          this.activeElTimeline !== this.timelineEls.length - 1) {
-          this.updateTimeline(true)
-        } else if (this.activeElTimeline !== 0 &&
-          this.lastScrollTop - 100 >= currentScrollTop &&
-          this.lastScrollTop - 150 <= currentScrollTop) {
-          this.updateTimeline(false)
-        }
-      }
-    },
-    updateTimeline (goDown) {
-      this.lastScrollTop = window.pageYOffset
-      this.timelineEls[this.activeElTimeline].classList.remove('active')
-      goDown ? this.activeElTimeline++ : this.activeElTimeline--
-      this.timelineEls[this.activeElTimeline].classList.add('active')
+      // lastScrollTop: 0,
+      // activeElTimeline: 0
     }
   },
   mounted () {
     // todo : Automatic scroll top on load page
-    this.timelineEls = document.querySelectorAll('.timeline li')
-    window.addEventListener('scroll', this.onScroll)
   }
 }
 </script>

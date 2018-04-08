@@ -12,13 +12,14 @@
       </div>
     </div>
     <transition-group name="list-fade" tag="div">
-      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item">
+      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month">
           <h2>{{month.month}} </h2>
           <transition-group name="list-fade" tag="div" id="sources-list">
             <source-articles  v-for="(article, indexArt) in month.articles"  :key="'article'+indexArt" :article="article" class="list-fade-item"></source-articles>
           </transition-group>
       </div>
     </transition-group>
+    <timeline :nbPoints="nbPointsTimeLine" :preventScroll="false" :arrayOfEvents="arrayOfEventsTimeLine"></timeline>
   </div>
 </template>
 
@@ -27,10 +28,11 @@ import articles from '@/data/sources.json'
 import tagsList from '@/data/tags.json'
 import sourceArticles from '@/components/SourceArticle'
 import Tag from '@/components/Tag'
+import Timeline from '@/components/Timeline'
 
 export default {
   name: 'home',
-  components: {sourceArticles, Tag},
+  components: {sourceArticles, Tag, Timeline},
   data () {
     return {
       articles,
@@ -38,7 +40,9 @@ export default {
       panelOpened: false,
       sources: articles,
       activeTags: [],
-      activeTag: false
+      activeTag: false,
+      nbPointsTimeLine: articles.length,
+      arrayOfEventsTimeLine: []
     }
   },
   computed: {
@@ -86,6 +90,16 @@ export default {
       }
       this.updateSourcesList()
     }
+  },
+  mounted () {
+    let monthEls = document.querySelectorAll('.list .month')
+    for (let i = 0; i < monthEls.length; i++) {
+      const month = monthEls[i]
+      this.arrayOfEventsTimeLine[i] = {
+        top : month.getBoundingClientRect().top,
+        height: month.scrollHeight
+      }
+    }
   }
 }
 </script>
@@ -130,7 +144,7 @@ export default {
 
         .tags-list-panel-el {
           position: relative;
-          top: 150px;
+          top: 100px;
           overflow: auto;
         }
       }
@@ -138,7 +152,7 @@ export default {
       .tags-options {
         position: absolute;
         right: 0;
-        margin: 50px;
+        margin: 50px 70px;
         text-align: right;
         letter-spacing: 2px;
         font-size: 10px;
