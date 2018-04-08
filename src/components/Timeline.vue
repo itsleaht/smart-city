@@ -12,17 +12,16 @@ export default {
   props: ['nbPoints', 'arrayOfEvents', 'preventScroll'],
   data () {
     return {
-      activePoint : 0,
-      lastScrollTop: 0,
+      activePoint: 0,
+      lastScrollTop: 0
     }
   },
   methods: {
     onScroll () {
       const gap = 100
       const windowPos = window.pageYOffset
-       for (let i = 0; i < this.nbPoints; i++) {
+      for (let i = 0; i < this.nbPoints; i++) {
         const event = this.arrayOfEvents[i]
-        const currentPoint = this.timelineEls[i]
         if ((windowPos + gap) >= event.top && windowPos < (event.top + event.height)) {
           this.activePoint = i
           this.timelineEls[i].classList.add('active')
@@ -33,13 +32,13 @@ export default {
     },
     updateTimeline (e) {
       const point = e.path[0]
-      const index = point.getAttribute('data-index') - 1;
+      const index = point.getAttribute('data-index') - 1
       this.jump = index
-      window.scrollTo(0, this.arrayOfEvents[index].top);
+      window.scrollTo(0, this.arrayOfEvents[index].top)
     }
   },
   mounted () {
-    if(!this.preventScroll) {
+    if (!this.preventScroll) {
       this.timelineEls = document.querySelectorAll('.timeline li')
       window.addEventListener('scroll', throttle(this.onScroll, 100))
     }

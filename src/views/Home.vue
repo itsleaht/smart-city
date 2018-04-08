@@ -10,20 +10,20 @@
     </transition>
     <section>
       <scene1></scene1>
+      <scene2></scene2>
     </section>
     <timeline :nbPoints="10" :preventScroll="true"></timeline>
   </div>
 </template>
 
 <script>
-import {TweenMax, Power2, TimelineLite} from 'gsap'
 import timeline from '@/components/Timeline'
 import scene1 from '@/components/scenes/Scene1'
-// var test = require('/static/libs/easings.js')
+import scene2 from '@/components/scenes/Scene2'
 
 export default {
   name: 'home',
-  components: {timeline, scene1},
+  components: {timeline, scene1, scene2},
   data () {
     return {
       showLanding: true

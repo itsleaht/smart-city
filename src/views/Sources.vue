@@ -96,7 +96,7 @@ export default {
     for (let i = 0; i < monthEls.length; i++) {
       const month = monthEls[i]
       this.arrayOfEventsTimeLine[i] = {
-        top : month.getBoundingClientRect().top,
+        top: month.getBoundingClientRect().top,
         height: month.scrollHeight
       }
     }
