@@ -9,60 +9,49 @@
       </div>
     </transition>
     <section>
-      <object :data="require('@/assets/scenes/scene1.svg')" type="image/svg+xml"></object>
-      <object :data="require('@/assets/scenes/scene2.svg')" type="image/svg+xml"></object>
-      <object :data="require('@/assets/scenes/scene3.svg')" type="image/svg+xml"></object>
-      <object :data="require('@/assets/scenes/scene4.svg')" type="image/svg+xml"></object>
-      <object :data="require('@/assets/scenes/scene5.svg')" type="image/svg+xml"></object>
+      <scene1></scene1>
+      <scene2></scene2>
+      <scene4></scene4>
+      <scene5></scene5>
     </section>
-    <timeline :nbPoints="10"></timeline>
+    <timeline :nbPoints="4" :arrayOfEvents="arrayOfEventsTimeLine"></timeline>
   </div>
 </template>
 
 <script>
-import {TweenMax, Power2, TimelineLite} from 'gsap'
 import timeline from '@/components/Timeline'
+import scene1 from '@/components/scenes/Scene1'
+import scene2 from '@/components/scenes/Scene2'
+import scene4 from '@/components/scenes/Scene4'
+import scene5 from '@/components/scenes/Scene5'
 
 export default {
   name: 'home',
-  components: {timeline},
+  components: {timeline, scene1, scene2, scene4, scene5},
   data () {
     return {
       showLanding: true,
-      lastScrollTop: 0,
-      activeElTimeline: 0
+      arrayOfEventsTimeLine: []
     }
   },
   methods: {
-
-    onScroll () {
-      const gap = 200
-      if (this.showLanding) {
+    hideLanding () {
+      if (window.pageYOffset > 10) {
         this.showLanding = false
-        this.timelineEls[0].classList.add('active')
-      } else {
-        const currentScrollTop = window.pageYOffset
-        if (currentScrollTop >= (this.lastScrollTop + gap) &&
-          this.activeElTimeline !== this.timelineEls.length - 1) {
-          this.updateTimeline(true)
-        } else if (this.activeElTimeline !== 0 &&
-          this.lastScrollTop - 100 >= currentScrollTop &&
-          this.lastScrollTop - 150 <= currentScrollTop) {
-          this.updateTimeline(false)
-        }
+        window.removeEventListener('scroll', this.hideLanding)
       }
-    },
-    updateTimeline (goDown) {
-      this.lastScrollTop = window.pageYOffset
-      this.timelineEls[this.activeElTimeline].classList.remove('active')
-      goDown ? this.activeElTimeline++ : this.activeElTimeline--
-      this.timelineEls[this.activeElTimeline].classList.add('active')
     }
   },
   mounted () {
-    // todo : Automatic scroll top on load page
-    this.timelineEls = document.querySelectorAll('.timeline li')
-    window.addEventListener('scroll', this.onScroll)
+    window.addEventListener('scroll', this.hideLanding)
+    const scenes = document.querySelectorAll('.home section object')
+    for (let i = 0; i < scenes.length; i++) {
+      const scene = scenes[i]
+      this.arrayOfEventsTimeLine[i] = {
+        top: scene.getBoundingClientRect().top,
+        height: scene.offsetHeight
+      }
+    }
   }
 }
 </script>
@@ -70,7 +59,6 @@ export default {
 <style lang="scss">
   .home {
     width: 100%;
-    height: 450vh;
 
     .landing {
       position: fixed;
@@ -151,8 +139,10 @@ export default {
       object {
         display: block;
         width: 100vw;
-        height: auto;
+        // height: 120vh;
         margin: 0;
+        padding: 0;
+        border: none;
       }
     }
   }
