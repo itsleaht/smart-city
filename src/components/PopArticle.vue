@@ -6,7 +6,7 @@
         <span class="date">{{article.stringDate}}</span>
     </div>
     <div class="content">
-        <h1 class="uppercase">{{article.name}}</h1>
+        <h1 class="uppercase">{{article.title}}</h1>
         <p class="description" v-for="(description, index) in article.description" :key="'description'+index">
             {{description}}
         </p>
@@ -31,10 +31,10 @@ export default {
   .pop-article {
     position: relative;
     display: inline-block;
-    width: 225px;
-    height: 400px;
+    width: 235px;
+    height: 350px;
     border-radius: 8px;
-    box-shadow: 0px 0px 8px 0px rgba(114, 114, 114, 0.302);
+    box-shadow: 6px 10px 20px 4px rgba(114, 114, 114, 0.13);
     background: #fff;
 
     button {
@@ -71,7 +71,7 @@ export default {
     }
 
     .content {
-      height: 350px;
+      height: 300px;
       width: 98%;
       overflow: auto;
       text-align: left;
@@ -113,6 +113,12 @@ export default {
       border-right: 28px solid transparent;
       border-bottom: 42px solid #fff;
       transform: rotate(-8deg);
+    }
+
+    &.leftOriented::after {
+      border-left: 0px solid transparent;
+      border-right: 28px solid transparent;
+      border-top: 42px solid #fff;
     }
 
   }

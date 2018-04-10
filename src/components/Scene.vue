@@ -182,13 +182,15 @@ export default {
       })
       steps.forEach(function (step, index) {
         const stepBounding = step.getBoundingClientRect()
-        const top = stepBounding.top
-        const left = stepBounding.left
+        const top = Math.round(stepBounding.top)
+        const left = Math.round(stepBounding.left)
         const height = Number(step.getAttribute('data-height'))
         const width = Number(step.getAttribute('data-width'))
         let position = height > 100 & top < 100 ? top - 100 : top - height
-        position = position < 0 ? top - (height / 2) : position
-        positions.push({'position': position, 'top': top, 'left': left, 'height': height * ratio, 'width': width * ratio})
+        position = position < 0 ? Math.round(top - (height / 2)) : Math.round(position)
+        const wheelTo = position - ((window.innerHeight / 2) - (height / 2))
+
+        positions.push({'position': position, 'top': top, 'left': left, 'height': height * ratio, 'width': width * ratio, 'wheelTo': Math.round(wheelTo)})
       })
       this.$emit('getPositions', positions)
     }

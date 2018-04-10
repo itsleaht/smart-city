@@ -28,6 +28,16 @@
       ]
   },
   {
+      "place": "Pune, India",
+      "title" : "The Quest To Use Big Data And Community Toilets To Create A Model For Building Urban Sanitation",
+      "stringDate" : "September 13, 2017",
+      "tags" : ["Health", "Network"],
+      "href" : "https://www.fastcompany.com/40466766/the-quest-to-use-big-data-and-community-toilets-to-create-a-model-for-building-urban-sanitation",
+      "from" : "Fast Company",
+      "by" : "Eillie Anzilotti",
+      "description": "-"
+  },
+  {
       "place" : "Champs-sur-Marne, France",
       "stringDate" : "October 2, 2017",
       "title" : "A smart city tested on a mini city in Champs sur Marne",
@@ -41,16 +51,6 @@
       ]
   },
   {
-      "place": "Pune, India",
-      "title" : "The Quest To Use Big Data And Community Toilets To Create A Model For Building Urban Sanitation",
-      "stringDate" : "September 13, 2017",
-      "tags" : ["Health", "Network"],
-      "href" : "https://www.fastcompany.com/40466766/the-quest-to-use-big-data-and-community-toilets-to-create-a-model-for-building-urban-sanitation",
-      "from" : "Fast Company",
-      "by" : "Eillie Anzilotti",
-      "description": "-"
-  },
-  {
       "place" : "-",
       "title" : "Alphabet's sidewalk labs launches a platform for making the city of tomorrow",
       "tags" : ["Transports", "Apps"],
@@ -58,10 +58,6 @@
       "href" : "https://www.wired.com/story/alphabet-sidewalk-labs-coord-city-of-tomorrow/",
       "from" : "Wired",
       "by" : "Aarian Marshall"
-  },
-  {
-    "place": "-",
-    "description": []
   },
   {
       "place" : "Paris, France",
@@ -75,6 +71,11 @@
         "Last year, Sea bubbles producers, electric energy bubbles that can float on the water were to abandon their project because of speed limits on the Seine (12km/h) and home port price. However, in November, they got an agreement to experiment sea Bubbles in Paris with a max speed of 30 km/h by the end of Summer 2018.",
         "Nevertheless, there’s still an issue about charging-up, which might be solved with a drop-minute system on houseboats."
       ]
+  },
+  {
+    "place": "-",
+    "title" : "Panneaux",
+    "description": []
   },
   {
       "place" : "Ohio, USA",
@@ -104,6 +105,17 @@
       ]
   },
   {
+      "place" : "-",
+      "title" : "Flying taxis are becoming a reality",
+      "tags" : ["Transports"],
+      "stringDate" : "March 21, 2018",
+      "from" : "Science et vie",
+      "description" : [
+          "Small autonomous, electric aircrafts who take-off and can land in a vertical way, seem now ready to take on board up to three passengers for a short route through the urban cities.",
+          "Imagine a 90 minutes road trip by car, who would take 8 minutes with an Uber air. The company already plans spreading between 500 and 1000 of these flying taxis in the congested megalopolises. To do this, Uber partners with NASA and the industrialists. They complete their first demonstrations in Dallas and in Dubai before 2020, and the first commercial flights before 2030."
+      ]
+  },
+  {
       "place" : "China",
       "title" : "Chinese police now uses facial recognition glasses",
       "tags" : ["Control", "Ethics"],
@@ -114,17 +126,6 @@
       "description" : [
           "In China, the police do not give a single chance to the fugitives to run away. Connected glasses with facial recognition scan the faces and allow a real time identification.",
           "But could those glasses also strengthen the power of the Chinese government? China has set up the biggest network of surveillance in the world with its 170 million security cameras. For information, 400 million cameras will be added in the next 3 years."
-      ]
-  },
-  {
-      "place" : "-",
-      "title" : "Flying taxis are becoming a reality",
-      "tags" : ["Transports"],
-      "stringDate" : "March 21, 2018",
-      "from" : "Science et vie",
-      "description" : [
-          "Small autonomous, electric aircrafts who take-off and can land in a vertical way, seem now ready to take on board up to three passengers for a short route through the urban cities.",
-          "Imagine a 90 minutes road trip by car, who would take 8 minutes with an Uber air. The company already plans spreading between 500 and 1000 of these flying taxis in the congested megalopolises. To do this, Uber partners with NASA and the industrialists. They complete their first demonstrations in Dallas and in Dubai before 2020, and the first commercial flights before 2030."
       ]
   }
 ]

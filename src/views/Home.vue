@@ -11,7 +11,7 @@
     </transition>
     <section>
       <scene @getPositions="updateScene"></scene>
-      <pop-article v-for="(article, index) in events" :article="article" :key="'pop-'+index" :class="{'active':currentStep == index}" ref="popArticle"></pop-article>
+      <pop-article v-for="(article, index) in events" :article="article" :key="'pop-'+index" :class="{'active':currentStep == index + 1}" ref="popArticle"></pop-article>
     </section>
     <timeline :nbSteps="nbSteps" :currentStep="currentStep" @currentStep="changeStep"></timeline>
   </div>
@@ -64,10 +64,10 @@ export default {
       this.manageWheel(this.currentStep)
     },
     manageWheel (step) {
-      TweenLite.to(window, 2, {scrollTo: {y: this.positions[step - 1].position, x: 0}, ease: Power3.easeIn})
+      const pos = this.positions[step - 1]
+      TweenLite.to(window, 2, {scrollTo: {y: pos.wheelTo, x: 0}, ease: Power2.easeIn})
     },
     changeStep (newStep) {
-      console.log(newStep)
       if (newStep >= 1 && newStep <= this.nbSteps) {
         this.currentStep = newStep
         this.manageWheel(this.currentStep)
@@ -82,8 +82,22 @@ export default {
       }
     },
     placePopArticles (positions) {
-      let test = document.querySelectorAll('.pop-article')
-      test[1].style.top = positions[1].top
+      let popArticles = document.querySelectorAll('.pop-article')
+      const popHeight = popArticles[0].clientHeight
+      const popWidth = popArticles[0].clientWidth
+      const windowHeight = window.innerHeight
+      this.$refs.popArticle.forEach((pop, index) => {
+        const pos = positions[index]
+        let left = pos.left - popWidth - pos.width / 2
+        let top = pos.top - popHeight
+        top = top <= 0 ? 40 : top
+        if (left <= 50) {
+          left = pos.left + (pos.width / 2)
+          pop.$el.classList.add('leftOriented')
+        }
+        pop.$el.style.top = top + 'px'
+        pop.$el.style.left = left + 'px'
+      })
     }
   },
   mounted () {
@@ -205,11 +219,13 @@ export default {
         z-index: 5;
         visibility: hidden;
         opacity: 0;
-        transition: opacity .5s;
+        transform: scale(0.5);
+        transition: opacity .5s, transform 0.7s;
 
         &.active {
           visibility: visible;
           opacity: 1;
+          transform: scale(1);
         }
       }
     }
