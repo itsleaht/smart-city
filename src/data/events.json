@@ -1,0 +1,130 @@
+[
+  {
+      "place" : "-",
+      "title" : "What Self-Driving Cars Could Learn From Air Traffic Control",
+      "tags" : ["Autonomous cars", "Citizens", "AI", "Anticipation"],
+      "stringDate": "February 9, 2018",
+      "transports" : ["AI", "Transports", "Autonomous cars"],
+      "href" : "https://www.fastcodesign.com/90159998/what-self-driving-cars-could-learn-from-air-traffic-control",
+      "from" : "FastcoDesign",
+      "by" : "Katharine Schwab",
+      "description" : [
+          "Connected digital safety grid, where infrastructure sensors, pedestrians’ devices, and the whole network of self-driving cars work together as a system to ensure that the cars themselves never have to make any kind of moral decision at all.",
+          "AI can then coordinate all the data, communicate it back out to the system, and ensure that if someone even veers toward the street unexpectedly, the entire system is aware of it and can react in such a way that no one gets hurt"
+      ]
+  },
+  {
+      "place" : "Las Vegas, USA",
+      "stringDate" : "November 9, 2017",
+      "tags" : ["Autonomous cars", "Transports"],
+      "title" : "Right after its being put in service, a french autonomous bus has an accident",
+      "href" : "http://www.leparisien.fr/economie/las-vegas-des-sa-mise-en-service-le-bus-autonome-francais-a-un-accident-09-11-2017-7383093.php",
+      "from" : "Le Parisien",
+      "by" : "M. Pf.",
+      "description": [
+        "Navya’s company self-driving car “Arma” test crashed into a delivery truck just an hour after being put on service. 8 people were on board during the collision but thankfully no one got hurt. The company representants claim that the car did what it had to do: stop, but the truck didn’t do the same.",
+        "Despite the accident, Arma will keep being tested and guarantee free drives for a year. At the same time, in France, Navya tested its electric autonomous cab in Saint-Denis. It is the first taxi robot that can drive up to 6 people to their demand.",
+        "Navya announces that it will be a revolution in French transports."
+      ]
+  },
+  {
+      "place" : "Champs-sur-Marne, France",
+      "stringDate" : "October 2, 2017",
+      "title" : "A smart city tested on a mini city in Champs sur Marne",
+      "tags" : ["Sensors", "Environment", "Health", "Test"],
+      "href" : "http://www.lemonde.fr/citynnovation/article/2017/10/02/a-champs-sur-marne-la-smart-city-durable-testee-sur-une-mini-ville_5195142_4811669.html",
+      "from" : "Le monde",
+      "by" : "Laetitia Van Eeckhout",
+      "description": [
+          "In Champs-Sur-Marne a beta miny city was created in 400m2 to evaluate energetic performance and sanitary quality of the buildings. It will allow to observe plants impact on its environment, analyse urban networks quality and durability in terms of transports and flow, but also analyse air, water, and soil quality…",
+          "It will also evaluates heatwaves weeks impact on pollution, plants and sensors resistance."
+      ]
+  },
+  {
+      "place": "Pune, India",
+      "title" : "The Quest To Use Big Data And Community Toilets To Create A Model For Building Urban Sanitation",
+      "stringDate" : "September 13, 2017",
+      "tags" : ["Health", "Network"],
+      "href" : "https://www.fastcompany.com/40466766/the-quest-to-use-big-data-and-community-toilets-to-create-a-model-for-building-urban-sanitation",
+      "from" : "Fast Company",
+      "by" : "Eillie Anzilotti",
+      "description": "-"
+  },
+  {
+      "place" : "-",
+      "title" : "Alphabet's sidewalk labs launches a platform for making the city of tomorrow",
+      "tags" : ["Transports", "Apps"],
+      "stringDate" : "January 1, 2018",
+      "href" : "https://www.wired.com/story/alphabet-sidewalk-labs-coord-city-of-tomorrow/",
+      "from" : "Wired",
+      "by" : "Aarian Marshall"
+  },
+  {
+    "place": "-",
+    "description": []
+  },
+  {
+      "place" : "Paris, France",
+      "title" : "Paris : Sea Bubbles are expected for 2018 on Seine",
+      "tags" : ["Transports"],
+      "stringDate" : "November 29, 2017",
+      "href" : "http://www.leparisien.fr/info-paris-ile-de-france-oise/transports/les-sea-bubbles-de-nouveau-esperes-en-2018-sur-la-seine-29-11-2017-7422840.php",
+      "from" : "Le Parisien",
+      "by" : "J.-G.B.",
+      "description" : [
+        "Last year, Sea bubbles producers, electric energy bubbles that can float on the water were to abandon their project because of speed limits on the Seine (12km/h) and home port price. However, in November, they got an agreement to experiment sea Bubbles in Paris with a max speed of 30 km/h by the end of Summer 2018.",
+        "Nevertheless, there’s still an issue about charging-up, which might be solved with a drop-minute system on houseboats."
+      ]
+  },
+  {
+      "place" : "Ohio, USA",
+      "title" : "This Smart Paint Talks To Canes To Help People Who Are Blind Navigate",
+      "tags" : ["Smart roads", "Transports", "IOT"],
+      "stringDate" : "7 March 2018",
+      "href" : "https://www.fastcompany.com/40537928/this-smart-paint-talks-to-canes-to-help-people-who-are-blind-navigate",
+      "from" : "Fast Company",
+      "by" : "Adele Peters",
+      "description" : [
+        "The Ohio State School for the Blind is pioneering new technology that causes canes to vibrate when it touches lines of traffic paint. As the company explored how the paint could be used with autonomous cars–the paint could, for example, help a car recognize an intersection or lane, or provide markers that make GPS much more accurate–they realized that the paint could also be useful for people who are blind. The lines will be made of smart paint : nanocrystals that can emit a unique light signature, which a sensor added to the tip of a cane can activate and then read. ",
+        "The University is also thinking about providing blind people with guidance as they move down a sidewalk or guidance about whether or not they’ve arrived at a bus stop or at a certain destination. The paint could help someone identify, for example, if they are standing on the northwest or southwest corner of an intersection, or the exact location of an entrance to a building. The paint could also be used with other navigation tools. There may be even a point where a smartphone (with Google maps) is connected to the paint speaks to the user.",
+        "The smart pain would be affordable as it wouldn’t cost much more than actual paints and the tip added to a cane, too, would be cheap to produce."
+      ]
+  },
+  {
+      "place" : "USA",
+      "title" : "Smart Roads Could Protect Us From Self-Driving Car Crashes",
+      "stringDate" : "February 23, 2018",
+      "tags" : ["Smart roads"],
+      "href" : "https://www.fastcodesign.com/90160958/smart-roads-could-protect-us-from-self-driving-car-crashes",
+      "from" : "FastcoDesign",
+      "by" : "Katharine Schwab",
+      "description" : [
+          "What happens if a pedestrian unexpectedly jumps out in front of a self-driving car? Designers in San Fransisco have find a way to solve this problem by creating a smart infrastructure system with warning lights, street illumination, and a fully reactive road (fully magnetized). With the belief that self-driving cars will be fully dedicated to protecting their passengers.",
+          "Even if the cars are smart and connected, doesn’t mean the people are smart and connected. This is why a laser projection from the car acts as a warning sign for cyclist and walkers. The roads will be illuminated as well and they will react to where people or cars are going to."
+      ]
+  },
+  {
+      "place" : "China",
+      "title" : "Chinese police now uses facial recognition glasses",
+      "tags" : ["Control", "Ethics"],
+      "stringDate": "February 17, 2018",
+      "href" : "https://pix-geeks.com/police-chinoise-lunettes-connectees-reconnaissance-faciale/ ",
+      "from" : "Journal du Geek",
+      "by" : "Anthony Brogat",
+      "description" : [
+          "In China, the police do not give a single chance to the fugitives to run away. Connected glasses with facial recognition scan the faces and allow a real time identification.",
+          "But could those glasses also strengthen the power of the Chinese government? China has set up the biggest network of surveillance in the world with its 170 million security cameras. For information, 400 million cameras will be added in the next 3 years."
+      ]
+  },
+  {
+      "place" : "-",
+      "title" : "Flying taxis are becoming a reality",
+      "tags" : ["Transports"],
+      "stringDate" : "March 21, 2018",
+      "from" : "Science et vie",
+      "description" : [
+          "Small autonomous, electric aircrafts who take-off and can land in a vertical way, seem now ready to take on board up to three passengers for a short route through the urban cities.",
+          "Imagine a 90 minutes road trip by car, who would take 8 minutes with an Uber air. The company already plans spreading between 500 and 1000 of these flying taxis in the congested megalopolises. To do this, Uber partners with NASA and the industrialists. They complete their first demonstrations in Dallas and in Dubai before 2020, and the first commercial flights before 2030."
+      ]
+  }
+]

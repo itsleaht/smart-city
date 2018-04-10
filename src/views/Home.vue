@@ -5,53 +5,91 @@
         <span class="question-mark black">?</span>
         <h1 class="uppercase black">What is a smart City ?</h1>
         <p>A developed urban area that creates sustainable economic development and high quality of life by excelling in multiple key areas; economy, mobility, environment, people, living, and government. Excelling in these key areas can be done so through strong human capital, social capital, and/or ICT infrastructure.</p>
-        <span class="uppercase black">Scroll</span>
+        <p>Here's some examples of smart cities innovations.</p>
+        <span class="uppercase black wheel" :class="{'wheelAllowed' : wheelAllowed}">Scroll to navigate</span>
       </div>
     </transition>
     <section>
-      <scene1></scene1>
-      <scene2></scene2>
-      <scene4></scene4>
-      <scene5></scene5>
+      <scene @getPositions="updateScene"></scene>
+      <pop-article v-for="(article, index) in events" :article="article" :key="'pop-'+index" :class="{'active':currentStep == index}" ref="popArticle"></pop-article>
     </section>
-    <timeline :nbPoints="4" :arrayOfEvents="arrayOfEventsTimeLine"></timeline>
+    <timeline :nbSteps="nbSteps" :currentStep="currentStep" @currentStep="changeStep"></timeline>
   </div>
 </template>
 
 <script>
 import timeline from '@/components/Timeline'
-import scene1 from '@/components/scenes/Scene1'
-import scene2 from '@/components/scenes/Scene2'
-import scene4 from '@/components/scenes/Scene4'
-import scene5 from '@/components/scenes/Scene5'
+import scene from '@/components/Scene'
+import popArticle from '@/components/PopArticle'
+import events from '@/data/events.json'
+import {Tweenmax} from 'gsap'
+require('gsap/ScrollToPlugin')
 
 export default {
   name: 'home',
-  components: {timeline, scene1, scene2, scene4, scene5},
+  components: {timeline, scene, popArticle},
   data () {
     return {
       showLanding: true,
-      arrayOfEventsTimeLine: []
+      arrayOfEventsTimeLine: [],
+      currentStep: 1,
+      wheelAllowed: false,
+      positions: [],
+      nbSteps: 11,
+      events
     }
   },
   methods: {
-    hideLanding () {
-      if (window.pageYOffset > 10) {
-        this.showLanding = false
-        window.removeEventListener('scroll', this.hideLanding)
+    throttle (delay, fn) {
+      let lastCall = 0
+      return function (...args) {
+        const now = (new Date()).getTime()
+        if (now - lastCall < delay) return
+        lastCall = now
+        return fn(...args)
       }
+    },
+    hideLanding () {
+      this.showLanding = false
+      window.removeEventListener('wheel', this.hideLanding)
+      window.scrollTo(0, 0)
+    },
+    onWheel (e) {
+      e.preventDefault()
+      if (e.deltaY < 0 && this.currentStep > 1) { // Wheels up
+        this.currentStep--
+      } else if (e.deltaY > 0 && this.currentStep <= this.nbSteps - 1) { // Wheels down
+        this.currentStep++
+      }
+      this.manageWheel(this.currentStep)
+    },
+    manageWheel (step) {
+      TweenLite.to(window, 2, {scrollTo: {y: this.positions[step - 1].position, x: 0}, ease: Power3.easeIn})
+    },
+    changeStep (newStep) {
+      console.log(newStep)
+      if (newStep >= 1 && newStep <= this.nbSteps) {
+        this.currentStep = newStep
+        this.manageWheel(this.currentStep)
+      }
+    },
+    updateScene (positions) {
+      if (positions.length) {
+        this.positions = positions
+        this.wheelAllowed = true
+        window.addEventListener('wheel', this.hideLanding)
+        this.placePopArticles(positions)
+      }
+    },
+    placePopArticles (positions) {
+      let test = document.querySelectorAll('.pop-article')
+      test[1].style.top = positions[1].top
     }
   },
   mounted () {
-    window.addEventListener('scroll', this.hideLanding)
     const scenes = document.querySelectorAll('.home section object')
-    for (let i = 0; i < scenes.length; i++) {
-      const scene = scenes[i]
-      this.arrayOfEventsTimeLine[i] = {
-        top: scene.getBoundingClientRect().top,
-        height: scene.offsetHeight
-      }
-    }
+    window.scrollTo(0, 0)
+    window.addEventListener('wheel', this.throttle(1000, this.onWheel))
   }
 }
 </script>
@@ -67,6 +105,8 @@ export default {
       background: rgba(0, 0, 0, 0.7);
       color: #FFF;
       overflow: hidden;
+      z-index: 10;
+      pointer-events: none;
 
       h1 {
         position: relative;
@@ -96,7 +136,7 @@ export default {
         font-size: 15px;
       }
       span {
-        &:first-of-type {
+        &.question-mark {
           display: block;
           width: 70px;
           height: 70px;
@@ -109,7 +149,8 @@ export default {
           font-family: $montserrat;
           font-size: 40px;
         }
-        &:last-of-type {
+
+        &.wheel {
           position: absolute;
           bottom: 50px;
           left: 50%;
@@ -118,6 +159,9 @@ export default {
           color: $yellow;
           font-size: 9px;
           letter-spacing: 1px;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity .3s;
 
           &::before {
             content: "";
@@ -129,21 +173,54 @@ export default {
             width: 6px;
             border-radius: 5px;
             background: $yellow;
+            transition: height .3s;
+          }
+
+          &.wheelAllowed {
+            opacity: 1;
+            visibility: visible;
+
+            &::before {
+              animation-name: grows;
+              animation-duration: 2s;
+              animation-iteration-count: infinite;
+            }
           }
         }
       }
     }
     section {
-      // position: absolute;
-
       object {
+        pointer-events: none;
         display: block;
         width: 100vw;
-        // height: 120vh;
         margin: 0;
         padding: 0;
         border: none;
       }
+
+      .pop-article {
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .5s;
+
+        &.active {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  @keyframes grows {
+    from {
+      height: 0;
+    }
+    to {
+      height: 42px;
     }
   }
 </style>

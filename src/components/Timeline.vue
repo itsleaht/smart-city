@@ -1,7 +1,7 @@
 <template>
   <section>
       <ul class="timeline">
-        <li v-for="n in nbPoints" :key="n" @click="updateTimeline" :data-index="n"></li>
+        <li v-for="n in nbSteps" :key="n" :data-index="n" :class="{ 'active': current === n, 'previous':  n < current}" @click="changeStep(n)"><span></span></li>
       </ul>
     </section>
 </template>
@@ -9,38 +9,21 @@
 <script>
 export default {
   name: 'timeline',
-  props: ['nbPoints', 'arrayOfEvents', 'preventScroll'],
+  props: ['nbSteps', 'currentStep'],
   data () {
     return {
-      activePoint: 0,
-      lastScrollTop: 0
+      current: this.currentStep
     }
   },
   methods: {
-    onScroll () {
-      const gap = 100
-      const windowPos = window.pageYOffset
-      for (let i = 0; i < this.nbPoints; i++) {
-        const event = this.arrayOfEvents[i]
-        if ((windowPos + gap) >= event.top && windowPos < (event.top + event.height)) {
-          this.activePoint = i
-          this.timelineEls[i].classList.add('active')
-        } else {
-          this.timelineEls[i].classList.remove('active')
-        }
-      }
-    },
-    updateTimeline (e) {
-      const point = e.path[0]
-      const index = point.getAttribute('data-index') - 1
-      this.jump = index
-      window.scrollTo(0, this.arrayOfEvents[index].top)
+    changeStep (newStep) {
+      this.current = newStep
+      this.$emit('currentStep', newStep)
     }
   },
-  mounted () {
-    if (!this.preventScroll) {
-      this.timelineEls = document.querySelectorAll('.timeline li')
-      window.addEventListener('scroll', throttle(this.onScroll, 100))
+  watch: {
+    'currentStep' (to, from) {
+      this.changeStep(to)
     }
   }
 }
@@ -67,25 +50,46 @@ export default {
       z-index: -1;
     }
   }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 
-  li {
-    display: block;
-    margin: 50px auto;
-    width: 11px;
-    height: 11px;
-    background: $darkBlue;
-    border-radius: 50%;
-    transition: background .5s, transform .5s, border .5s;
-    cursor: pointer;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
 
-    &.active {
-      background: #fff;
-      transform: scale(1.5);
-      border: 5px solid $yellow;
-    }
+      span {
+        display: block;
+        width: 11px;
+        height: 11px;
+        background: $darkBlue;
+        border-radius: 50%;
+        transform-origin: center;
+        transition: background .5s, transform .5s, border .5s;
+        text-align: center;
+        cursor: pointer;
+      }
 
-    &.former {
-      background: $skyBlue;
-    }
+      &.active {
+        span {
+          background: #fff;
+          transform: scale(1.5);
+          border: 5px solid $yellow;
+        }
+
+      }
+
+      &.previous {
+        span {
+          background: $skyBlue;
+        }
+      }
+  }
+
   }
 </style>

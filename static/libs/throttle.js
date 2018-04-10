@@ -9,6 +9,7 @@ function debounce (callback, delay) {
 }
 
 function throttle(callback, delay) {
+  console.log(callback, delay)
   var last;
   var timer;
   return function () {

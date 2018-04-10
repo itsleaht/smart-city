@@ -9,7 +9,7 @@ export default {
   name: 'scene3',
   props: ['startAnimation'],
   mounted () {
-    const svg =  document.getElementById('scene3')
+    const svg = document.getElementById('scene3')
 
     svg.addEventListener('load', () => {
       const scene2 = svg.getSVGDocument()
@@ -17,4 +17,3 @@ export default {
   }
 }
 </script>
-

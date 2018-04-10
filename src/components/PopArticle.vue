@@ -3,7 +3,7 @@
     <button id="closePop" v-bind:class="{ 'topOriented': topOriented }" v-on:click="closePop" >+</button>
     <div class="header">
         <span class="place">{{article.place}}</span>
-        <span class="date">{{article.date.day}}.{{article.date.month}}.{{article.date.year}}</span>
+        <span class="date">{{article.stringDate}}</span>
     </div>
     <div class="content">
         <h1 class="uppercase">{{article.name}}</h1>
@@ -34,7 +34,8 @@ export default {
     width: 225px;
     height: 400px;
     border-radius: 8px;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px 0px rgba(114, 114, 114, 0.302);
+    background: #fff;
 
     button {
       position: absolute;
