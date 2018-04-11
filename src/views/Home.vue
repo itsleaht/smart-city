@@ -81,7 +81,8 @@ export default {
         this.positions = positions
         this.wheelAllowed = true
         this.placePopArticles(positions)
-        window.addEventListener('wheel', this.throttle(1000, this.onWheel))
+        this.throttleEvent = this.throttle(1000, this.onWheel)
+        window.addEventListener('wheel',  this.throttleEvent)
       }
     },
     placePopArticles (positions) {
@@ -108,8 +109,8 @@ export default {
     window.addEventListener('wheel', this.hideLanding)
     window.scrollTo(0, 0)
   },
-  beforeDestroy () {
-     window.removeEventListener('wheel', this.throttle(1000, this.onWheel))
+  destroyed () {
+     window.removeEventListener('wheel', this.throttleEvent)
   }
 }
 </script>

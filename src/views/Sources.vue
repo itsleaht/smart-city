@@ -19,7 +19,7 @@
           </transition-group>
       </div>
     </transition-group>
-    <timeline :nbSteps="nbSteps" :arrayOfEvents="arrayOfEventsTimeLine"></timeline>
+    <timeline :nbSteps="nbSteps" :currentStep="currentStep"></timeline>
   </div>
 </template>
 
@@ -42,7 +42,8 @@ export default {
       activeTags: [],
       activeTag: false,
       nbSteps: articles.length,
-      currentStep: 1
+      currentStep: 1,
+      arrayOfEventsTimeLine: []
     }
   },
   computed: {
@@ -93,13 +94,18 @@ export default {
   },
   mounted () {
     let monthEls = document.querySelectorAll('.list .month')
-    for (let i = 0; i < monthEls.length; i++) {
-      const month = monthEls[i]
-      this.arrayOfEventsTimeLine[i] = {
+    monthEls.forEach( (month) => {
+      this.arrayOfEventsTimeLine.push({
         top: month.getBoundingClientRect().top,
         height: month.scrollHeight
-      }
-    }
+      })
+    })
+    // for (let i = 0; i < monthEls.length; i++) {
+    //   const month = monthEls[i]
+    //   console.log(month)
+    //   console.log()
+
+    // }
   }
 }
 </script>
