@@ -6,7 +6,7 @@
         <h1 class="uppercase black">What is a smart City ?</h1>
         <p>We believe a smart city is a digital and a human system, buildt to maintain a structured environment and to ensure a sustainable, prosperous future to its citizens.</p>
         <p>Here are some examples of smart cities innovations.</p>
-        <span class="uppercase black wheel" :class="{'wheelAllowed' : wheelAllowed}">Scroll to navigate</span>
+        <scroll-indicator :wheelAllowed="true"></scroll-indicator>
       </div>
     </transition>
     <section>
@@ -21,12 +21,13 @@
 import timeline from '@/components/Timeline'
 import scene from '@/components/Scene'
 import popArticle from '@/components/PopArticle'
+import ScrollIndicator from '@/components/ScrollIndicator'
 import events from '@/data/events.json'
 require('gsap/ScrollToPlugin')
 
 export default {
   name: 'home',
-  components: {timeline, scene, popArticle},
+  components: {timeline, scene, popArticle, ScrollIndicator},
   data () {
     return {
       showLanding: true,
@@ -169,44 +170,6 @@ export default {
           font-family: $montserrat;
           font-size: 40px;
         }
-
-        &.wheel {
-          position: absolute;
-          bottom: 100px;
-          left: 50%;
-          transform: translateX(-50%);
-          text-align: center;
-          color: $yellow;
-          font-size: 9px;
-          letter-spacing: 1px;
-          opacity: 0;
-          visibility: hidden;
-          transition: opacity .3s;
-
-          &::before {
-            content: "";
-            position: absolute;
-            bottom: -52px;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 42px;
-            width: 6px;
-            border-radius: 5px;
-            background: $yellow;
-            transition: height .3s;
-          }
-
-          &.wheelAllowed {
-            opacity: 1;
-            visibility: visible;
-
-            &::before {
-              animation-name: grows;
-              animation-duration: 2s;
-              animation-iteration-count: infinite;
-            }
-          }
-        }
       }
     }
     section {
@@ -234,15 +197,6 @@ export default {
           transform: scale(1);
         }
       }
-    }
-  }
-
-  @keyframes grows {
-    from {
-      height: 0;
-    }
-    to {
-      height: 42px;
     }
   }
 </style>

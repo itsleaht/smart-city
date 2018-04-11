@@ -1,8 +1,9 @@
 <template>
   <div class="infos">
-    <transition name="goUp" mode="out-in" tag="div">
+    <transition name="goUp" mode="out-in">
       <info-block v-for="(info, index) in infos" :key="'infowrapper'+index" :info="info" v-if="currentSlide === index ? true: false" :test="index"></info-block>
     </transition>
+    <transition name="fadeOut" mode="out-in"><scroll-indicator :wheelAllowed="wheelAllowed"  :lightColors="true"></scroll-indicator></transition>
     <timeline :nbSteps="infos.length" :currentStep="currentStep" @currentStep="changeStep"></timeline>
   </div>
 </template>
@@ -11,15 +12,17 @@
 import infos from '@/data/infos.json'
 import infoBlock from '@/components/InfoBlock'
 import timeline from '@/components/Timeline'
+import scrollIndicator from '@/components/ScrollIndicator'
 
 export default {
   name: 'info',
-  components: {infoBlock, timeline},
+  components: {infoBlock, timeline, scrollIndicator},
   data () {
     return {
       infos,
       currentStep: 1,
-      currentSlide: 0
+      currentSlide: 0,
+      wheelAllowed: true
     }
   },
   methods: {
@@ -33,14 +36,15 @@ export default {
       }
     },
     changeStep (newStep) {
+      this.wheelAllowed = false
       if (newStep >= 1 && newStep <= infos.length) {
-        console.log('ayo')
         this.currentStep = newStep
         this.currentSlide = this.currentStep - 1
       }
     },
     onWheel (e) {
       e.preventDefault()
+      this.wheelAllowed = false
       if (e.deltaY < 0 && this.currentStep > 1) { // Wheels up
         this.currentStep--
         this.currentSlide--
@@ -69,6 +73,16 @@ export default {
     opacity: 0;
     transform: translateY(100px)
   }
+
+  .fadeOut-enter-active, .fadeOut-leave-active {
+    transition: opacity 1s, transform 1s;
+  }
+
+  .fadeOut-enter, .fadeOut-leave-to {
+    opacity: 0;
+    transform: translateY(-100px)
+  }
+
 
   .infos {
     background: $skyBlue;

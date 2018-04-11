@@ -1,6 +1,6 @@
 <template>
   <div class="pop-article">
-    <button id="closePop" v-bind:class="{ 'topOriented': topOriented }" v-on:click="closePop" >+</button>
+    <!-- <button id="closePop" v-bind:class="{ 'topOriented': topOriented }" v-on:click="closePop" >+</button> -->
     <div class="header">
         <span class="place">{{article.place}}</span>
         <span class="date">{{article.stringDate}}</span>
