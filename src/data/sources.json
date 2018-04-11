@@ -32,15 +32,6 @@
                 ]
             },
             {
-                "stringDate" : "September 13, 2017",
-                "tags" : ["Apps"],
-                "title" : "Apps mobiles urbaines : comment elles nous facilitent la vie",
-                "translation" : "Urban mobile apps : How they ease our life",
-                "href" : "https://www.linformaticien.com/dossiers/apps-mobiles-urbaines-comment-elles-nous-facilitent-la-vie.aspx",
-                "from" : "L'informaticien'",
-                "by" : "Jérôme Cartegini"
-            },
-            {
                 "place" : "USA",
                 "stringDate" : "September 20, 2017",
                 "tags" : ["Apps"],
@@ -177,15 +168,6 @@
                 ]
             },
             {
-                "place" : "Toronto, Canada",
-                "title" : "A google branch build a entire neighbourhood in Toronto",
-                "tags" : ["Future", "Cities", "Environment"],
-                "stringDate" : "October 12, 2017",
-                "href" : "https://usbeketrica.com/article/sidewalk-labs-quartier-google-toronto",
-                "from" : "Usbek et Rica",
-                "by" : "Benjamin Hourcade"
-            },
-            {
                 "place" : "-",
                 "stringDate" : "October 23, 2017",
                 "tags" : ["AI", "Cities", "Environment"],
@@ -243,15 +225,6 @@
                 ]
             },
             {
-                "place" : "Ile-de-France, France",
-                "stringDate" : "November 14, 2017",
-                "tags" : [],
-                "title" : "L’Ile-de-France en force au Smart city expo world congress de Barcelone",
-                "translation" : "Ile-de-france strongly there for the Smart city expo world congress in Barcelone.",
-                "href" : "https://www.lejournaldugrandparis.fr/lile-de-france-force-smart-city-expo-world-forum-de-barcelone/",
-                "from" : "Le journal du Grand Paris"
-            },
-            {
                 "place" : "Barcelona, Spain",
                 "title" : "Huawei creates a brain for a smart city for more than 100 cities with its new technologies",
                 "tags" : ["Data", "Events"],
@@ -266,32 +239,16 @@
                 ]
             },
             {
-                "place" : "-",
-                "title" : "Are smart cities incompatible with private life ?",
-                "tags" : ["Data", "Privacy"],
-                "stringDate" : "November 16, 2017",
-                "href" : "https://usbeketrica.com/article/smart-city-inconciliable-vie-privee",
-                "from" : "Usbek & Rica",
-                "by" : "Demain la ville"
-            },
-            {
                 "place" : "Belmont, USA",
                 "title" : "Bill Gates is going to build a smart city in the desert",
                 "tags" : ["Future", "Cities", "Project"],
                 "stringDate": "November 15, 2017",
                 "href" : "https://usbeketrica.com/article/bill-gates-va-construire-une-smart-city-dans-un-desert",
                 "from" : "Usbek et Rica",
-                "by" : "Maylis Haegel"
-            },
-            {
-                "place" : "-",
-                "title" : "Les smart cities sont-elles vraiment intelligentes ?",
-                "translation" : "Are smart cities trully smart ?",
-                "tags" : ["Debate"],
-                "stringDate": "November 27, 2017",
-                "href" : "http://www.ladn.eu/tech-a-suivre/habitat-et-villes-connectes/les-smart-cities-sont-elles-vraiment-intelligentes/",
-                "from" : "L'ADN",
-                "by" : "Mélanie Roosen"
+                "by" : "Maylis Haegel",
+                "description": [
+                  "As an answer to overpopulation in the cities, such as expected in 2050, Bill Gates wants to build a futuristic city somewhere in the in the desert of Arizona. We know that 70% of the world population will live in cities or urban areas in thirty years. The city has to serve as a model for the development of future sustainable cities."
+                ]
             },
             {
                 "place" : "Paris, France",
@@ -313,21 +270,15 @@
         "articles" : [
             {
                 "place" : "Vancouver, Canada",
-                "translation" : "In Vancouver, a luxury hostel will soon handle its own micro climate",
+                "title" : "In Vancouver, a luxury hotel will soon generate its own microclimate",
                 "tags" : ["Environment"],
                 "stringDate" : "December 22, 2017",
                 "href" : "https://usbeketrica.com/article/a-vancouver-un-hotel-de-luxe-genere-son-propre-micro-climat",
                 "from" : "Usbek et Rica",
-                "by" : "Arnaud Pagès"
-            },
-            {
-                "place" : "France",
-                "title" : "French are asking for online administration & smart cities",
-                "tags" : ["Online services", "Citizens"],
-                "stringDate" : "December 4, 2017",
-                "href" : "http://www.lagazettedescommunes.com/538783/les-francais-plebiscitent-ladministration-en-ligne-et-la-smart-city/ ",
-                "from" : "Usbek et Rica",
-                "by" : "Arnaud Pagès"
+                "by" : "Arnaud Pagès",
+                "description": [
+                    "In the future, controlling the heat of a building could turn out precious to make bearable the increase of the temperatures due to the global warming. Based in Vancouver, an architect’s cabinet imagined a building who generates its own custom-made climate, without polluting. But how do the hotel regulate its temperature? To create a microclimate in the outside periphery of the hotel, the architects equipped the rails with reflective panels sending the heat and the light towards the ground by concentrating them at the most. These eco-responsible constructions are designed to store a maximum of energy. The tours distribute massively heat and light in each part of the complex."
+                ]
             },
             {
                 "place" : "Montgenèvre, France",
@@ -336,49 +287,16 @@
                 "stringDate" : "December 3, 2017",
                 "href" : "https://www.tourmag.com/Montgenevre-premiere-smart-station-de-montagne_a90394.html",
                 "from" : "Tour mag",
-                "by" : "Juliette Pic"
-            },
-            {
-                "place" : "-",
-                "title" : "Smart City is looking for graduates",
-                "tags" : ["Education"],
-                "stringDate" : "December 12, 2017",
-                "href" : "http://www.lemonde.fr/campus/article/2017/12/12/la-smart-city-cherche-des-diplomes_5228407_4401467.html",
-                "from" : "Le monde Campus",
-                "by" : "Jessica Gourdon"
-            },
-            {
-                "place" : "-",
-                "title" : "World Smart City Awards 2017 : le Cameroun récompensé",
-                "tags" : ["Rankings"],
-                "stringDate" : "December 19, 2017",
-                "href" : "https://happyinafrica.com/societe/world-smart-city-awards-2017-cameroun-recompense ",
-                "from" : "Happy In Africa",
-                "by" : " Miguel Godonou"
+                "by" : "Juliette Pic",
+                "description": [
+                  "Montgenèvre, a ski resort is equipped with a new application called smartmountain. This application allows the local people to search for administrative information. It also helps tourists to find useful information on the ski-roads. The application is available since December, 2017."
+                ]
             }
         ]
     },
     {
         "month" : "January",
         "articles": [
-            {
-                "place" : "-",
-                "title" : "Alphabet's sidewalk labs launches a platform for making the city of tomorrow",
-                "tags" : ["Transports", "Apps"],
-                "stringDate" : "January 1, 2018",
-                "href" : "https://www.wired.com/story/alphabet-sidewalk-labs-coord-city-of-tomorrow/",
-                "from" : "Wired",
-                "by" : "Aarian Marshall"
-            },
-            {
-                "place" : "-",
-                "title" : "What 100 Cities Are Learning From Each Other By Sharing Their Data",
-                "tags" : ["Data", "Sharing"],
-                "stringDate" : "January 18, 2018",
-                "href" : "https://www.fastcompany.com/40518004/what-100-cities-are-learning-from-each-other-by-sharing-their-data ",
-                "from" : "Fast Company",
-                "by" : "Ben Paynter"
-            },
             {
                 "place" : "Arizona, USA",
                 "title" : "Bill Gates smart City is controversial",
@@ -390,24 +308,6 @@
                 "description" : [
                   "Bill Gates, the Microsoft co-founder, just bought a 10 000 hectares field in Arizona desert to build a futuristic city. This smart city will be named Belmont, after the real estate developer that pilots the project: Belmont Partners. This city must serve as a model for future sustainable city development and shows itself as an answer to urban overpopulation that will be seen around 2050."
                 ]
-            },
-            {
-                "place" : "-",
-                "title" : "Average cities have a right to smart cities, too",
-                "tags" : ["Cities"],
-                "stringDate" : "January 11, 2018",
-                "href" : "http://www.lagazettedescommunes.com/544166/les-villes-moyennes-aussi-ont-droit-a-la-smart-city/ ",
-                "from" : "La gazette des communes",
-                "by" : "Martine Courgnaud - Del Ry"
-            },
-            {
-                "place" : "Shenzen, China",
-                "title" : "Shenzen : when China awakes as a Smart City",
-                "tags" : ["Cities"],
-                "stringDate" : "January 30, 2018",
-                "href" : "https://www.villeintelligente-mag.fr/Shenzhen%C2%A0-quand-la-Chine-s-eveille-a-la-Smart-City_a422.html",
-                "from" : "Ville Intelligente",
-                "by" : "Yannick Sourisseau"
             },
             {
                 "place" : "Shenzen, China",
@@ -517,7 +417,7 @@
                 "from" : "Le Figaro",
                 "by" : " Juliette Singeot",
                 "description" : [
-                    "The Hong-Kong company of self-service bikes stops its activity in France. In cause: the  robbery and the damages of his bicycles. But what exactly does it mean?",
+                    "The Hong-Kong company of self-service bikes stops its activities in France. In cause: the robbery and the damaged bicycles. But what exactly does it mean?",
                     "First of all, this behavior is rather revealing of the French society. There is no respect anymore. Secondly, poor quality together with an application that did not work well, causes frustration and bad user experiences.",
                     "Together, those connected bikes were a real disaster in Europe. While in Hong-Kong they work great. Some things just work better in their city of origin."
                 ]
@@ -560,21 +460,21 @@
         "articles" : [
             {
                 "place" : "Lyon, France",
-                "title" : "Lyon : Why Indigo thinks it should succeed while Gobee.Bike failed",
+                "title" : "Why Indigo thinks they can succeed (while Gobee.Bike failed)",
                 "tags" : ["Transports", "Sharing", "Apps", "Citizens"],
                 "stringDate" : "March 13, 2018",
                 "href" : "https://www.20minutes.fr/lyon/2236367-20180312-lyon-pourquoi-indigo-persuade-reussir-o-gobeebike-plante",
                 "from" : "20 minutes",
                 "by" : "Caroline Girardon",
                 "description" : [
-                  "After the failure of GobeeBike, a shared bike self-service and without parking, further to damaging and robberies, Indigo tries out to get into this field in Lyon by improving the service.",
+                  "Remember the damaged and robbered bikes of Gobee.bike (a shared bike self-service without parking) ? Indigo, located in Lyon, tries to get into this field by improving their services.",
                   "Working in tandem with local authorities they chose to forbid the bikes dropping on sidewalks and public places. Those who do not respect this criterion will be blacklisted after the 4th for at least few months. Finally, they put together a participative gaming system based on positive and negative point to raise awareness about using correctly the service. It will also allow them to swap those points for gifts for vouchers if they report a bike badly parked or damaged or if they park in a safe area.",
                   "As GoBee.bike, users must download and subscribe on the app Indigo Weel, then they can unlock a bike by scanning its QR Code, which is not secured as some have found a way to break the system to unlock lockers and get free bikes. Indigo app creators believe in human civism: they think that if they give them good bikes in the right place they will use them the right way."
                 ]
             },
             {
                 "place" : "Ohio, USA",
-                "title" : "This Smart Paint Talks To Canes To Help People Who Are Blind Navigate",
+                "title" : "How smart paint helps blind people finding their way",
                 "tags" : ["Smart roads", "Transports", "IOT"],
                 "stringDate" : "7 March 2018",
                 "href" : "https://www.fastcompany.com/40537928/this-smart-paint-talks-to-canes-to-help-people-who-are-blind-navigate",
@@ -613,7 +513,7 @@
             },
             {
                 "place" : "-",
-                "title" : "Offices/farm tower is in progress",
+                "title" : "Half offices, half farm towers",
                 "tags" : ["Environment"],
                 "stringDate" : "March 21, 2018",
                 "from" : "Science et vie",
@@ -623,7 +523,7 @@
             },
             {
                 "place": "France",
-                "title" : "MoodWalkr, une appli pour se promener à la carte",
+                "title" : "MoodWalkr: transport application",
                 "tags" : ["Apps"],
                 "translation" : "Moodwalker, an app to get personnalized walks",
                 "stringDate" : "March 26, 2018",
@@ -631,12 +531,12 @@
                 "from" : "RCF La matinale",
                 "by" : "Vincent Belotti",
                 "description" : [
-                    "Its name is MoodWalkr : A new application made in France, which according to your desires suggests you visiting special places in town. The app is collaborative, free and analyze the data and maps them."
+                    "Its name is MoodWalkr: A new application made in France, which according to your desires suggests you visiting special places in town. The app is collaborative, free and analyze the data and maps them."
                 ]
             },
             {
                 "place" : "-",
-                "title" : " Mini drones will replace CCTV",
+                "title" : " Mini drones will replace security cameras and road transport",
                 "tags" : ["Control", "IOT"],
                 "stringDate" : "March 30, 2018",
                 "from" : "Science et vie",
@@ -647,7 +547,7 @@
             },
             {
                 "place" : "-",
-                "title" : "Bioluminescence will give life to city lights",
+                "title" : "Bioluminescence: the new lights of the city",
                 "tags" : ["Environment", "Energy"],
                 "stringDate" : "March 30, 2018",
                 "from" : "Science et vie",
@@ -668,7 +568,7 @@
             },
             {
                 "place" : "-",
-                "title" : "Autonomous car will actually replace normal cars",
+                "title" : "Autonomous cars: there are no zero risks",
                 "tags" : ["Transports", "Autonomous cars"],
                 "stringDate" : "March 30, 2018",
                 "from" : "Science et vie",
@@ -679,41 +579,53 @@
             },
             {
                 "place" : "Alger, Algérie",
-                "title" : "These projects that will make Casa a true Smart City",
+                "title" : "These projects will make Casa a true Smart City",
                 "tags" : ["Test"],
                 "href" : "http://www.aps.dz/sante-science-technologie/71824-alger-smart-city-mise-en-place-de-deux-laboratoires-a-ciel-ouvert-pour-tester-les-solutions-innovantes",
                 "stringDate" : "March 31, 2018",
-                "from" : "Algérie Presse Service"
+                "from" : "Algérie Presse Service",
+                "description" : [
+                    "The Alger Smart City project is now possible thanks to new laboratories implemented in the city. Fatiha Slimani, adviser and lead of the project, just talked about new innovative solutions for the mobility, the environment and the local economy. An international meeting dedicated to smart cities is organized the 27th June and the 28th June in Alger. A total of 4000 participants, mostly experts in the field of new technologies, are planned to be part of the meeting."
+                ]
             },
             {
                 "place" : "-",
-                "title" : "Datas contribute to the smart city",
+                "title" : "How data contribute to smart cities",
                 "tags" : ["Data"],
                 "href" : "https://www.villeintelligente-mag.fr/Les-donnees-numeriques-contribuent-a-l-intelligence-de-la-ville_a475.html",
                 "stringDate" : "March 28, 2018",
                 "from" : "Ville intelligente - Mag",
-                "by" : "Tony Cavadas"
+                "by" : "Tony Cavadas",
+                "description" : [
+                    "A digital platform is being created for a better gestion and analysis of the urban data. Three groups of people will have access on the platform: the citizens, the elected representatives and the companies. Their aim is to improve the quality and fluidity of its citizens lives, and to make the urban territory more attractive."
+                ]
             },
             {
-                "title" : "In Dijon, the debit card becomes a transport card for the first time in France",
+                "title" : "Pay your transport with your credit card. First time in France!",
                 "tags" : ["Transports"],
                 "href" : "https://www.usine-digitale.fr/article/paiement-sans-contact-a-dijon-la-carte-bancaire-devient-pour-la-premiere-fois-en-france-un-titre-de-transport.N672569",
                 "stringDate" : "March 27, 2018",
                 "from" : "L'usine Digitale",
-                "by" : "Antonin Tabard"
+                "by" : "Antonin Tabard",
+                "description" : [
+                  "Dijon installs new equipments aboard the transport network Divia with Open Payment. The travelers can pay their ticket by presenting their « sans contact » credit card. This represents a 600 000€ investment. Dijon is one of the French cities where the public transportation is the least expensive."
+                ]
             },
             {
                 "place" : "Bordeaux, France",
-                "title" : "Smart City Bordeaux : the 4 avril programme is precising",
+                "title" : "Smart City Bordeaux",
                 "tags" : ["Events"],
                 "href" : "https://objectifaquitaine.latribune.fr/evenements/2018-03-13/smart-city-bordeaux-le-programme-du-4-avril-se-precise-771683.html",
                 "stringDate" : "March 13, 2018",
                 "from" : "La tribune",
-                "by" : "Mikaël Lozano"
+                "by" : "Mikaël Lozano",
+                "description" : [
+                  "The next forum of Bordeaux dedicated to smart cities will take place the April 4th, Palais de la Bourse. The central theme is to live in the city, to share the life . Next places are Bordeaux, Nice, Marseille, Paris and Toulouse."
+                ]
             },
             {
                 "place" : "China",
-                "title" : "China is using AI and facial recognition to fine jaywalkers via text",
+                "title" : "China is using AI and facial recognition to find jaywalkers",
                 "tags" : ["Control", "Ethics"],
                 "href" : "https://www.fastcompany.com/40550856/china-is-using-ai-and-facial-recognition-to-fine-jaywalkers-via-text",
                 "stringDate" : "March 28, 2018",
@@ -743,7 +655,7 @@
         "articles": [
             {
                 "place" : "Paris, France",
-                "title" : "Paris and (or is ?) the french lateness : the capital isn’t even on the smart city mondial rankings.",
+                "title" : "Paris and the french lateness: the capital isn’t even on the smart city mondial rankings.",
                 "tags" : ["Cities", "Rankings"],
                 "stringDate" : "April 3, 2018",
                 "href" : "http://www.atlantico.fr/decryptage/paris-et-est-retard-francais-capitale-ne-figure-meme-pas-dans-classement-mondial-villes-intelligentes-jean-marc-sylvestre-3351897.html",
