@@ -313,12 +313,15 @@
         "articles" : [
             {
                 "place" : "Vancouver, Canada",
-                "translation" : "In Vancouver, a luxury hostel will soon handle its own micro climate",
+                "title" : "In Vancouver, a luxury hotel will soon generate its own microclimate",
                 "tags" : ["Environment"],
                 "stringDate" : "December 22, 2017",
                 "href" : "https://usbeketrica.com/article/a-vancouver-un-hotel-de-luxe-genere-son-propre-micro-climat",
                 "from" : "Usbek et Rica",
-                "by" : "Arnaud Pagès"
+                "by" : "Arnaud Pagès",
+                "description": [
+                    "In the future, controlling the heat of a building could turn out precious to make bearable the increase of the temperatures due to the global warming. Based in Vancouver, an architect’s cabinet imagined a building who generates its own custom-made climate, without polluting. But how do the hotel regulate its temperature? To create a microclimate in the outside periphery of the hotel, the architects equipped the rails with reflective panels sending the heat and the light towards the ground by concentrating them at the most. These eco-responsible constructions are designed to store a maximum of energy. The tours distribute massively heat and light in each part of the complex."
+                ]
             },
             {
                 "place" : "France",
@@ -336,7 +339,10 @@
                 "stringDate" : "December 3, 2017",
                 "href" : "https://www.tourmag.com/Montgenevre-premiere-smart-station-de-montagne_a90394.html",
                 "from" : "Tour mag",
-                "by" : "Juliette Pic"
+                "by" : "Juliette Pic",
+                "description": [
+                  "Montgenèvre, a ski resort is equipped with a new application called smartmountain. This application allows the local people to search for administrative information. It also helps tourists to find useful information on the ski-roads. The application is available since December, 2017."
+                ]
             },
             {
                 "place" : "-",
@@ -517,7 +523,7 @@
                 "from" : "Le Figaro",
                 "by" : " Juliette Singeot",
                 "description" : [
-                    "The Hong-Kong company of self-service bikes stops its activity in France. In cause: the  robbery and the damages of his bicycles. But what exactly does it mean?",
+                    "The Hong-Kong company of self-service bikes stops its activities in France. In cause: the robbery and the damaged bicycles. But what exactly does it mean?",
                     "First of all, this behavior is rather revealing of the French society. There is no respect anymore. Secondly, poor quality together with an application that did not work well, causes frustration and bad user experiences.",
                     "Together, those connected bikes were a real disaster in Europe. While in Hong-Kong they work great. Some things just work better in their city of origin."
                 ]
@@ -560,21 +566,21 @@
         "articles" : [
             {
                 "place" : "Lyon, France",
-                "title" : "Lyon : Why Indigo thinks it should succeed while Gobee.Bike failed",
+                "title" : "Why Indigo thinks they can succeed (while Gobee.Bike failed)",
                 "tags" : ["Transports", "Sharing", "Apps", "Citizens"],
                 "stringDate" : "March 13, 2018",
                 "href" : "https://www.20minutes.fr/lyon/2236367-20180312-lyon-pourquoi-indigo-persuade-reussir-o-gobeebike-plante",
                 "from" : "20 minutes",
                 "by" : "Caroline Girardon",
                 "description" : [
-                  "After the failure of GobeeBike, a shared bike self-service and without parking, further to damaging and robberies, Indigo tries out to get into this field in Lyon by improving the service.",
+                  "Remember the damaged and robbered bikes of Gobee.bike (a shared bike self-service without parking) ? Indigo, located in Lyon, tries to get into this field by improving their services.",
                   "Working in tandem with local authorities they chose to forbid the bikes dropping on sidewalks and public places. Those who do not respect this criterion will be blacklisted after the 4th for at least few months. Finally, they put together a participative gaming system based on positive and negative point to raise awareness about using correctly the service. It will also allow them to swap those points for gifts for vouchers if they report a bike badly parked or damaged or if they park in a safe area.",
                   "As GoBee.bike, users must download and subscribe on the app Indigo Weel, then they can unlock a bike by scanning its QR Code, which is not secured as some have found a way to break the system to unlock lockers and get free bikes. Indigo app creators believe in human civism: they think that if they give them good bikes in the right place they will use them the right way."
                 ]
             },
             {
                 "place" : "Ohio, USA",
-                "title" : "This Smart Paint Talks To Canes To Help People Who Are Blind Navigate",
+                "title" : "How smart paint helps blind people finding their way",
                 "tags" : ["Smart roads", "Transports", "IOT"],
                 "stringDate" : "7 March 2018",
                 "href" : "https://www.fastcompany.com/40537928/this-smart-paint-talks-to-canes-to-help-people-who-are-blind-navigate",
@@ -613,7 +619,7 @@
             },
             {
                 "place" : "-",
-                "title" : "Offices/farm tower is in progress",
+                "title" : "Half offices, half farm towers",
                 "tags" : ["Environment"],
                 "stringDate" : "March 21, 2018",
                 "from" : "Science et vie",
@@ -623,7 +629,7 @@
             },
             {
                 "place": "France",
-                "title" : "MoodWalkr, une appli pour se promener à la carte",
+                "title" : "MoodWalkr: transport application",
                 "tags" : ["Apps"],
                 "translation" : "Moodwalker, an app to get personnalized walks",
                 "stringDate" : "March 26, 2018",
@@ -631,12 +637,12 @@
                 "from" : "RCF La matinale",
                 "by" : "Vincent Belotti",
                 "description" : [
-                    "Its name is MoodWalkr : A new application made in France, which according to your desires suggests you visiting special places in town. The app is collaborative, free and analyze the data and maps them."
+                    "Its name is MoodWalkr: A new application made in France, which according to your desires suggests you visiting special places in town. The app is collaborative, free and analyze the data and maps them."
                 ]
             },
             {
                 "place" : "-",
-                "title" : " Mini drones will replace CCTV",
+                "title" : " Mini drones will replace security cameras and road transport",
                 "tags" : ["Control", "IOT"],
                 "stringDate" : "March 30, 2018",
                 "from" : "Science et vie",
@@ -647,7 +653,7 @@
             },
             {
                 "place" : "-",
-                "title" : "Bioluminescence will give life to city lights",
+                "title" : "Bioluminescence: the new lights of the city",
                 "tags" : ["Environment", "Energy"],
                 "stringDate" : "March 30, 2018",
                 "from" : "Science et vie",
@@ -668,7 +674,7 @@
             },
             {
                 "place" : "-",
-                "title" : "Autonomous car will actually replace normal cars",
+                "title" : "Autonomous cars: there are no zero risks",
                 "tags" : ["Transports", "Autonomous cars"],
                 "stringDate" : "March 30, 2018",
                 "from" : "Science et vie",
@@ -701,7 +707,7 @@
                 ]
             },
             {
-                "title" : "Pay your transport from your credit card for the first time in France",
+                "title" : "Pay your transport with your credit card. First time in France!",
                 "tags" : ["Transports"],
                 "href" : "https://www.usine-digitale.fr/article/paiement-sans-contact-a-dijon-la-carte-bancaire-devient-pour-la-premiere-fois-en-france-un-titre-de-transport.N672569",
                 "stringDate" : "March 27, 2018",
@@ -725,7 +731,7 @@
             },
             {
                 "place" : "China",
-                "title" : "China is using AI and facial recognition to fine jaywalkers via text",
+                "title" : "China is using AI and facial recognition to find jaywalkers",
                 "tags" : ["Control", "Ethics"],
                 "href" : "https://www.fastcompany.com/40550856/china-is-using-ai-and-facial-recognition-to-fine-jaywalkers-via-text",
                 "stringDate" : "March 28, 2018",
@@ -755,7 +761,7 @@
         "articles": [
             {
                 "place" : "Paris, France",
-                "title" : "Paris and (or is ?) the french lateness : the capital isn’t even on the smart city mondial rankings.",
+                "title" : "Paris and the french lateness: the capital isn’t even on the smart city mondial rankings.",
                 "tags" : ["Cities", "Rankings"],
                 "stringDate" : "April 3, 2018",
                 "href" : "http://www.atlantico.fr/decryptage/paris-et-est-retard-francais-capitale-ne-figure-meme-pas-dans-classement-mondial-villes-intelligentes-jean-marc-sylvestre-3351897.html",
