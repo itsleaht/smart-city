@@ -4,18 +4,19 @@
     <ul v-bind:class="{ 'slideOut': slideOut }">
       <li>
         <router-link :to="{name: 'home'}"><span v-on:click="animateSlideOut">Innovations</span></router-link>
-        <p>Discover the last smart cities innovations, from September 2017 to April 2018.</p>
+        <p>Discover the latest smart cities innovations.</p>
       </li>
       <li>
         <router-link :to="{name: 'info'}"><span v-on:click="animateSlideOut">Smart cities</span></router-link>
-        <p>Learn more about smart cities</p>
+        <p>Ever wondered how technology could evolve and change our cities? </p>
       </li>
       <li>
         <router-link :to="{name: 'sources'}"><span v-on:click="animateSlideOut">Sources</span></router-link>
-        <p>Access informations about smart cities through a lot of datas.</p>
+        <p>Find all our researches and sources, from September 2017 to April 2018.</p>
       </li>
       <li>
         <router-link :to="{name: 'about'}"><span v-on:click="animateSlideOut">About</span></router-link>
+        <p>Curious to find out more about our project? </p>
       </li>
     </ul>
     <p v-bind:class="{ 'slideDown': slideOut }">Pauline Stichelbau,<br> Léa Tanda,<br> Fany Thourain,<br> Clara Vigourous,<br> Xindi Yang</p>
