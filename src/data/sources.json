@@ -32,15 +32,6 @@
                 ]
             },
             {
-                "stringDate" : "September 13, 2017",
-                "tags" : ["Apps"],
-                "title" : "Apps mobiles urbaines : comment elles nous facilitent la vie",
-                "translation" : "Urban mobile apps : How they ease our life",
-                "href" : "https://www.linformaticien.com/dossiers/apps-mobiles-urbaines-comment-elles-nous-facilitent-la-vie.aspx",
-                "from" : "L'informaticien'",
-                "by" : "Jérôme Cartegini"
-            },
-            {
                 "place" : "USA",
                 "stringDate" : "September 20, 2017",
                 "tags" : ["Apps"],
@@ -177,15 +168,6 @@
                 ]
             },
             {
-                "place" : "Toronto, Canada",
-                "title" : "A google branch build a entire neighbourhood in Toronto",
-                "tags" : ["Future", "Cities", "Environment"],
-                "stringDate" : "October 12, 2017",
-                "href" : "https://usbeketrica.com/article/sidewalk-labs-quartier-google-toronto",
-                "from" : "Usbek et Rica",
-                "by" : "Benjamin Hourcade"
-            },
-            {
                 "place" : "-",
                 "stringDate" : "October 23, 2017",
                 "tags" : ["AI", "Cities", "Environment"],
@@ -243,15 +225,6 @@
                 ]
             },
             {
-                "place" : "Ile-de-France, France",
-                "stringDate" : "November 14, 2017",
-                "tags" : [],
-                "title" : "L’Ile-de-France en force au Smart city expo world congress de Barcelone",
-                "translation" : "Ile-de-france strongly there for the Smart city expo world congress in Barcelone.",
-                "href" : "https://www.lejournaldugrandparis.fr/lile-de-france-force-smart-city-expo-world-forum-de-barcelone/",
-                "from" : "Le journal du Grand Paris"
-            },
-            {
                 "place" : "Barcelona, Spain",
                 "title" : "Huawei creates a brain for a smart city for more than 100 cities with its new technologies",
                 "tags" : ["Data", "Events"],
@@ -266,32 +239,16 @@
                 ]
             },
             {
-                "place" : "-",
-                "title" : "Are smart cities incompatible with private life ?",
-                "tags" : ["Data", "Privacy"],
-                "stringDate" : "November 16, 2017",
-                "href" : "https://usbeketrica.com/article/smart-city-inconciliable-vie-privee",
-                "from" : "Usbek & Rica",
-                "by" : "Demain la ville"
-            },
-            {
                 "place" : "Belmont, USA",
                 "title" : "Bill Gates is going to build a smart city in the desert",
                 "tags" : ["Future", "Cities", "Project"],
                 "stringDate": "November 15, 2017",
                 "href" : "https://usbeketrica.com/article/bill-gates-va-construire-une-smart-city-dans-un-desert",
                 "from" : "Usbek et Rica",
-                "by" : "Maylis Haegel"
-            },
-            {
-                "place" : "-",
-                "title" : "Les smart cities sont-elles vraiment intelligentes ?",
-                "translation" : "Are smart cities trully smart ?",
-                "tags" : ["Debate"],
-                "stringDate": "November 27, 2017",
-                "href" : "http://www.ladn.eu/tech-a-suivre/habitat-et-villes-connectes/les-smart-cities-sont-elles-vraiment-intelligentes/",
-                "from" : "L'ADN",
-                "by" : "Mélanie Roosen"
+                "by" : "Maylis Haegel",
+                "description": [
+                  "As an answer to overpopulation in the cities, such as expected in 2050, Bill Gates wants to build a futuristic city somewhere in the in the desert of Arizona. We know that 70% of the world population will live in cities or urban areas in thirty years. The city has to serve as a model for the development of future sustainable cities."
+                ]
             },
             {
                 "place" : "Paris, France",
@@ -324,15 +281,6 @@
                 ]
             },
             {
-                "place" : "France",
-                "title" : "French are asking for online administration & smart cities",
-                "tags" : ["Online services", "Citizens"],
-                "stringDate" : "December 4, 2017",
-                "href" : "http://www.lagazettedescommunes.com/538783/les-francais-plebiscitent-ladministration-en-ligne-et-la-smart-city/ ",
-                "from" : "Usbek et Rica",
-                "by" : "Arnaud Pagès"
-            },
-            {
                 "place" : "Montgenèvre, France",
                 "title" : "Montgenèvre, the first mountain smart station",
                 "tags" : ["Environment"],
@@ -343,48 +291,12 @@
                 "description": [
                   "Montgenèvre, a ski resort is equipped with a new application called smartmountain. This application allows the local people to search for administrative information. It also helps tourists to find useful information on the ski-roads. The application is available since December, 2017."
                 ]
-            },
-            {
-                "place" : "-",
-                "title" : "Smart City is looking for graduates",
-                "tags" : ["Education"],
-                "stringDate" : "December 12, 2017",
-                "href" : "http://www.lemonde.fr/campus/article/2017/12/12/la-smart-city-cherche-des-diplomes_5228407_4401467.html",
-                "from" : "Le monde Campus",
-                "by" : "Jessica Gourdon"
-            },
-            {
-                "place" : "-",
-                "title" : "World Smart City Awards 2017 : le Cameroun récompensé",
-                "tags" : ["Rankings"],
-                "stringDate" : "December 19, 2017",
-                "href" : "https://happyinafrica.com/societe/world-smart-city-awards-2017-cameroun-recompense ",
-                "from" : "Happy In Africa",
-                "by" : " Miguel Godonou"
             }
         ]
     },
     {
         "month" : "January",
         "articles": [
-            {
-                "place" : "-",
-                "title" : "Alphabet's sidewalk labs launches a platform for making the city of tomorrow",
-                "tags" : ["Transports", "Apps"],
-                "stringDate" : "January 1, 2018",
-                "href" : "https://www.wired.com/story/alphabet-sidewalk-labs-coord-city-of-tomorrow/",
-                "from" : "Wired",
-                "by" : "Aarian Marshall"
-            },
-            {
-                "place" : "-",
-                "title" : "What 100 Cities Are Learning From Each Other By Sharing Their Data",
-                "tags" : ["Data", "Sharing"],
-                "stringDate" : "January 18, 2018",
-                "href" : "https://www.fastcompany.com/40518004/what-100-cities-are-learning-from-each-other-by-sharing-their-data ",
-                "from" : "Fast Company",
-                "by" : "Ben Paynter"
-            },
             {
                 "place" : "Arizona, USA",
                 "title" : "Bill Gates smart City is controversial",
@@ -396,24 +308,6 @@
                 "description" : [
                   "Bill Gates, the Microsoft co-founder, just bought a 10 000 hectares field in Arizona desert to build a futuristic city. This smart city will be named Belmont, after the real estate developer that pilots the project: Belmont Partners. This city must serve as a model for future sustainable city development and shows itself as an answer to urban overpopulation that will be seen around 2050."
                 ]
-            },
-            {
-                "place" : "-",
-                "title" : "Average cities have a right to smart cities, too",
-                "tags" : ["Cities"],
-                "stringDate" : "January 11, 2018",
-                "href" : "http://www.lagazettedescommunes.com/544166/les-villes-moyennes-aussi-ont-droit-a-la-smart-city/ ",
-                "from" : "La gazette des communes",
-                "by" : "Martine Courgnaud - Del Ry"
-            },
-            {
-                "place" : "Shenzen, China",
-                "title" : "Shenzen : when China awakes as a Smart City",
-                "tags" : ["Cities"],
-                "stringDate" : "January 30, 2018",
-                "href" : "https://www.villeintelligente-mag.fr/Shenzhen%C2%A0-quand-la-Chine-s-eveille-a-la-Smart-City_a422.html",
-                "from" : "Ville Intelligente",
-                "by" : "Yannick Sourisseau"
             },
             {
                 "place" : "Shenzen, China",
