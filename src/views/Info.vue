@@ -13,4 +13,9 @@ export default {
 </script>
 
 <style lang="scss">
+  .list {
+    background: $lightYellow;
+    height: 100vh;
+    width: 100vw;
+  }
 </style>

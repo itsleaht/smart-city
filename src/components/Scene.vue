@@ -7,7 +7,12 @@ import {TimelineMax} from 'gsap'
 
 export default {
   name: 'scene',
-  props: ['startAnimation'],
+  props: ['startAnimation', 'animate'],
+  data() {
+    return {
+      timelines: []
+    }
+  },
   methods: {
     activateTimelines () {
       const tlMain = new TimelineMax({repeat: -1, yoyo: true, repeatDelay: 0})
@@ -40,21 +45,21 @@ export default {
       const yellowButtons = this.sceneMain.querySelectorAll('.yellowButton path')
 
       let tlTrees = new TimelineMax({repeat: -1, yoyo: true})
-      const tlMainObjectToilet = new TimelineMax()
-      const tlMainObjectSatelite = new TimelineMax({repeat: -1, yoyo: true})
-      const tlsateliteRotation = new TimelineMax({repeat: -1, yoyo: true})
-      const tlSateliteOndes = new TimelineMax({repeat: -1, yoyo: true})
-      const tlMainObjectDetecteurAir = new TimelineMax()
-      const tlMainObjectSeaBubble = new TimelineMax({repeat: -1})
-      const tlMainObjectPanneaux = new TimelineMax()
-      const tlMainObjectTelephone = new TimelineMax()
+      const tlMainObjectToilet = new TimelineMax({paused: true})
+      const tlMainObjectSatelite = new TimelineMax({repeat: -1, yoyo: true, paused: true})
+      const tlsateliteRotation = new TimelineMax({repeat: -1, yoyo: true, paused: true})
+      const tlSateliteOndes = new TimelineMax({repeat: -1, yoyo: true, paused: true})
+      const tlMainObjectDetecteurAir = new TimelineMax({paused: true})
+      const tlMainObjectSeaBubble = new TimelineMax({repeat: -1, paused: true})
+      const tlMainObjectPanneaux = new TimelineMax({paused: true})
+      const tlMainObjectTelephone = new TimelineMax({paused: true})
       const tlTelephoneRotation = new TimelineMax({repeat: -1, yoyo: true})
-      const tlMainObjectSmartRoad = new TimelineMax()
-      const tlMainObjectPieton = new TimelineMax()
-      const tlMainObjectCar = new TimelineMax()
-      const tlMainObjectCars = new TimelineMax()
-      const tlMainObjectPolice = new TimelineMax()
-      const tlMainObjectTaxiVolant = new TimelineMax()
+      const tlMainObjectSmartRoad = new TimelineMax({paused: true})
+      const tlMainObjectPieton = new TimelineMax({paused: true})
+      const tlMainObjectCar = new TimelineMax({paused: true, repeat: -1})
+      const tlMainObjectCars = new TimelineMax({paused: true})
+      const tlMainObjectPolice = new TimelineMax({paused: true})
+      const tlMainObjectTaxiVolant = new TimelineMax({paused: true})
       const tlTaxiVolantRotation = new TimelineMax({repeat: -1, yoyo: true})
       const tlTaxiVolantRotationSuite = new TimelineMax({repeat: -1, yoyo: true})
       const tlNuages = new TimelineMax({repeat: -1, yoyo: true})
@@ -65,25 +70,52 @@ export default {
       const tlYellowButtons = new TimelineMax({repeat: -1, yoyo: true})
       const tlPlans = new TimelineMax()
 
-      tlMainObjectToilet
-        .fromTo(mainObjectToilet, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
-
+      //Satelite
       tlMainObjectSatelite
         .staggerFromTo(mainObjectSatelite, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
         .fromTo(mainObjectSatelite, 1, {y: 0}, {y: 20, ease: Power2.easeInOut})
         .fromTo(mainObjectSatelite, 3, {rotation: '50deg', x: 0}, {rotation: '40deg', x: -80, ease: Power3.easeInOut})
 
-      tlsateliteRotation
+      tlMainObjectSatelite.add(tlsateliteRotation
         .to(tlMainObjectSatelite, 10, {rotation: '-20deg', x: -500, ease: Sine.easeOut})
         .to(tlMainObjectSatelite, 8, {rotation: '20deg', x: 60, ease: Sine.easeOut})
+      )
 
-      tlSateliteOndes
+      tlMainObjectSatelite.add(tlSateliteOndes
         .staggerFromTo(sateliteOndes, 1, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: SteppedEase.config(6)}, 0)
+      )
 
-      tlMainObjectDetecteurAir
+      this.timelines.push(tlMainObjectSatelite)
+
+      //Car
+      this.timelines.push(tlMainObjectCar
+        .fromTo(mainObjectCar, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Power3.easeOut}, 0.05)
+        .fromTo(mainObjectCar, 6, {x: -100, y: 0}, {x: 1400, y: 160, ease: Back.easeIn.config(1)})
+      )
+
+      // Toilets
+      this.timelines.push(tlMainObjectToilet
+        .fromTo(mainObjectToilet, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
+      )
+
+      // Air detector
+      this.timelines.push(tlMainObjectDetecteurAir
         .fromTo(mainObjectDetecteurAir, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
+      )
 
-      tlMainObjectSeaBubble
+      // Telephone
+      tlMainObjectTelephone
+        .fromTo(mainObjectTelephone, 1, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
+
+      tlMainObjectTelephone.add(
+         tlTelephoneRotation
+        .fromTo(mainObjectTelephone, 0.4, {y: 0, transformOrigin: '50% 50%'}, {y: 10, rotation: '0deg'}, 0.15)
+      )
+
+      this.timelines.push(tlMainObjectTelephone)
+
+      // Sea bubbles
+      this.timelines.push(tlMainObjectSeaBubble
         .fromTo(mainObjectSeaBubble, 1, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.015)
         .to(mainObjectSeaBubble, 2.7, {x: 20, y: 10, ease: Expo.easeOut})
         .to(mainObjectSeaBubble, 2.6, {x: 40, y: 20, ease: Expo.easeOut})
@@ -91,33 +123,25 @@ export default {
         .to(mainObjectSeaBubble, 2, {x: 80, y: 28, ease: Expo.easeOut})
         .to(mainObjectSeaBubble, 1.7, {x: 100, y: 28, ease: Expo.easeOut})
         .to(mainObjectSeaBubble, 1.4, {x: 150, y: 28, ease: Expo.easeOut})
+      )
 
-      tlMainObjectPanneaux
+      // Panneaux
+      this.timelines.push(tlMainObjectPanneaux
         .fromTo(mainObjectPanneaux, 1, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.015)
+      )
 
-      tlMainObjectTelephone
-        .fromTo(mainObjectTelephone, 1, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
 
-      tlTelephoneRotation
-        .fromTo(mainObjectTelephone, 0.4, {y: 0, transformOrigin: '50% 50%'}, {y: 10, rotation: '0deg'}, 0.15)
 
-      tlMainObjectSmartRoad
-        .fromTo(mainObjectSmartRoad, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
-
-      tlMainObjectPieton
+      //Smart roads
+      this.timelines.push(tlMainObjectPieton
         .fromTo(mainObjectPieton, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
+      )
 
-      tlMainObjectCar
-        .fromTo(mainObjectCar, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Power3.easeOut}, 0.05)
-        .fromTo(mainObjectCar, 6, {x: -100, y: 0}, {x: 1400, y: 160, ease: Back.easeIn.config(1)})
+      this.timelines.push( tlMainObjectSmartRoad
+        .fromTo(mainObjectSmartRoad, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
+      )
 
-      tlMainObjectCars
-        .fromTo(mainObjectCars, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
-        .to(mainObjectCars, 3, {x: 1100, y: 160}, 0.15)
-
-      tlMainObjectPolice
-        .fromTo(mainObjectPolice, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
-
+      // Flying taxis
       tlMainObjectTaxiVolant
         .fromTo(mainObjectTaxiVolant, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
 
@@ -127,6 +151,22 @@ export default {
       tlTaxiVolantRotationSuite
         .to(mainObjectTaxiVolant, 1, {rotation: '-2deg', ease: Sine.easeOut})
         .to(mainObjectTaxiVolant, 1, {rotation: '2deg', ease: Sine.easeOut})
+
+      tlMainObjectTaxiVolant
+      .add(tlTaxiVolantRotation)
+      .add(tlTaxiVolantRotationSuite)
+
+      this.timelines.push(tlMainObjectTaxiVolant)
+
+      // Police
+      this.timelines.push(tlMainObjectPolice
+        .fromTo(mainObjectPolice, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
+      )
+
+      tlMainObjectCars
+        .fromTo(mainObjectCars, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
+        .to(mainObjectCars, 3, {x: 1100, y: 160}, 0.15)
+
 
       tlYellowButtons
         .fromTo(yellowButtons, 0.3, {y: 0}, {y: -10})
@@ -156,20 +196,23 @@ export default {
 
       tlMain
         .add(tlTreesDiv1, 0)
-        .add(tlMainObjectCar, 1)
-        .add(tlMainObjectToilet, 2)
-        .add(tlMainObjectDetecteurAir, 3)
-        .add(tlMainObjectTelephone, 4)
+        // .add(tlMainObjectCar, 1)
+        // .add(tlMainObjectToilet, 2)
+        // .add(tlMainObjectDetecteurAir, 3)
+        // .add(tlMainObjectTelephone, 4)
         .add(tlTreesDiv2, 5)
-        .add(tlMainObjectSeaBubble, 6)
-        .add(tlMainObjectPanneaux, 7)
+        // .add(tlMainObjectSeaBubble, 6)
+        // .add(tlMainObjectPanneaux, 7)
         .add(tlMainObjectCars, 8)
         .add(tlTreesDiv3, 8)
-        .add(tlMainObjectPieton, 9)
-        .add(tlMainObjectSmartRoad, 10)
+        // .add(tlMainObjectPieton, 9)
+        // .add(tlMainObjectSmartRoad, 10)
         // .add(tlPlans, 11)
-        .add(tlMainObjectTaxiVolant, 12)
-        .add(tlMainObjectPolice, 13)
+        // .add(tlMainObjectTaxiVolant, 12)
+        // .add(tlMainObjectPolice, 13)
+    },
+    animateObj() {
+
     },
     getPositions () {
       const steps = Array.prototype.slice.call(this.sceneMain.querySelectorAll('.step'))
@@ -205,6 +248,14 @@ export default {
         e.preventDefault()
       })
     })
+  },
+  watch: {
+    'animate' (to, from) {
+      if (to != 0) {
+        this.timelines[from].pause()
+      }
+      this.timelines[to].play()
+    }
   }
 }
 </script>

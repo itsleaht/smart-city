@@ -19,7 +19,7 @@
           </transition-group>
       </div>
     </transition-group>
-    <timeline :nbPoints="nbPointsTimeLine" :preventScroll="false" :arrayOfEvents="arrayOfEventsTimeLine"></timeline>
+    <timeline :nbSteps="nbSteps" :arrayOfEvents="arrayOfEventsTimeLine"></timeline>
   </div>
 </template>
 
@@ -41,8 +41,8 @@ export default {
       sources: articles,
       activeTags: [],
       activeTag: false,
-      nbPointsTimeLine: articles.length,
-      arrayOfEventsTimeLine: []
+      nbSteps: articles.length,
+      currentStep: 1
     }
   },
   computed: {

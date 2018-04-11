@@ -10,7 +10,7 @@
       </div>
     </transition>
     <section>
-      <scene @getPositions="updateScene"></scene>
+      <scene @getPositions="updateScene" :animate="animation"></scene>
       <pop-article v-for="(article, index) in events" :article="article" :key="'pop-'+index" :class="{'active':currentStep == index + 1}" ref="popArticle"></pop-article>
     </section>
     <timeline :nbSteps="nbSteps" :currentStep="currentStep" @currentStep="changeStep"></timeline>
@@ -32,11 +32,13 @@ export default {
     return {
       showLanding: true,
       arrayOfEventsTimeLine: [],
-      currentStep: 1,
+      currentStep: 0,
       wheelAllowed: false,
       positions: [],
       nbSteps: 11,
-      events
+      events,
+      animation: 0,
+      startAnimation: false
     }
   },
   methods: {
@@ -71,14 +73,15 @@ export default {
       if (newStep >= 1 && newStep <= this.nbSteps) {
         this.currentStep = newStep
         this.manageWheel(this.currentStep)
+        this.animation = this.currentStep - 1
       }
     },
     updateScene (positions) {
       if (positions.length) {
         this.positions = positions
         this.wheelAllowed = true
-        window.addEventListener('wheel', this.hideLanding)
         this.placePopArticles(positions)
+        window.addEventListener('wheel', this.throttle(1000, this.onWheel))
       }
     },
     placePopArticles (positions) {
@@ -102,8 +105,11 @@ export default {
   },
   mounted () {
     const scenes = document.querySelectorAll('.home section object')
+    window.addEventListener('wheel', this.hideLanding)
     window.scrollTo(0, 0)
-    window.addEventListener('wheel', this.throttle(1000, this.onWheel))
+  },
+  beforeDestroy () {
+     window.removeEventListener('wheel', this.throttle(1000, this.onWheel))
   }
 }
 </script>
