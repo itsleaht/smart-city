@@ -113,7 +113,7 @@ export default {
         const offsetY = month.offsetTop - window.scrollY
         const offsetYPourcent = offsetY / window.innerHeight
 
-        if (offsetYPourcent > 0.5 && offsetYPourcent < 1 && this.currentStep !== index + 1) {
+        if (offsetYPourcent > 0 && offsetYPourcent < 1 && this.currentStep !== index + 1) {
           this.changeStep(index + 1)
         }
       })

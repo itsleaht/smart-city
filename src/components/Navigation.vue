@@ -20,6 +20,7 @@
       </li>
     </ul>
     <p v-bind:class="{ 'slideDown': slideOut }">Pauline Stichelbau,<br> Léa Tanda,<br> Fany Thourain,<br> Clara Vigourous,<br> Xindi Yang</p>
+    <a class="download" href="/smartCity/static/smartCity.pdf" target="_blank">Download the PDF</a>
   </section>
 </template>
 
@@ -73,6 +74,25 @@ section {
   align-items: center;
   background: none;
   z-index: 31;
+
+  .download {
+    position: absolute;
+    right: 45px;
+    top: 60px;
+    width: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: $montserrat;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: left;
+    text-decoration: none;
+    transition: color .5s;
+
+    &:hover {
+      color: $darkBlue;
+    }
+  }
 
   ul {
     vertical-align: middle;
