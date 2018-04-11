@@ -104,11 +104,11 @@ export default {
       this.changeStep(newStep)
     },
     onScroll () {
-      this.$refs.monthList.forEach( (month, index) => {
+      this.$refs.monthList.forEach((month, index) => {
         const offsetY = month.offsetTop - window.scrollY
         const offsetYPourcent = offsetY / window.innerHeight
 
-        if (offsetYPourcent > 0.5 && offsetYPourcent < 1 && this.currentStep != index + 1) {
+        if (offsetYPourcent > 0.5 && offsetYPourcent < 1 && this.currentStep !== index + 1) {
           this.changeStep(index + 1)
         }
       })
@@ -121,7 +121,7 @@ export default {
         lastCall = now
         return fn(...args)
       }
-    },
+    }
   },
   mounted () {
     // this.scrollEvent = throttle(1000, this.onScroll(this.$refs.monthList))
