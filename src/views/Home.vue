@@ -22,7 +22,6 @@ import timeline from '@/components/Timeline'
 import scene from '@/components/Scene'
 import popArticle from '@/components/PopArticle'
 import events from '@/data/events.json'
-import {Tweenmax} from 'gsap'
 require('gsap/ScrollToPlugin')
 
 export default {
@@ -67,7 +66,7 @@ export default {
     },
     manageWheel (step) {
       const pos = this.positions[step - 1]
-      TweenLite.to(window, 2, {scrollTo: {y: pos.wheelTo, x: 0}, ease: Power2.easeIn})
+      TweenLite.to(window, 2, {scrollTo: {y: pos.wheelTo, x: 0}, ease: Power3.easeOut})
     },
     changeStep (newStep) {
       if (newStep >= 1 && newStep <= this.nbSteps) {
@@ -88,7 +87,6 @@ export default {
       let popArticles = document.querySelectorAll('.pop-article')
       const popHeight = popArticles[0].clientHeight
       const popWidth = popArticles[0].clientWidth
-      const windowHeight = window.innerHeight
       this.$refs.popArticle.forEach((pop, index) => {
         const pos = positions[index]
         let left = pos.left - popWidth - pos.width / 2
@@ -104,7 +102,7 @@ export default {
     }
   },
   mounted () {
-    const scenes = document.querySelectorAll('.home section object')
+    // const scenes = document.querySelectorAll('.home section object')
     this.throttleEvent = this.throttle(1000, this.onWheel)
     window.addEventListener('wheel', this.hideLanding)
     window.scrollTo(0, 0)
@@ -118,6 +116,7 @@ export default {
 <style lang="scss">
   .home {
     width: 100%;
+    overflow-x: hidden;
 
     .landing {
       position: fixed;

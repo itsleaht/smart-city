@@ -32,12 +32,12 @@ export default {
 <style scoped lang="scss">
   .timeline {
     position: fixed;
-    top: 5vh;
+    top: 45px;
+    bottom: 0;
     right: 0;
     padding: 0;
     margin: 0;
     width: 60px;
-    height: 95vh;
     background: #fff;
     list-style: none;
 

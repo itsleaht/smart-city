@@ -57,7 +57,7 @@ export default {
       position: fixed;
       top: 0;
       width: 100%;
-      height: 7vh;
+      height: 45px;
       background: #fff;
       line-height: 1.7;
       font-family: 'Roboto Mono', monospace;
@@ -80,7 +80,7 @@ export default {
       #moreInfo {
         float: right;
         width: 60px;
-        height: 7vh;
+        height: 45px;
         border: none;
         font-size: 40px;
         background: $darkBlue;

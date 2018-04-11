@@ -39,12 +39,12 @@ export default {
       const cloud4 = this.sceneMain.querySelector('.cloud4')
       const cloud5 = this.sceneMain.querySelector('.cloud5')
       const cloud6 = this.sceneMain.querySelector('.cloud6')
-      const bg4 = this.sceneMain.querySelector('.bg4')
-      const bg5 = this.sceneMain.querySelector('.bg5')
+      // const bg4 = this.sceneMain.querySelector('.bg4')
+      // const bg5 = this.sceneMain.querySelector('.bg5')
 
       const yellowButtons = this.sceneMain.querySelectorAll('.yellowButton path')
 
-      let tlTrees = new TimelineMax({repeat: -1, yoyo: true})
+      // let tlTrees = new TimelineMax({repeat: -1, yoyo: true})
       const tlMainObjectToilet = new TimelineMax({paused: true})
       const tlMainObjectSatelite = new TimelineMax({repeat: -1, yoyo: true, paused: true})
       const tlsateliteRotation = new TimelineMax({repeat: -1, yoyo: true, paused: true})
@@ -68,7 +68,7 @@ export default {
       const tlTreesDiv2 = new TimelineMax()
       const tlTreesDiv3 = new TimelineMax()
       const tlYellowButtons = new TimelineMax({repeat: -1, yoyo: true})
-      const tlPlans = new TimelineMax()
+      // const tlPlans = new TimelineMax()
 
       // Satelite
       tlMainObjectSatelite
@@ -193,20 +193,9 @@ export default {
 
       tlMain
         .add(tlTreesDiv1, 0)
-        // .add(tlMainObjectCar, 1)
-        // .add(tlMainObjectToilet, 2)
-        // .add(tlMainObjectDetecteurAir, 3)
-        // .add(tlMainObjectTelephone, 4)
         .add(tlTreesDiv2, 5)
-        // .add(tlMainObjectSeaBubble, 6)
-        // .add(tlMainObjectPanneaux, 7)
         .add(tlMainObjectCars, 8)
         .add(tlTreesDiv3, 8)
-        // .add(tlMainObjectPieton, 9)
-        // .add(tlMainObjectSmartRoad, 10)
-        // .add(tlPlans, 11)
-        // .add(tlMainObjectTaxiVolant, 12)
-        // .add(tlMainObjectPolice, 13)
     },
     animateObj () {
 
@@ -250,7 +239,7 @@ export default {
   },
   watch: {
     'animate' (to, from) {
-      if (to != 0) {
+      if (to !== 0) {
         this.timelines[from].pause()
       }
       this.timelines[to].play()

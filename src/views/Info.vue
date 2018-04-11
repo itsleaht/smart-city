@@ -1,7 +1,7 @@
 <template>
   <div class="infos">
     <transition name="goUp" mode="out-in" tag="div">
-      <info-block v-for="(info, index) in infos" :key="'infowrapper'+index" :info="info" v-if="currentStep === index ? true: false"  ></info-block>
+      <info-block v-for="(info, index) in infos" :key="'infowrapper'+index" :info="info" v-if="currentSlide === index ? true: false" :test="index"></info-block>
     </transition>
     <timeline :nbSteps="infos.length" :currentStep="currentStep" @currentStep="changeStep"></timeline>
   </div>
@@ -18,7 +18,8 @@ export default {
   data () {
     return {
       infos,
-      currentStep: 0
+      currentStep: 1,
+      currentSlide: 0
     }
   },
   methods: {
@@ -32,16 +33,20 @@ export default {
       }
     },
     changeStep (newStep) {
-      if (newStep >= 0 && newStep <= infos.length) {
+      if (newStep >= 1 && newStep <= infos.length) {
+        console.log('ayo')
         this.currentStep = newStep
+        this.currentSlide = this.currentStep - 1
       }
     },
     onWheel (e) {
       e.preventDefault()
-      if (e.deltaY < 0) { // Wheels up
+      if (e.deltaY < 0 && this.currentStep > 1) { // Wheels up
         this.currentStep--
-      } else if (e.deltaY > 0) { // Wheels down
+        this.currentSlide--
+      } else if (e.deltaY > 0 && this.currentStep < infos.length) { // Wheels down
         this.currentStep++
+        this.currentSlide++
       }
     }
   },
@@ -66,7 +71,7 @@ export default {
   }
 
   .infos {
-    background: $lightYellow;
+    background: $skyBlue;
     font-family: $montserrat;
     height: 100vh;
     width: 100vw;
