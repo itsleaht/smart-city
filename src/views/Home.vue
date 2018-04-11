@@ -4,8 +4,8 @@
       <div class="landing" v-if="showLanding">
         <span class="question-mark black">?</span>
         <h1 class="uppercase black">What is a smart City ?</h1>
-        <p>A developed urban area that creates sustainable economic development and high quality of life by excelling in multiple key areas; economy, mobility, environment, people, living, and government. Excelling in these key areas can be done so through strong human capital, social capital, and/or ICT infrastructure.</p>
-        <p>Here's some examples of smart cities innovations.</p>
+        <p>We believe a smart city is a digital and a human system, buildt to maintain a structured environment and to ensure a sustainable, prosperous future to its citizens.</p>
+        <p>Here are some examples of smart cities innovations.</p>
         <span class="uppercase black wheel" :class="{'wheelAllowed' : wheelAllowed}">Scroll to navigate</span>
       </div>
     </transition>
@@ -132,7 +132,7 @@ export default {
         position: relative;
         display: inline-block;
         padding-bottom: 30px;
-        width: 300px;
+        width: 600px;
         font-weight: 700;
         font-size: 40px;
         letter-spacing: 2px;
@@ -141,7 +141,7 @@ export default {
           content: "";
           position: absolute;
           bottom: 0;
-          left: 50px;
+          left: 200px;
           width: 200px;
           height: 5px;
           background: $yellow;
@@ -150,7 +150,7 @@ export default {
       }
       p {
         margin: 30px auto 0;
-        width: 320px;
+        width: 520px;
         text-align: center;
         font-family: $roboto;
         font-size: 15px;
@@ -160,7 +160,7 @@ export default {
           display: block;
           width: 70px;
           height: 70px;
-          margin: 50px auto 0;
+          margin: 80px auto 30px;
           background: #FFF;
           border: 5px solid $yellow;
           border-radius: 100%;
@@ -172,7 +172,7 @@ export default {
 
         &.wheel {
           position: absolute;
-          bottom: 50px;
+          bottom: 100px;
           left: 50%;
           transform: translateX(-50%);
           text-align: center;
