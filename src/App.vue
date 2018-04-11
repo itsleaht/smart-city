@@ -57,7 +57,7 @@ export default {
       position: fixed;
       top: 0;
       width: 100%;
-      height: 5vh;
+      height: 7vh;
       background: #fff;
       line-height: 1.7;
       font-family: 'Roboto Mono', monospace;
@@ -67,7 +67,7 @@ export default {
 
       h1 {
         padding: 0;
-        margin: 0 50px 0;
+        margin: 10px 50px 0;
         text-align: left;
         float: left;
         font-size: 20px;
@@ -80,7 +80,7 @@ export default {
       #moreInfo {
         float: right;
         width: 60px;
-        height: 5vh;
+        height: 7vh;
         border: none;
         font-size: 40px;
         background: $darkBlue;
@@ -89,6 +89,7 @@ export default {
         line-height: 0.8;
 
         span {
+          margin: 5px 5px;
           display: block;
           transition: transform .3s;
         }
