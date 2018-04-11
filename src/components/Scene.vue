@@ -8,7 +8,7 @@ import {TimelineMax} from 'gsap'
 export default {
   name: 'scene',
   props: ['startAnimation', 'animate'],
-  data() {
+  data () {
     return {
       timelines: []
     }
@@ -70,7 +70,7 @@ export default {
       const tlYellowButtons = new TimelineMax({repeat: -1, yoyo: true})
       const tlPlans = new TimelineMax()
 
-      //Satelite
+      // Satelite
       tlMainObjectSatelite
         .staggerFromTo(mainObjectSatelite, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
         .fromTo(mainObjectSatelite, 1, {y: 0}, {y: 20, ease: Power2.easeInOut})
@@ -87,7 +87,7 @@ export default {
 
       this.timelines.push(tlMainObjectSatelite)
 
-      //Car
+      // Car
       this.timelines.push(tlMainObjectCar
         .fromTo(mainObjectCar, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Power3.easeOut}, 0.05)
         .fromTo(mainObjectCar, 6, {x: -100, y: 0}, {x: 1400, y: 160, ease: Back.easeIn.config(1)})
@@ -108,8 +108,8 @@ export default {
         .fromTo(mainObjectTelephone, 1, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
 
       tlMainObjectTelephone.add(
-         tlTelephoneRotation
-        .fromTo(mainObjectTelephone, 0.4, {y: 0, transformOrigin: '50% 50%'}, {y: 10, rotation: '0deg'}, 0.15)
+        tlTelephoneRotation
+          .fromTo(mainObjectTelephone, 0.4, {y: 0, transformOrigin: '50% 50%'}, {y: 10, rotation: '0deg'}, 0.15)
       )
 
       this.timelines.push(tlMainObjectTelephone)
@@ -130,14 +130,12 @@ export default {
         .fromTo(mainObjectPanneaux, 1, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.015)
       )
 
-
-
-      //Smart roads
+      // Smart roads
       this.timelines.push(tlMainObjectPieton
         .fromTo(mainObjectPieton, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
       )
 
-      this.timelines.push( tlMainObjectSmartRoad
+      this.timelines.push(tlMainObjectSmartRoad
         .fromTo(mainObjectSmartRoad, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
       )
 
@@ -153,8 +151,8 @@ export default {
         .to(mainObjectTaxiVolant, 1, {rotation: '2deg', ease: Sine.easeOut})
 
       tlMainObjectTaxiVolant
-      .add(tlTaxiVolantRotation)
-      .add(tlTaxiVolantRotationSuite)
+        .add(tlTaxiVolantRotation)
+        .add(tlTaxiVolantRotationSuite)
 
       this.timelines.push(tlMainObjectTaxiVolant)
 
@@ -166,7 +164,6 @@ export default {
       tlMainObjectCars
         .fromTo(mainObjectCars, 0.4, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.15)
         .to(mainObjectCars, 3, {x: 1100, y: 160}, 0.15)
-
 
       tlYellowButtons
         .fromTo(yellowButtons, 0.3, {y: 0}, {y: -10})
@@ -211,7 +208,7 @@ export default {
         // .add(tlMainObjectTaxiVolant, 12)
         // .add(tlMainObjectPolice, 13)
     },
-    animateObj() {
+    animateObj () {
 
     },
     getPositions () {
@@ -236,6 +233,9 @@ export default {
         positions.push({'position': position, 'top': top, 'left': left, 'height': height * ratio, 'width': width * ratio, 'wheelTo': Math.round(wheelTo)})
       })
       this.$emit('getPositions', positions)
+    },
+    preventScroll (e) {
+      e.preventDefault()
     }
   },
   mounted () {
@@ -244,9 +244,8 @@ export default {
       this.sceneMain = svg.getSVGDocument()
       this.activateTimelines()
       this.getPositions()
-      window.addEventListener('wheel', (e) => {
-        e.preventDefault()
-      })
+
+      window.addEventListener('wheel', this.preventScroll)
     })
   },
   watch: {
@@ -256,6 +255,9 @@ export default {
       }
       this.timelines[to].play()
     }
+  },
+  destroyed () {
+    window.removeEventListener('wheel', this.preventScroll)
   }
 }
 </script>

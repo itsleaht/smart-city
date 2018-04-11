@@ -10,7 +10,7 @@
 <script>
 export default {
   name: 'infoBlock',
-  props: ['info', 'active'],
+  props: ['info', 'active']
 }
 </script>
 
@@ -41,7 +41,6 @@ export default {
       font-size: 20px;
       font-family: $roboto;
     }
-
 
   }
 </style>

@@ -36,7 +36,7 @@ export default {
         this.currentStep = newStep
       }
     },
-    onWheel(e) {
+    onWheel (e) {
       e.preventDefault()
       if (e.deltaY < 0) { // Wheels up
         this.currentStep--
@@ -46,7 +46,11 @@ export default {
     }
   },
   mounted () {
+    this.throttleEvent = this.throttle(1000, this.onWheel)
     window.addEventListener('wheel', this.throttle(1000, this.onWheel))
+  },
+  destroyed () {
+    window.removeEventListener('wheel', this.throttleEvent)
   }
 }
 </script>

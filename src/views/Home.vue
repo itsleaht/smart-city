@@ -81,8 +81,7 @@ export default {
         this.positions = positions
         this.wheelAllowed = true
         this.placePopArticles(positions)
-        this.throttleEvent = this.throttle(1000, this.onWheel)
-        window.addEventListener('wheel',  this.throttleEvent)
+        window.addEventListener('wheel', this.throttleEvent)
       }
     },
     placePopArticles (positions) {
@@ -106,11 +105,12 @@ export default {
   },
   mounted () {
     const scenes = document.querySelectorAll('.home section object')
+    this.throttleEvent = this.throttle(1000, this.onWheel)
     window.addEventListener('wheel', this.hideLanding)
     window.scrollTo(0, 0)
   },
   destroyed () {
-     window.removeEventListener('wheel', this.throttleEvent)
+    window.removeEventListener('wheel', this.throttleEvent)
   }
 }
 </script>

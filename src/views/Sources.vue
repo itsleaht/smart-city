@@ -94,18 +94,12 @@ export default {
   },
   mounted () {
     let monthEls = document.querySelectorAll('.list .month')
-    monthEls.forEach( (month) => {
+    monthEls.forEach((month) => {
       this.arrayOfEventsTimeLine.push({
         top: month.getBoundingClientRect().top,
         height: month.scrollHeight
       })
     })
-    // for (let i = 0; i < monthEls.length; i++) {
-    //   const month = monthEls[i]
-    //   console.log(month)
-    //   console.log()
-
-    // }
   }
 }
 </script>
