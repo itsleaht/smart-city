@@ -20,7 +20,7 @@
       </li>
     </ul>
     <p v-bind:class="{ 'slideDown': slideOut }">Pauline Stichelbau,<br> Léa Tanda,<br> Fany Thourain,<br> Clara Vigourous,<br> Xindi Yang</p>
-    <a class="download" href="/smartCity/static/smartCity.pdf" target="_blank">Download the PDF</a>
+    <a class="download"  href="/smartCity/static/smartCity.pdf" target="_blank" v-bind:class="{ 'slideOut': slideOut }">Download the PDF</a>
   </section>
 </template>
 
@@ -94,8 +94,8 @@ section {
     }
   }
 
-  ul {
-    vertical-align: middle;
+  ul,
+  .download {
     transition: transform 0.7s;
     animation-duration:  0.7s;
     animation-fill-mode: forwards;
@@ -103,18 +103,27 @@ section {
     &.slideOut {
       animation-name: slideOut;
     }
+  }
+
+  li,
+  .download {
+    animation-name: slidein;
+    animation-duration:  0.7s;
+    animation-fill-mode: forwards;
+    transition: transform 0.3s;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+
+  ul {
+    vertical-align: middle;
 
     li {
       margin: 50px;
       text-align: left;
       list-style: none;
       font-family: 'Roboto Mono', monospace;
-      animation-name: slidein;
-      animation-duration:  0.7s;
-      animation-fill-mode: forwards;
-      transition: transform 0.3s;
-      transform: translateX(100%);
-      opacity: 0;
 
       &:nth-child(1) {
         animation-delay: 0.3s;
