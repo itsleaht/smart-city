@@ -679,37 +679,49 @@
             },
             {
                 "place" : "Alger, Algérie",
-                "title" : "These projects that will make Casa a true Smart City",
+                "title" : "These projects will make Casa a true Smart City",
                 "tags" : ["Test"],
                 "href" : "http://www.aps.dz/sante-science-technologie/71824-alger-smart-city-mise-en-place-de-deux-laboratoires-a-ciel-ouvert-pour-tester-les-solutions-innovantes",
                 "stringDate" : "March 31, 2018",
-                "from" : "Algérie Presse Service"
+                "from" : "Algérie Presse Service",
+                "description" : [
+                    "The Alger Smart City project is now possible thanks to new laboratories implemented in the city. Fatiha Slimani, adviser and lead of the project, just talked about new innovative solutions for the mobility, the environment and the local economy. An international meeting dedicated to smart cities is organized the 27th June and the 28th June in Alger. A total of 4000 participants, mostly experts in the field of new technologies, are planned to be part of the meeting."
+                ]
             },
             {
                 "place" : "-",
-                "title" : "Datas contribute to the smart city",
+                "title" : "How data contribute to smart cities",
                 "tags" : ["Data"],
                 "href" : "https://www.villeintelligente-mag.fr/Les-donnees-numeriques-contribuent-a-l-intelligence-de-la-ville_a475.html",
                 "stringDate" : "March 28, 2018",
                 "from" : "Ville intelligente - Mag",
-                "by" : "Tony Cavadas"
+                "by" : "Tony Cavadas",
+                "description" : [
+                    "A digital platform is being created for a better gestion and analysis of the urban data. Three groups of people will have access on the platform: the citizens, the elected representatives and the companies. Their aim is to improve the quality and fluidity of its citizens lives, and to make the urban territory more attractive."
+                ]
             },
             {
-                "title" : "In Dijon, the debit card becomes a transport card for the first time in France",
+                "title" : "Pay your transport from your credit card for the first time in France",
                 "tags" : ["Transports"],
                 "href" : "https://www.usine-digitale.fr/article/paiement-sans-contact-a-dijon-la-carte-bancaire-devient-pour-la-premiere-fois-en-france-un-titre-de-transport.N672569",
                 "stringDate" : "March 27, 2018",
                 "from" : "L'usine Digitale",
-                "by" : "Antonin Tabard"
+                "by" : "Antonin Tabard",
+                "description" : [
+                  "Dijon installs new equipments aboard the transport network Divia with Open Payment. The travelers can pay their ticket by presenting their « sans contact » credit card. This represents a 600 000€ investment. Dijon is one of the French cities where the public transportation is the least expensive."
+                ]
             },
             {
                 "place" : "Bordeaux, France",
-                "title" : "Smart City Bordeaux : the 4 avril programme is precising",
+                "title" : "Smart City Bordeaux",
                 "tags" : ["Events"],
                 "href" : "https://objectifaquitaine.latribune.fr/evenements/2018-03-13/smart-city-bordeaux-le-programme-du-4-avril-se-precise-771683.html",
                 "stringDate" : "March 13, 2018",
                 "from" : "La tribune",
-                "by" : "Mikaël Lozano"
+                "by" : "Mikaël Lozano",
+                "description" : [
+                  "The next forum of Bordeaux dedicated to smart cities will take place the April 4th, Palais de la Bourse. The central theme is to live in the city, to share the life . Next places are Bordeaux, Nice, Marseille, Paris and Toulouse."
+                ]
             },
             {
                 "place" : "China",
