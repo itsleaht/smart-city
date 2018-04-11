@@ -114,8 +114,7 @@ section {
     transform: translateX(100%);
     opacity: 0;
   }
-
-
+  
   ul {
     vertical-align: middle;
 

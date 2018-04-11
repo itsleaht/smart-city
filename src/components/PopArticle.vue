@@ -76,7 +76,7 @@ export default {
       overflow: auto;
       text-align: left;
       h1 {
-        margin: 20px 0;
+        margin: 15px 0;
         padding: 0 20px;
         font-size: 13px;
         font-weight: 900;

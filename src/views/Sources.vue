@@ -130,8 +130,11 @@ export default {
   },
   mounted () {
     this.headerHeight = document.querySelector('header').clientHeight
-     TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
+    TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
     window.addEventListener('scroll', this.onScroll)
+  },
+  destroyed () {
+     window.removeEventListener('scroll', this.onScroll)
   }
 }
 </script>
@@ -246,7 +249,7 @@ export default {
           margin-right: 10px;
           font-family: $roboto;
           opacity: 0;
-          transform: translateX(100%);
+          transform: translateX(150%);
           transition: opacity .3s, transform .3s, color .3s;
 
           &.show {

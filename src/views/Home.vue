@@ -23,6 +23,7 @@ import scene from '@/components/Scene'
 import popArticle from '@/components/PopArticle'
 import ScrollIndicator from '@/components/ScrollIndicator'
 import events from '@/data/events.json'
+import {TweenLite} from 'gsap'
 require('gsap/ScrollToPlugin')
 
 export default {
@@ -59,15 +60,14 @@ export default {
     onWheel (e) {
       e.preventDefault()
       if (e.deltaY < 0 && this.currentStep > 1) { // Wheels up
-        this.currentStep--
+        this.changeStep(this.currentStep-1)
       } else if (e.deltaY > 0 && this.currentStep <= this.nbSteps - 1) { // Wheels down
-        this.currentStep++
+        this.changeStep(this.currentStep+1)
       }
-      this.manageWheel(this.currentStep)
     },
     manageWheel (step) {
       const pos = this.positions[step - 1]
-      TweenLite.to(window, 2, {scrollTo: {y: pos.wheelTo, x: 0}, ease: Power3.easeOut})
+      TweenLite.to(window, 2, {scrollTo: {y: pos.wheelTo}, ease: Power3.easeOut})
       this.animation = this.currentStep - 1
     },
     changeStep (newStep) {
@@ -103,7 +103,7 @@ export default {
     }
   },
   mounted () {
-    // const scenes = document.querySelectorAll('.home section object')
+    TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
     this.throttleEvent = this.throttle(1000, this.onWheel)
     window.addEventListener('wheel', this.hideLanding)
     window.scrollTo(0, 0)

@@ -1,7 +1,7 @@
 [
   {
       "place" : "-",
-      "title" : "What Self-Driving Cars Could Learn From Air Traffic Control",
+      "title" : "What AI can bring to self-driving cars",
       "tags" : ["Autonomous cars", "Citizens", "AI", "Anticipation"],
       "stringDate": "February 9, 2018",
       "transports" : ["AI", "Transports", "Autonomous cars"],
@@ -17,7 +17,7 @@
       "place" : "Las Vegas, USA",
       "stringDate" : "November 9, 2017",
       "tags" : ["Autonomous cars", "Transports"],
-      "title" : "Right after its being put in service, a french autonomous bus has an accident",
+      "title" : "A french autonomous bus has an accident",
       "href" : "http://www.leparisien.fr/economie/las-vegas-des-sa-mise-en-service-le-bus-autonome-francais-a-un-accident-09-11-2017-7383093.php",
       "from" : "Le Parisien",
       "by" : "M. Pf.",
@@ -29,7 +29,7 @@
   },
   {
       "place": "Pune, India",
-      "title" : "The Quest To Use Big Data And Community Toilets To Create A Model For Building Urban Sanitation",
+      "title" : "Using Big Data To Create Urban Sanitation",
       "stringDate" : "September 13, 2017",
       "tags" : ["Health", "Network"],
       "href" : "https://www.fastcompany.com/40466766/the-quest-to-use-big-data-and-community-toilets-to-create-a-model-for-building-urban-sanitation",
@@ -52,7 +52,7 @@
   },
   {
       "place" : "-",
-      "title" : "Alphabet's sidewalk labs launches a platform for making the city of tomorrow",
+      "title" : "A platform for making the city of tomorrow",
       "tags" : ["Transports", "Apps"],
       "stringDate" : "January 1, 2018",
       "href" : "https://www.wired.com/story/alphabet-sidewalk-labs-coord-city-of-tomorrow/",
@@ -61,7 +61,7 @@
   },
   {
       "place" : "Paris, France",
-      "title" : "Paris : Sea Bubbles are expected for 2018 on Seine",
+      "title" : "Sea bubbles",
       "tags" : ["Transports"],
       "stringDate" : "November 29, 2017",
       "href" : "http://www.leparisien.fr/info-paris-ile-de-france-oise/transports/les-sea-bubbles-de-nouveau-esperes-en-2018-sur-la-seine-29-11-2017-7422840.php",
@@ -79,16 +79,14 @@
   },
   {
       "place" : "Ohio, USA",
-      "title" : "This Smart Paint Talks To Canes To Help People Who Are Blind Navigate",
+      "title" : "Smart Paint  Help Blind People Navigate",
       "tags" : ["Smart roads", "Transports", "IOT"],
       "stringDate" : "7 March 2018",
       "href" : "https://www.fastcompany.com/40537928/this-smart-paint-talks-to-canes-to-help-people-who-are-blind-navigate",
       "from" : "Fast Company",
       "by" : "Adele Peters",
       "description" : [
-        "The Ohio State School for the Blind is pioneering new technology that causes canes to vibrate when it touches lines of traffic paint. As the company explored how the paint could be used with autonomous cars–the paint could, for example, help a car recognize an intersection or lane, or provide markers that make GPS much more accurate–they realized that the paint could also be useful for people who are blind. The lines will be made of smart paint : nanocrystals that can emit a unique light signature, which a sensor added to the tip of a cane can activate and then read. ",
-        "The University is also thinking about providing blind people with guidance as they move down a sidewalk or guidance about whether or not they’ve arrived at a bus stop or at a certain destination. The paint could help someone identify, for example, if they are standing on the northwest or southwest corner of an intersection, or the exact location of an entrance to a building. The paint could also be used with other navigation tools. There may be even a point where a smartphone (with Google maps) is connected to the paint speaks to the user.",
-        "The smart pain would be affordable as it wouldn’t cost much more than actual paints and the tip added to a cane, too, would be cheap to produce."
+        "A school is pioneering new technology that causes canes to vibrate when it touches lines of traffic paint. They were exploring how the paint could be used with autonomous cars by helping a car recognize an intersection or lane, or providing markers that make GPS much more accurate. They realized that the paint could also be useful for people who are blind. The lines will be made of smart paint : nanocrystals that can emit a unique light signature, which a sensor added to the tip of a cane can activate and then read. "
       ]
   },
   {
@@ -100,8 +98,8 @@
       "from" : "FastcoDesign",
       "by" : "Katharine Schwab",
       "description" : [
-          "What happens if a pedestrian unexpectedly jumps out in front of a self-driving car? Designers in San Fransisco have find a way to solve this problem by creating a smart infrastructure system with warning lights, street illumination, and a fully reactive road (fully magnetized). With the belief that self-driving cars will be fully dedicated to protecting their passengers.",
-          "Even if the cars are smart and connected, doesn’t mean the people are smart and connected. This is why a laser projection from the car acts as a warning sign for cyclist and walkers. The roads will be illuminated as well and they will react to where people or cars are going to."
+          "What happens if a pedestrian unexpectedly jumps out in front of a self-driving car? Some Designers have find a way to solve this problem by creating a smart infrastructure system with warning lights, street illumination, and a fully reactive road (fully magnetized).",
+          "A laser projection will come from the car acts as a warning sign for cyclist and walkers. The roads will be illuminated as well and they will react to where people or cars are going to."
       ]
   },
   {

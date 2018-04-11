@@ -18,6 +18,10 @@ export default {
   methods: {
     changeStep (newStep) {
       this.current = newStep
+
+      if (this.$route.name == 'home') {
+        this.$emit('currentStep', newStep)
+      }
     },
     onClickStep (newStep) {
       this.$emit('currentStep', newStep)
