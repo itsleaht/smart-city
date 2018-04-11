@@ -26,6 +26,8 @@ export default {
   watch: {
     'currentStep' (to, from) {
       this.changeStep(to)
+    },
+    'nbSteps' (to, from) {
     }
   }
 }

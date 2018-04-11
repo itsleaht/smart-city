@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-    <div class="tags-list">
+    <div class="tags-list" ref="test">
       <div class="tags-options">
         <p class="filters uppercase" v-on:click="panelOpened = !panelOpened">Filters<span class="icon-filters" ></span></p>
         <p class="clearFilters" v-on:click="clearFilters" v-bind:class="{ 'show': activeTags.length }">X Clear filters</p>
@@ -11,8 +11,8 @@
         </div>
       </div>
     </div>
-    <transition-group name="list-fade" tag="div">
-      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month" ref="monthList">
+    <transition-group name="list-fade" tag="div" v-on:after-enter="afterEnter">
+      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month" ref="monthList" >
           <h2>{{month.month}} </h2>
           <transition-group name="list-fade" tag="div" id="sources-list">
             <source-articles  v-for="(article, indexArt) in month.articles"  :key="'article'+indexArt" :article="article" class="list-fade-item"></source-articles>
@@ -80,11 +80,13 @@ export default {
             return true
           }
         })
-        return {month: temp.month, articles: newArticlesList}
+        return {'month': temp.month, 'articles': newArticlesList}
       })
       this.sources = temps
-      this.nbSteps = this.$refs.monthList.length
       this.currentStep = 1
+    },
+    afterEnter () {
+      this.nbSteps = this.$refs.monthList.length
     },
     clearFilters () {
       this.activeTags = []
@@ -124,7 +126,6 @@ export default {
     }
   },
   mounted () {
-    // this.scrollEvent = throttle(1000, this.onScroll(this.$refs.monthList))
     window.addEventListener('scroll', this.onScroll)
   }
 }
