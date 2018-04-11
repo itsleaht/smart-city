@@ -12,14 +12,14 @@
       </div>
     </div>
     <transition-group name="list-fade" tag="div">
-      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month">
+      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month" ref="monthList">
           <h2>{{month.month}} </h2>
           <transition-group name="list-fade" tag="div" id="sources-list">
             <source-articles  v-for="(article, indexArt) in month.articles"  :key="'article'+indexArt" :article="article" class="list-fade-item"></source-articles>
           </transition-group>
       </div>
     </transition-group>
-    <timeline :nbSteps="nbSteps" :currentStep="currentStep"></timeline>
+    <timeline :nbSteps="nbSteps" :currentStep="currentStep" @currentStep="scrollToPos"></timeline>
   </div>
 </template>
 
@@ -83,6 +83,8 @@ export default {
         return {month: temp.month, articles: newArticlesList}
       })
       this.sources = temps
+      this.nbSteps = this.$refs.monthList.length
+      this.currentStep = 1
     },
     clearFilters () {
       this.activeTags = []
@@ -90,23 +92,47 @@ export default {
         this.isActiveTag[i] = false
       }
       this.updateSourcesList()
-    }
+    },
+    changeStep (newStep) {
+      if (newStep >= 1 && newStep <= this.nbSteps) {
+        this.currentStep = newStep
+      }
+    },
+    scrollToPos (newStep) {
+      const pos = this.$refs.monthList[newStep - 1].offsetTop
+      window.scrollTo(0, pos)
+      this.changeStep(newStep)
+    },
+    onScroll () {
+      this.$refs.monthList.forEach( (month, index) => {
+        const offsetY = month.offsetTop - window.scrollY
+        const offsetYPourcent = offsetY / window.innerHeight
+
+        if (offsetYPourcent > 0.5 && offsetYPourcent < 1 && this.currentStep != index + 1) {
+          this.changeStep(index + 1)
+        }
+      })
+    },
+    throttle (delay, fn) {
+      let lastCall = 0
+      return function (...args) {
+        const now = (new Date()).getTime()
+        if (now - lastCall < delay) return
+        lastCall = now
+        return fn(...args)
+      }
+    },
   },
   mounted () {
-    let monthEls = document.querySelectorAll('.list .month')
-    monthEls.forEach((month) => {
-      this.arrayOfEventsTimeLine.push({
-        top: month.getBoundingClientRect().top,
-        height: month.scrollHeight
-      })
-    })
+    // this.scrollEvent = throttle(1000, this.onScroll(this.$refs.monthList))
+    window.addEventListener('scroll', this.onScroll)
   }
 }
 </script>
 
 <style lang="scss">
 .list-fade-item {
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .list-fade-enter, .list-fade-leave-to {
@@ -115,7 +141,7 @@ export default {
 }
 
 .list-fade-leave-active {
-  position: absolute;
+  // position: absolute;
 }
 
   .list {
@@ -125,7 +151,7 @@ export default {
 
     .tags-list {
       position: fixed;
-      top: 5vh;
+      top: 45px;
       width: 100%;
       z-index: 30;
 
@@ -251,6 +277,10 @@ export default {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+    .month,
+    article {
+       transition: all 1s;
     }
   }
 </style>

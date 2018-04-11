@@ -67,12 +67,12 @@ export default {
     manageWheel (step) {
       const pos = this.positions[step - 1]
       TweenLite.to(window, 2, {scrollTo: {y: pos.wheelTo, x: 0}, ease: Power3.easeOut})
+      this.animation = this.currentStep - 1
     },
     changeStep (newStep) {
       if (newStep >= 1 && newStep <= this.nbSteps) {
         this.currentStep = newStep
         this.manageWheel(this.currentStep)
-        this.animation = this.currentStep - 1
       }
     },
     updateScene (positions) {

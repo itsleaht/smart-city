@@ -1,7 +1,7 @@
 <template>
   <section>
       <ul class="timeline">
-        <li v-for="n in nbSteps" :key="n" :data-index="n" :class="{ 'active': current === n, 'previous':  n < current}" @click="changeStep(n)"><span></span></li>
+        <li v-for="n in nbSteps" :key="n" :data-index="n" :class="{ 'active': current === n, 'previous':  n < current}" @click="onClickStep(n)"><span></span></li>
       </ul>
     </section>
 </template>
@@ -18,6 +18,8 @@ export default {
   methods: {
     changeStep (newStep) {
       this.current = newStep
+    },
+    onClickStep (newStep) {
       this.$emit('currentStep', newStep)
     }
   },
