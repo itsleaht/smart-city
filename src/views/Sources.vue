@@ -19,6 +19,7 @@
           </transition-group>
       </div>
     </transition-group>
+    <span class="monthDate" :ref="'monthDate'">09</span>
     <timeline :nbSteps="nbSteps" :currentStep="currentStep" @currentStep="scrollToPos"></timeline>
   </div>
 </template>
@@ -96,13 +97,14 @@ export default {
       this.updateSourcesList()
     },
     changeStep (newStep) {
-      if (newStep >= 1 && newStep <= this.nbSteps) {
+      if (newStep >= 0 && newStep <= this.nbSteps) {
         this.currentStep = newStep
+        this.$refs.monthDate.innerHTML = this.sources[newStep - 1].monthDate
       }
     },
     scrollToPos (newStep) {
       const pos = this.$refs.monthList[newStep - 1].offsetTop
-      window.scrollTo(0, pos)
+      window.scrollTo(0, pos - this.headerHeight)
       this.changeStep(newStep)
     },
     onScroll () {
@@ -126,6 +128,7 @@ export default {
     }
   },
   mounted () {
+    this.headerHeight = document.querySelector('header').clientHeight
     window.addEventListener('scroll', this.onScroll)
   }
 }
@@ -282,6 +285,16 @@ export default {
     .month,
     article {
        transition: all 1s;
+       position: relative;
+    }
+    .monthDate {
+      position: fixed;
+      right: 50px;
+      bottom: 0;
+      font-size: 500px;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      opacity: 0.1;
     }
   }
 </style>
