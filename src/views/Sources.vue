@@ -30,6 +30,7 @@ import tagsList from '@/data/tags.json'
 import sourceArticles from '@/components/SourceArticle'
 import Tag from '@/components/Tag'
 import Timeline from '@/components/Timeline'
+require('gsap/ScrollToPlugin')
 
 export default {
   name: 'home',
@@ -104,7 +105,7 @@ export default {
     },
     scrollToPos (newStep) {
       const pos = this.$refs.monthList[newStep - 1].offsetTop
-      window.scrollTo(0, pos - this.headerHeight)
+      TweenLite.to(window, 2, {scrollTo: {y: pos - this.headerHeight, x: 0}, ease: Power3.easeOut})
       this.changeStep(newStep)
     },
     onScroll () {
@@ -129,6 +130,7 @@ export default {
   },
   mounted () {
     this.headerHeight = document.querySelector('header').clientHeight
+     TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
     window.addEventListener('scroll', this.onScroll)
   }
 }
