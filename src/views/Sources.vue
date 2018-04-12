@@ -110,11 +110,15 @@ export default {
     },
     onScroll () {
       this.$refs.monthList.forEach((month, index) => {
-        const offsetY = month.offsetTop - window.scrollY
-        const offsetYPourcent = offsetY / window.innerHeight
+        const offsetBottomY = (month.offsetTop + month.clientHeight) - window.scrollY
+        const offsetTopY = month.offsetTop - window.scrollY
+        const offsetTopYPourcent = offsetTopY / window.innerHeight
+        const offsetBottomYPourcent = offsetBottomY / window.innerHeight
 
-        if (offsetYPourcent > 0 && offsetYPourcent < 1 && this.currentStep !== index + 1) {
-          this.changeStep(index + 1)
+        if (offsetTopYPourcent > 0 && offsetTopYPourcent < 1 || offsetBottomYPourcent > 0 && offsetBottomYPourcent < 1) {
+          if(this.currentStep !== index + 1 ) {
+            this.changeStep(index + 1)
+          }
         }
       })
     },
