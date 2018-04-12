@@ -2,10 +2,12 @@
   <div class="home">
     <transition name="fade">
       <div class="landing" v-if="showLanding">
-        <span class="question-mark black">?</span>
-        <h1 class="uppercase black">What is a smart City ?</h1>
-        <p>We believe a smart city is a digital and a human system, buildt to maintain a structured environment and to ensure a sustainable, prosperous future to its citizens.</p>
-        <p>Here are some examples of smart cities innovations.</p>
+        <div class="middle">
+          <span class="question-mark black">?</span>
+          <h1 class="uppercase black">What is a smart City ?</h1>
+          <p>We believe a smart city is a digital and a human system, buildt to maintain a structured environment and to ensure a sustainable, prosperous future to its citizens.</p>
+          <p>Here are some examples of smart cities innovations.</p>
+        </div>
         <scroll-indicator :wheelAllowed="true"></scroll-indicator>
       </div>
     </transition>
@@ -130,10 +132,17 @@ export default {
       z-index: 10;
       pointer-events: none;
 
+      .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+
       h1 {
         position: relative;
         display: inline-block;
-        padding-bottom: 30px;
+        padding-bottom: 5px;
         width: 600px;
         font-weight: 700;
         font-size: 40px;
@@ -162,7 +171,7 @@ export default {
           display: block;
           width: 70px;
           height: 70px;
-          margin: 80px auto 30px;
+          margin: 10px auto 15px;
           background: #FFF;
           border: 5px solid $yellow;
           border-radius: 100%;
