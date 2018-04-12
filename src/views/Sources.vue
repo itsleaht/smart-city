@@ -88,8 +88,8 @@ export default {
       })
       this.sources = temps
       this.currentStep = 1
-      TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
       this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+      TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
     },
     afterLeave () {
       this.nbSteps = this.$refs.monthList.length
