@@ -11,8 +11,8 @@
         </div>
       </div>
     </div>
-    <transition-group name="list-fade" tag="div" v-on:after-enter="afterEnter">
-      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month" ref="monthList" >
+    <transition-group name="list-fade" tag="div" v-on:after-leave="afterLeave">
+      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month" ref="monthList" :data-month-date="month.monthDate">
           <h2>{{month.month}} </h2>
           <transition-group name="list-fade" tag="div" id="sources-list">
             <source-articles  v-for="(article, indexArt) in month.articles"  :key="'article'+indexArt" :article="article" class="list-fade-item"></source-articles>
@@ -45,7 +45,9 @@ export default {
       activeTag: false,
       nbSteps: articles.length,
       currentStep: 1,
-      arrayOfEventsTimeLine: []
+      arrayOfEventsTimeLine: [],
+      monthDate: '09',
+      isScrollingUp: false
     }
   },
   computed: {
@@ -82,12 +84,13 @@ export default {
             return true
           }
         })
-        return {'month': temp.month, 'articles': newArticlesList}
+        return {'month': temp.month, 'articles': newArticlesList, 'monthDate': temp.monthDate}
       })
       this.sources = temps
+      this.monthDate = this.sources[0].monthDate
       this.currentStep = 1
     },
-    afterEnter () {
+    afterLeave () {
       this.nbSteps = this.$refs.monthList.length
     },
     clearFilters () {
@@ -100,12 +103,13 @@ export default {
     changeStep (newStep) {
       if (newStep >= 0 && newStep <= this.nbSteps) {
         this.currentStep = newStep
-        this.$refs.monthDate.innerHTML = this.sources[newStep - 1].monthDate
+        this.$refs.monthDate.innerHTML = this.monthDate
       }
     },
     scrollToPos (newStep) {
       const pos = this.$refs.monthList[newStep - 1].offsetTop
       TweenLite.to(window, 2, {scrollTo: {y: pos - this.headerHeight, x: 0}, ease: Power3.easeOut})
+      this.monthDate = this.$refs.monthList[newStep - 1].getAttribute('data-month-date')
       this.changeStep(newStep)
     },
     onScroll () {
@@ -115,10 +119,12 @@ export default {
         const offsetTopYPourcent = offsetTopY / window.innerHeight
         const offsetBottomYPourcent = offsetBottomY / window.innerHeight
 
-        if (offsetTopYPourcent > 0 && offsetTopYPourcent < 1 || offsetBottomYPourcent > 0 && offsetBottomYPourcent < 1) {
-          if(this.currentStep !== index + 1 ) {
+        if (this.isScrollingUp && offsetBottomYPourcent > 0 && offsetBottomYPourcent < 1) {
             this.changeStep(index + 1)
-          }
+            this.monthDate = month.getAttribute('data-month-date')
+        } else if (!this.isScrollingUp && offsetTopYPourcent > 0 && offsetTopYPourcent < 1) {
+            this.changeStep(index + 1)
+            this.monthDate = month.getAttribute('data-month-date')
         }
       })
     },
@@ -130,15 +136,26 @@ export default {
         lastCall = now
         return fn(...args)
       }
+    },
+    onWheel (e) {
+      if (e.deltaY < 0 && this.currentStep > 1) { // Wheels up
+        this.isScrollingUp = true
+      } else if (e.deltaY > 0 && this.currentStep <= this.nbSteps - 1) { // Wheels down
+        this.isScrollingUp = false
+      }
     }
   },
   mounted () {
     this.headerHeight = document.querySelector('header').clientHeight
+    this.onWheel = this.onWheel
     TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
     window.addEventListener('scroll', this.onScroll)
+    window.addEventListener('wheel', this.onWheel)
+
   },
   destroyed () {
      window.removeEventListener('scroll', this.onScroll)
+     window.removeEventListener('wheel', this.onWheel)
   }
 }
 </script>
