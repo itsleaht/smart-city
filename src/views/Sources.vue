@@ -88,15 +88,20 @@ export default {
       })
       this.sources = temps
       this.currentStep = 1
-      this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+      // this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
       TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
     },
     afterLeave () {
-      this.nbSteps = this.$refs.monthList.length
-      this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+      // this.nbSteps = this.$refs.monthList.length
+      // this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+      this.changeStep(0)
+      this.updateMonthList()
     },
     afterEnter () {
-      this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+      // this.nbSteps = this.$refs.monthList.length
+      // this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+      this.changeStep(0)
+      this.updateMonthList()
     },
     clearFilters () {
       this.activeTags = []
@@ -104,13 +109,18 @@ export default {
         this.isActiveTag[i] = false
       }
       this.updateSourcesList()
-      this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+      // this.updateMonthList()
     },
     changeStep (newStep) {
+      console.log(newStep)
       if (newStep >= 0 && newStep <= this.nbSteps) {
         this.currentStep = newStep
-        this.$refs.monthDate.innerHTML = this.monthDate
+        // this.$refs.monthDate.innerHTML = this.monthDate
       }
+    },
+    updateMonthList() {
+      this.nbSteps = this.$refs.monthList.length
+      this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
     },
     scrollToPos (newStep) {
       const pos = this.$refs.monthList[newStep - 1].offsetTop

@@ -124,4 +124,10 @@ export default {
   .black {
     font-weight: 900;
   }
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
 </style>

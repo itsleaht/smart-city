@@ -29,6 +29,7 @@ export default {
   },
   watch: {
     'currentStep' (to, from) {
+      console.log('to', to)
       this.changeStep(to)
     },
     'nbSteps' (to, from) {

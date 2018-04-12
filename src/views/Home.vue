@@ -132,13 +132,6 @@ export default {
       z-index: 10;
       pointer-events: none;
 
-      .middle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-      }
-
       h1 {
         position: relative;
         display: inline-block;
