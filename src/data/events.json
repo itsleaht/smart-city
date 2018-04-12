@@ -22,9 +22,7 @@
       "from" : "Le Parisien",
       "by" : "M. Pf.",
       "description": [
-        "Navya’s company self-driving car “Arma” test crashed into a delivery truck just an hour after being put on service. 8 people were on board during the collision but thankfully no one got hurt. The company representants claim that the car did what it had to do: stop, but the truck didn’t do the same.",
-        "Despite the accident, Arma will keep being tested and guarantee free drives for a year. At the same time, in France, Navya tested its electric autonomous cab in Saint-Denis. It is the first taxi robot that can drive up to 6 people to their demand.",
-        "Navya announces that it will be a revolution in French transports."
+        "Navya’s company self-driving car “Arma” test crashed into a delivery truck just an hour after being put on service. The company representants claim that the car did what it had to do: stop, but the truck didn’t do the same. Despite the accident, Arma will keep being tested and guarantee free drives for a year. At the same time, in France, Navya tested its electric autonomous cab in Saint-Denis. It is the first taxi robot that can drive up to 6 people to their demand. Navya announces that it will be a revolution in French transports."
       ]
   },
   {
@@ -57,7 +55,10 @@
       "stringDate" : "January 1, 2018",
       "href" : "https://www.wired.com/story/alphabet-sidewalk-labs-coord-city-of-tomorrow/",
       "from" : "Wired",
-      "by" : "Aarian Marshall"
+      "by" : "Aarian Marshall",
+      "description" : [
+        "Alphabet's Sidewalk Lab is going to transform an underutilized part of Toronto into one of the most innovative city neighborhood, called Quayside. In this new smart city, driverless cars, smart road controls, robots and many other new technologies are going to replace what we've known today in our city. Sidewalk thinks this city rather like a smartphone: it's just a platform that provides basic tools. Users can configure it and it will reflect people's personality."
+      ]
   },
   {
       "place" : "Paris, France",
@@ -71,11 +72,6 @@
         "Last year, Sea bubbles producers, electric energy bubbles that can float on the water were to abandon their project because of speed limits on the Seine (12km/h) and home port price. However, in November, they got an agreement to experiment sea Bubbles in Paris with a max speed of 30 km/h by the end of Summer 2018.",
         "Nevertheless, there’s still an issue about charging-up, which might be solved with a drop-minute system on houseboats."
       ]
-  },
-  {
-    "place": "-",
-    "title" : "Panneaux",
-    "description": []
   },
   {
       "place" : "Ohio, USA",
@@ -98,8 +94,7 @@
       "from" : "FastcoDesign",
       "by" : "Katharine Schwab",
       "description" : [
-          "What happens if a pedestrian unexpectedly jumps out in front of a self-driving car? Some Designers have find a way to solve this problem by creating a smart infrastructure system with warning lights, street illumination, and a fully reactive road (fully magnetized).",
-          "A laser projection will come from the car acts as a warning sign for cyclist and walkers. The roads will be illuminated as well and they will react to where people or cars are going to."
+          "What happens if a pedestrian unexpectedly jumps out in front of a self-driving car? Some Designers have find a way to solve this problem by creating a smart infrastructure system with warning lights, street illumination, and a fully reactive road (fully magnetized). A laser projection will come from the car acts as a warning sign for cyclist and walkers. The roads will be illuminated as well and they will react to where people or cars are going to."
       ]
   },
   {
@@ -109,8 +104,7 @@
       "stringDate" : "March 21, 2018",
       "from" : "Science et vie",
       "description" : [
-          "Small autonomous, electric aircrafts who take-off and can land in a vertical way, seem now ready to take on board up to three passengers for a short route through the urban cities.",
-          "Imagine a 90 minutes road trip by car, who would take 8 minutes with an Uber air. The company already plans spreading between 500 and 1000 of these flying taxis in the congested megalopolises. To do this, Uber partners with NASA and the industrialists. They complete their first demonstrations in Dallas and in Dubai before 2020, and the first commercial flights before 2030."
+          "Small autonomous, electric aircrafts who take-off and can land in a vertical way, seem now ready to take on board up to three passengers for a short route through the urban cities. Imagine a 90 minutes road trip by car, who would take 8 minutes with an Uber air. To do this, Uber partners with NASA and the industrialists. They complete their first demonstrations in Dallas and in Dubai before 2020, and the first commercial flights before 2030."
       ]
   },
   {

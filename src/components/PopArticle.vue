@@ -32,10 +32,10 @@ export default {
     position: relative;
     display: inline-block;
     width: 235px;
-    height: 350px;
     border-radius: 8px;
     box-shadow: 6px 10px 20px 4px rgba(114, 114, 114, 0.13);
     background: #fff;
+    padding: 10px 0;
 
     button {
       position: absolute;
@@ -71,7 +71,6 @@ export default {
     }
 
     .content {
-      height: 300px;
       width: 98%;
       overflow: auto;
       text-align: left;
@@ -92,35 +91,6 @@ export default {
         color: #b1b1b1;
       }
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 28px;
-      bottom: -40px;
-      border-left: 28px solid transparent;
-      border-right: 0 solid transparent;
-      border-top: 42px solid #fff;
-      transform: rotate(-5deg);
-    }
-
-    &.topOriented::after {
-      bottom: auto;
-      left: 20px;
-      right: auto;
-      top: -78px;
-      border-left: 0 solid transparent;
-      border-right: 28px solid transparent;
-      border-bottom: 42px solid #fff;
-      transform: rotate(-8deg);
-    }
-
-    &.leftOriented::after {
-      border-left: 0px solid transparent;
-      border-right: 28px solid transparent;
-      border-top: 42px solid #fff;
-    }
-
   }
 
   ::-webkit-scrollbar-track

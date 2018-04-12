@@ -187,7 +187,7 @@
           <use xlink:href="#_Image3" x="0" y="0" width="200px" height="128px"/>
       </g>
   </g>
-  <g id="PANNEAUX" transform="matrix(2.66667,0,0,2.66667,0,0)" class="step" data-index="7" data-height="208" data-width="168">
+  <g id="PANNEAUX" transform="matrix(2.66667,0,0,2.66667,0,0)">
       <g class="mainObjectPanneaux">
           <g id="panneau" transform="matrix(1,0,0,1,660,1247.09)">
               <use xlink:href="#_Image22" x="0" y="0" width="168px" height="208px"/>
@@ -362,12 +362,12 @@
           <path id="bg4" d="M0,274.779L1919.98,274.779L1919.98,4.824L0.02,0L0,274.779Z" style="fill:rgb(20,150,209);fill-rule:nonzero;"/>
       </g>
   </g>
-  <g transform="matrix(2.66667,0,0,2.66667,3577.15,4523.3)" class="step" data-index="9" data-width="476" data-height="175">
+  <g transform="matrix(2.66667,0,0,2.66667,3577.15,4523.3)" class="step" data-index="7" data-width="476" data-height="175">
       <g id="SMART-ROAD" serif:id="SMART ROAD">
           <use class="mainObjectSmartRoad" xlink:href="#_Image25" x="0" y="0" width="476px" height="175px"/>
       </g>
   </g>
-  <g id="PASAGE-PIETON" serif:id="PASAGE PIETON" transform="matrix(2.66667,0,0,2.66667,0,0)" class="step" data-index="8" data-height="264" data-width="422">
+  <g id="PASAGE-PIETON" serif:id="PASAGE PIETON" transform="matrix(2.66667,0,0,2.66667,0,0)" class="step" data-index="6" data-height="264" data-width="422">
       <g class="mainObjectPieton">
           <g id="passagePieton" transform="matrix(1,0,0,1,988,1594.24)">
               <use xlink:href="#_Image26" x="0" y="0" width="422px" height="264px"/>
@@ -402,7 +402,7 @@
           <use xlink:href="#_Image28" x="0" y="0" width="452px" height="84px"/>
       </g>
   </g>
-  <g transform="matrix(2.66667,0,0,2.66667,522.461,5698.68)" class="step" data-index="11" data-height="323" data-width="323">
+  <g transform="matrix(2.66667,0,0,2.66667,522.461,5698.68)" class="step" data-index="9" data-height="323" data-width="323">
       <g id="POLICE">
           <use class="mainObjectPolice" xlink:href="#_Image29" x="0" y="0" width="380px" height="323px"/>
       </g>
@@ -427,7 +427,7 @@
           <path d="M0,0.001C0,-4.847 3.929,-8.775 8.775,-8.775C13.622,-8.775 17.552,-4.847 17.552,0.001C17.552,4.848 13.622,8.776 8.775,8.776C3.929,8.776 0,4.848 0,0.001" style="fill:rgb(237,198,0);fill-rule:nonzero;"/>
       </g>
   </g>
-  <g transform="matrix(2.66667,0,0,2.66667,2862.88,5690.72)" class="step" data-index="10" data-height="269" data-width="771">
+  <g transform="matrix(2.66667,0,0,2.66667,2862.88,5690.72)" class="step" data-index="8" data-height="269" data-width="771">
       <g id="TAXI-VOLANT" serif:id="TAXI VOLANT">
           <use class="mainObjectTaxiVolant" xlink:href="#_Image30" x="0" y="0" width="771px" height="269px"/>
       </g>

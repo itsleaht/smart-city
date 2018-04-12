@@ -13,7 +13,7 @@
       <scene @getPositions="updateScene" :animate="animation"></scene>
       <pop-article v-for="(article, index) in events" :article="article" :key="'pop-'+index" :class="{'active':currentStep == index + 1}" ref="popArticle"></pop-article>
     </section>
-    <timeline :nbSteps="nbSteps" :currentStep="currentStep" @currentStep="changeStep"></timeline>
+    <timeline :nbSteps="nbSteps - 1" :currentStep="currentStep" @currentStep="changeStep"></timeline>
   </div>
 </template>
 
@@ -71,7 +71,7 @@ export default {
       this.animation = this.currentStep - 1
     },
     changeStep (newStep) {
-      if (newStep >= 1 && newStep <= this.nbSteps) {
+      if (newStep >= 1 && newStep <= this.nbSteps - 1) {
         this.currentStep = newStep
         this.manageWheel(this.currentStep)
       }
@@ -110,6 +110,7 @@ export default {
   },
   destroyed () {
     window.removeEventListener('wheel', this.throttleEvent)
+
   }
 }
 </script>

@@ -126,9 +126,9 @@ export default {
       )
 
       // Panneaux
-      this.timelines.push(tlMainObjectPanneaux
-        .fromTo(mainObjectPanneaux, 1, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.015)
-      )
+      // this.timelines.push(tlMainObjectPanneaux
+      //   .fromTo(mainObjectPanneaux, 1, {scale: 0, transformOrigin: '50% 50%'}, {scale: 1, ease: Elastic.easeOut.config(0.2, 0.3)}, 0.015)
+      // )
 
       // Smart roads
       this.timelines.push(tlMainObjectPieton
@@ -202,6 +202,7 @@ export default {
     },
     getPositions () {
       const steps = Array.prototype.slice.call(this.sceneMain.querySelectorAll('.step'))
+
       const ratio = window.innerWidth / 1920
       let positions = []
       steps.sort((a, b) => {
