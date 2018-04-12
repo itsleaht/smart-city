@@ -94,7 +94,7 @@ export default {
     align-items: center;
 
     div, h1 {
-      width: 700px;
+      width: 750px;
       margin: 0 auto;
     }
     div {
