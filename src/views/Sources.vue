@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-    <div class="tags-list">
+    <div class="tags-list" ref="test">
       <div class="tags-options">
         <p class="filters uppercase" v-on:click="panelOpened = !panelOpened">Filters<span class="icon-filters" ></span></p>
         <p class="clearFilters" v-on:click="clearFilters" v-bind:class="{ 'show': activeTags.length }">X Clear filters</p>
@@ -11,14 +11,15 @@
         </div>
       </div>
     </div>
-    <transition-group name="list-fade" tag="div">
-      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month" ref="monthList">
+    <transition-group name="list-fade" tag="div" v-on:after-enter="afterEnter">
+      <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month" ref="monthList" >
           <h2>{{month.month}} </h2>
           <transition-group name="list-fade" tag="div" id="sources-list">
             <source-articles  v-for="(article, indexArt) in month.articles"  :key="'article'+indexArt" :article="article" class="list-fade-item"></source-articles>
           </transition-group>
       </div>
     </transition-group>
+    <span class="monthDate" :ref="'monthDate'">09</span>
     <timeline :nbSteps="nbSteps" :currentStep="currentStep" @currentStep="scrollToPos"></timeline>
   </div>
 </template>
@@ -29,6 +30,7 @@ import tagsList from '@/data/tags.json'
 import sourceArticles from '@/components/SourceArticle'
 import Tag from '@/components/Tag'
 import Timeline from '@/components/Timeline'
+require('gsap/ScrollToPlugin')
 
 export default {
   name: 'home',
@@ -80,11 +82,13 @@ export default {
             return true
           }
         })
-        return {month: temp.month, articles: newArticlesList}
+        return {'month': temp.month, 'articles': newArticlesList}
       })
       this.sources = temps
-      this.nbSteps = this.$refs.monthList.length
       this.currentStep = 1
+    },
+    afterEnter () {
+      this.nbSteps = this.$refs.monthList.length
     },
     clearFilters () {
       this.activeTags = []
@@ -94,22 +98,27 @@ export default {
       this.updateSourcesList()
     },
     changeStep (newStep) {
-      if (newStep >= 1 && newStep <= this.nbSteps) {
+      if (newStep >= 0 && newStep <= this.nbSteps) {
         this.currentStep = newStep
+        this.$refs.monthDate.innerHTML = this.sources[newStep - 1].monthDate
       }
     },
     scrollToPos (newStep) {
       const pos = this.$refs.monthList[newStep - 1].offsetTop
-      window.scrollTo(0, pos)
+      TweenLite.to(window, 2, {scrollTo: {y: pos - this.headerHeight, x: 0}, ease: Power3.easeOut})
       this.changeStep(newStep)
     },
     onScroll () {
       this.$refs.monthList.forEach((month, index) => {
-        const offsetY = month.offsetTop - window.scrollY
-        const offsetYPourcent = offsetY / window.innerHeight
+        const offsetBottomY = (month.offsetTop + month.clientHeight) - window.scrollY
+        const offsetTopY = month.offsetTop - window.scrollY
+        const offsetTopYPourcent = offsetTopY / window.innerHeight
+        const offsetBottomYPourcent = offsetBottomY / window.innerHeight
 
-        if (offsetYPourcent > 0.5 && offsetYPourcent < 1 && this.currentStep !== index + 1) {
-          this.changeStep(index + 1)
+        if (offsetTopYPourcent > 0 && offsetTopYPourcent < 1 || offsetBottomYPourcent > 0 && offsetBottomYPourcent < 1) {
+          if(this.currentStep !== index + 1 ) {
+            this.changeStep(index + 1)
+          }
         }
       })
     },
@@ -124,8 +133,12 @@ export default {
     }
   },
   mounted () {
-    // this.scrollEvent = throttle(1000, this.onScroll(this.$refs.monthList))
+    this.headerHeight = document.querySelector('header').clientHeight
+    TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
     window.addEventListener('scroll', this.onScroll)
+  },
+  destroyed () {
+     window.removeEventListener('scroll', this.onScroll)
   }
 }
 </script>
@@ -240,7 +253,7 @@ export default {
           margin-right: 10px;
           font-family: $roboto;
           opacity: 0;
-          transform: translateX(100%);
+          transform: translateX(150%);
           transition: opacity .3s, transform .3s, color .3s;
 
           &.show {
@@ -281,6 +294,16 @@ export default {
     .month,
     article {
        transition: all 1s;
+       position: relative;
+    }
+    .monthDate {
+      position: fixed;
+      right: 50px;
+      bottom: 0;
+      font-size: 500px;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      opacity: 0.1;
     }
   }
 </style>

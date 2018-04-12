@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1 class="uppercase"><router-link :to="{name: 'home'}">Smart City</router-link> - </h1>
+      <h1 class="uppercase" @click="updateMenu"><router-link :to="{name: 'home'}"><span @closeMenu="showMenu = !showMenu">Smart City</span></router-link> - </h1>
       <a v-on:click="updateMenu" v-bind:class="{ 'open-menu': showMenu }" href="#" id="moreInfo" class="black"><span>+</span></a>
     </header>
       <navigation v-if="showMenu" @closeMenu="showMenu = !showMenu" :showClosingAnimation="showClosingMenuAnimation" @closeNavigation="closeNavigation"></navigation>

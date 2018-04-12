@@ -1,6 +1,7 @@
 [
     {
         "month" : "September",
+        "monthDate" : "09",
         "articles": [
             {
                 "place" : "Dijon, France",
@@ -117,6 +118,7 @@
     },
     {
         "month" : "October",
+        "monthDate" : "10",
         "articles": [
             {
                 "place" : "Champs-sur-Marne, France",
@@ -212,6 +214,7 @@
     },
     {
         "month" : "November",
+        "monthDate" : "11",
         "articles" : [
             {
                 "place" : "Las Vegas, USA",
@@ -270,6 +273,7 @@
     },
     {
         "month" : "December",
+        "monthDate" : "12",
         "articles" : [
             {
                 "place" : "Vancouver, Canada",
@@ -299,6 +303,7 @@
     },
     {
         "month" : "January",
+        "monthDate" : "01",
         "articles": [
             {
                 "place" : "Arizona, USA",
@@ -328,6 +333,7 @@
     },
     {
         "month" : "February",
+        "monthDate" : "02",
         "articles" : [
             {
                 "place" : "China",
@@ -460,6 +466,7 @@
     },
     {
         "month" : "March",
+        "monthDate" : "03",
         "articles" : [
             {
                 "place" : "Lyon, France",
@@ -655,6 +662,7 @@
     },
     {
         "month" : "April",
+        "monthDate" : "04",
         "articles": [
             {
                 "place" : "Paris, France",
@@ -675,6 +683,7 @@
     },
     {
         "month" : "Other sources",
+        "monthDate" : "--",
         "articles" : [
             {
                 "title" : "Sense City",
