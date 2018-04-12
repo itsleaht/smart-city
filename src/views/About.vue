@@ -1,13 +1,7 @@
 <template>
   <div class="about">
     <router-link to="/">Retour</router-link>
-    <div class="middle">
-      <h1>About</h1>
-      <p>This website aims at introducing connected urbanism and most especially smart cities evolutions between September 2017 and April 2018.</p>
-      <p>It is the result of a school project in Design & Development Bachelor at Gobelins.</p>
-      <p>Designed by Clara Vigourous Fany Thourain and Xindi Yang</p>
       <p>Developed by Pauline Stichelbaut and Léa Tanda.</p>
-    </div>
   </div>
 </template>
 

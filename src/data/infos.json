@@ -1,6 +1,8 @@
 [
   {
-    "title" : "Ever wondered how technology could evolve and <span>change our cities</span> ?",
+    "title" : "Ever wondered how technology could evolve and <span>change our cities</span> ?"
+  },
+  {
     "description" : [
       "Technological dynamism is at the heart of our cities. It is all predicated on the premise that technologies can help make people’s lives better in cities.",
       "While technology is changing our lives, according to what Steve Jobs once said, <span>technology is nothing</span> if you do not <span>believe in your people</span>."
@@ -10,50 +12,51 @@
     "quote" : "“Technology is nothing. What’s important is that you <span>have a faith in people</span>, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them. ” — Steve Jobs"
   },
   {
-    "title" : "We know that <em>70% of the world population</em> will live in <span>cities</span> or <span>urban areas</span> in thirty years. It's an important matter that governments now have to face."
+    "subtitle" : "How are we going to use those ‘smart’ cities? Are they dangerous? Or are they <span>pleasant</span> to live in? ?"
+  },
+  {
+    "title" : "We know that <em>70% of the world population</em> will live in <span>cities</span> or <span>urban areas</span> in thirty years."
   },
   {
     "description" : [
-      "As an answer to overpopulation in the cities, such as expected in 2050, <span>smart cities</span> has to serve as a model for the development of future sustainable cities by using technology. Indeed, in the future, there’s a need to protect and to optimize the natural resources ",
-      "Smart cities are also supposed to help people in their everyday life by easing their habits."
+      "As an answer to overpopulation in cities, like the 70% of people expected to be city-dwellers by 2050, <span>smart cities</span> need to serve as a model for the development of future sustainable cities.",
+      "In the future, there’s a need to protect and to optimize natural resources."
     ]
   },
   {
-    "title" : "But before thinking about what could be a smart city. Let's know what means a city?<br> Do humans just live in cities?<br> Or are cities the expression of humans living in collectives?<br> Are cities about things? <em>Or are cities about people?<em>"
+    "title" : "What is a city?<br>Are cities the expression of humans living in collectives<br>?<br> Are cities about things? <em>Or are cities about people?<em>"
   },
   {
     "description" : [
-      "The answer, of course, is both. Cities are organisms. Cities are objects and cities are systems. Cities are a series of connections. But <span>what you put first</span> in that <span>duality and dynamic</span> determines <span>what you think makes cities</span> <span>“smart.”</span>"
+      "The answer, of course, is both. Cities are organisms. Cities are objects and cities are systems. Cities are a series of connections. But it’s what you put in, that duality and dynamism, which determines <span> what you think</span> makes cities <span>‘smart’</span>."
     ]
   },
   {
     "description" : [
-      "We believe a <span>smart city is a digital and a human system</span>, builded to maintain a structured environment and to ensure a sustainable, prosperous future to it’s citizens. A smart city has to stay transparent. <span>Smart doesn’t mean</span> <span>intrusive, nor control of the private life.</span> Its strength is to make an optimal use of all the available interconnected information, to better understand it’s people and to better <span>optimize the use of its economic</span> and <span>natural resources</span>."
+      "We believe a smart city is a <span>digital and a human system</span>, built to maintain a structured environment and to ensure a sustainable, prosperous future for its citizens. A smart city has to stay <span>transparent</span>. Smart doesn’t mean intrusive, nor the surveillance of our private lives. Its strength is to make optimal use of all the available interconnected information, <span>to better understand its people</span> and to optimize the use of its <span>economic and natural resources</span>."
     ]
   },
   {
-    "subtitle" : "In short, a smart city is <span>useful</span>, <span>ecological</span>, <span>safer</span>, <span>better organized</span> and makes it fun to live."
+    "subtitle" : "In short, a smart city is <span>useful</span>, <span>ecological</span>, <span>safer</span>, <span>better-organized</span> and makes it fun to live in."
   },
   {
-    "title" : "How will look a smart city?"
+    "title" : "How will a smart city look?"
   },
   {
     "description" : [
-      "Image a city with autonomous vehicles on our roadway, drones specializing in parcel delivery, bioluminescence to transform vegetables into new lights of the city, 3D printed buildings, greener offices/farm towers, flying taxis and sea bubbles, smart reactive roads, fast connected glasses with facial recognition useful for security protocols.",
+      "Image a city with autonomous vehicles on our roadway, drones specializing in parcel delivery, bioluminescence to transform vegetables into new lights of the city, 3D printed buildings, greener offices/farm towers, flying taxis and sea bubbles, smart reactive roads, connected glasses with facial recognition useful for security protocols.",
       "Traffic itself becomes a thing of the past, and cities can once again be for people."
     ]
   },
   {
-    "title" : "Smart cities are fun to live, so what could possibly be wrong for the public opinion?"
+    "title" : "Smart cities are fun to live in, so what could possibly go wrong in the eyes of the public?"
   },
   {
     "description" : [
-      "Tesla’s recent accidents showed us that <span>even the most</span> <span>ultra-sophisticated algorithms cannot guarantee a zero</span> <span>risk</span>. It is almost impossible to plan all the situations.",
-      "Our fear for IA and technology is growing while technology is planned to totally pilot our lives.",
-      "<span>Where are the limits of the smart cities? What about our</span> <span>private lives?</span> This questions a permanent under surveillance society, such as China who recently allowed police to have recognition glasses to recognize thiefs in the street and then send text messages on their phones.",
-      "Also, isn’t the fact that having everything connected and centralized dangerous?",
-      "And how much power the citizen will have on its private life ? What will people do with its data ? <span>Are private</span> <span>companies</span> <span>supposed to keep these datas for themselves</span> ? CNIL recently answered to these problems.",
-      "Another question may be the education. Are its citizens ready and enough civilized?"
+      "Tesla’s recent accidents have shown us that even <span>the most sophisticated algorithms</span> cannot eliminate risks entirely. <span> It is almost impossible to anticipate every situation </span>.",
+      "Our fear of AI and technology is growing while technology is planned to totally guide our lives.",
+      "<span>Where are the limits of smart cities? What about our</span> <span>private lives?</span>  This puts into question whether our society is permanently under surveillance. Is the fact that everything is permanently connected and centralized dangerous?",
+      "Another question is education, are our citizens ready and civilized enough?"
     ]
   },
   {
@@ -61,10 +64,9 @@
   },
   {
     "description" : [
-      "Just as the same can be applied for human individuals, cities are all different. What makes them great is how unique they are. Each city is based upon its <span>cultures</span>, its <span>economic growth</span> and its <span>knowledge</span>.",
-      "<strong>Each « smart » city is a response to local, specific problems to solve. That’s why, none of them is the same</strong>.",
-      "For instance, Japan have to face an aging population, China has to deal with pollution and India has to face health access.",
-      "The asian continent and the north European countries are the most advanced « smart » cities. France is very interested in newer, smarter technologies for its cities."
+      "Like humans, cities are all different. What makes them great is how unique they are. Each city is built upon its <span>culture</span>, its <span>economic growth</span> and its <span>knowledge</span>.",
+      "<strong>Each ‘smart’ city is a response to local, specific problems — that’s why none of them are the same.</strong>.",
+      "The Asian continent and the north European countries are the most advanced ‘smart’ cities. France is very interested in newer, smarter technologies for its cities."
     ]
   },
   {
@@ -72,32 +74,34 @@
   },
   {
     "description" : [
-      "We shall <span>avoid the monopol of the data</span>. <span>Data has to stay</span> <span>accessible for an individual</span> in a clear way. Data that belonged to compagnies until then must be shared to public services to serve. Shared data will improve smart cities services.",
-      "At the moment, we are more willingly to welcome changes that are favorable to sustainability more than changes that call in question our ethics. But with time, we shall be more ready to welcome simple innovations. Innovations allows us to improve our cities and energy consumptions.",
-      "<span>In several years we shall naturally be used to newer</span> <span>technologies</span>."
+      "We should <span>avoid the monopolisation of data</span>. <span>Data has to stay</span> <span>accessible for each individual</span> in a clear way.",
+      "We should be more ready to welcome simple innovations. Innovations allows us to improve our cities and our energy consumptions.",
+      "Over the coming years we will get used to newer technologies, so don’t worry."
     ]
   },
   {
     "description" : [
-      "While our fear for IA and technology is growing, it is almost impossible to plan all the situations. As written before, <span>a zero risk can not be ensured</span>.",
-      "But what we know for sure, is that the 70% of world population will be concentrated in cities or urban areas in thirty years. Smart cities must be a model for the future cities.",
-      "A smart city — <span>combining digital and human systems</span>– will be necessary to maintain a viable environment and to ensure a continuous, renewable and prosperous future for its citizens.."
+      "While our fear of AI and technology is growing, we know for sure that it is impossible to plan for all possible situations.",
+      "As we have said, a zero risk cannot be ensured.",
+      "What we know for sure is that the <span>70% of world population will be concentrated in cities or urban areas within thirty years</span>.",
+      "Smart cities must be a model for future cities.",
+      "A smart city — combining digital and human systems– will be necessary to maintain a healthy environment and to ensure a continuous, renewable and prosperous future for its citizens."
     ]
   },
   {
     "subtitle" : "",
     "description" : [
-      "A smart city has to stay <span>transparent</span>. Smart doesn’t mean intrusive, nor that it would mean the supervisory of the the citizens private lives. The strength of smart is to make an optimal use of all the available interconnected information, to better understand its people and to better optimize the use of its economic and natural resources."
+      "A <span>smart city has to be transparent</span>. <span>Smart doesn’t mean</span> <span>intrusive, nor does it mean surveillance of citizens’ private lives</span>. Smart cities’ strength is to make optimal use of all the available information, to better understand it’s people and to optimize the use of its economic and natural resources."
     ]
   },
   {
-    "subtitle" : "In short, a smart city is useful, ecological, safer, better organized and makes it fun to live.",
+    "subtitle" : "In short, a smart city is useful, ecological, safer, better organized and makes it fun to live in.",
     "description" : [
       "If you have any doubt about technology and how technology is changing our lives, according to what Steve Jobs once said, technology is nothing if you do not believe in your people."
     ]
   },
   {
-    "title" : "The future belongs to us,<br> lets change it."
+    "title" : "The future belongs to us, lets change it."
   }
 
 ]
