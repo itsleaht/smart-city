@@ -24,6 +24,7 @@ export default {
       }
     },
     onClickStep (newStep) {
+      console.log(newStep)
       this.$emit('currentStep', newStep)
     }
   },

@@ -87,20 +87,15 @@ export default {
         return {'month': temp.month, 'articles': newArticlesList, 'monthDate': temp.monthDate}
       })
       this.sources = temps
-      this.currentStep = 1
-      // this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+      this.changeStep(1)
       TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
     },
     afterLeave () {
-      // this.nbSteps = this.$refs.monthList.length
-      // this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
-      this.changeStep(0)
+      this.changeStep(1)
       this.updateMonthList()
     },
     afterEnter () {
-      // this.nbSteps = this.$refs.monthList.length
-      // this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
-      this.changeStep(0)
+      this.changeStep(1)
       this.updateMonthList()
     },
     clearFilters () {
@@ -121,6 +116,7 @@ export default {
     updateMonthList() {
       this.nbSteps = this.$refs.monthList.length
       this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+      this.changeStep(1)
     },
     scrollToPos (newStep) {
       const pos = this.$refs.monthList[newStep - 1].offsetTop
