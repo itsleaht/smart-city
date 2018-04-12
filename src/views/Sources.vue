@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <transition-group name="list-fade" tag="div" v-on:after-leave="afterLeave">
+    <transition-group name="list-fade" tag="div" @after-leave="afterLeave" @after-enter="afterEnter">
       <div v-for="(month, index) in sources" :key="'month'+index" v-if="month.articles.length" class="list-fade-item month" ref="monthList" :data-month-date="month.monthDate">
           <h2>{{month.month}} </h2>
           <transition-group name="list-fade" tag="div" id="sources-list">
@@ -19,7 +19,7 @@
           </transition-group>
       </div>
     </transition-group>
-    <span class="monthDate" :ref="'monthDate'">09</span>
+    <span class="monthDate" :ref="'monthDate'">{{monthDate}}</span>
     <timeline :nbSteps="nbSteps" :currentStep="currentStep" @currentStep="scrollToPos"></timeline>
   </div>
 </template>
@@ -46,7 +46,7 @@ export default {
       nbSteps: articles.length,
       currentStep: 1,
       arrayOfEventsTimeLine: [],
-      monthDate: '09',
+      monthDate: articles[0].monthDate,
       isScrollingUp: false
     }
   },
@@ -72,7 +72,7 @@ export default {
       this.updateSourcesList()
     },
     updateSourcesList () {
-      const temps = articles.map((temp) => {
+      const temps = articles.map((temp, index) => {
         const newArticlesList = temp.articles.filter((article) => {
           if (this.activeTags.length) {
             for (let i = 0; i < this.activeTags.length; i++) {
@@ -87,11 +87,16 @@ export default {
         return {'month': temp.month, 'articles': newArticlesList, 'monthDate': temp.monthDate}
       })
       this.sources = temps
-      this.monthDate = this.sources[0].monthDate
       this.currentStep = 1
+      TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
+      this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
     },
     afterLeave () {
       this.nbSteps = this.$refs.monthList.length
+      this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
+    },
+    afterEnter () {
+      this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
     },
     clearFilters () {
       this.activeTags = []
@@ -99,6 +104,7 @@ export default {
         this.isActiveTag[i] = false
       }
       this.updateSourcesList()
+      this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
     },
     changeStep (newStep) {
       if (newStep >= 0 && newStep <= this.nbSteps) {
@@ -151,7 +157,7 @@ export default {
     TweenLite.to(window, 2, {scrollTo: {y: 0, x: 0}, ease: Power3.easeOut})
     window.addEventListener('scroll', this.onScroll)
     window.addEventListener('wheel', this.onWheel)
-
+    this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
   },
   destroyed () {
      window.removeEventListener('scroll', this.onScroll)
