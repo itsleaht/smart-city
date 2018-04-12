@@ -33,7 +33,9 @@
       "href" : "https://www.fastcompany.com/40466766/the-quest-to-use-big-data-and-community-toilets-to-create-a-model-for-building-urban-sanitation",
       "from" : "Fast Company",
       "by" : "Eillie Anzilotti",
-      "description": "-"
+      "description": [
+        "In the Indian city of Pune, toilets are a disaster.  Around 64% of Pune’s sewage water goes untreated, and the contaminated fluids that leak into drinking water supplies exacerbate diseases like cholera and E. coli among the region’s residents. A possible solution toward the end of eradicating open defecation is to build « smart toilets ». Smart, sustainable toilets who would collect data and analyse them. The idea is to develop a network of the worlds first aspirational community toilets."
+      ]
   },
   {
       "place" : "Champs-sur-Marne, France",
