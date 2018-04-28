@@ -62,9 +62,9 @@ export default {
     onWheel (e) {
       e.preventDefault()
       if (e.deltaY < 0 && this.currentStep > 1) { // Wheels up
-        this.changeStep(this.currentStep-1)
+        this.changeStep(this.currentStep - 1)
       } else if (e.deltaY > 0 && this.currentStep <= this.nbSteps - 1) { // Wheels down
-        this.changeStep(this.currentStep+1)
+        this.changeStep(this.currentStep + 1)
       }
     },
     manageWheel (step) {
@@ -112,7 +112,6 @@ export default {
   },
   destroyed () {
     window.removeEventListener('wheel', this.throttleEvent)
-
   }
 }
 </script>

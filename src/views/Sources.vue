@@ -113,7 +113,7 @@ export default {
         // this.$refs.monthDate.innerHTML = this.monthDate
       }
     },
-    updateMonthList() {
+    updateMonthList () {
       this.nbSteps = this.$refs.monthList.length
       this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
       this.changeStep(1)
@@ -132,11 +132,11 @@ export default {
         const offsetBottomYPourcent = offsetBottomY / window.innerHeight
 
         if (this.isScrollingUp && offsetBottomYPourcent > 0 && offsetBottomYPourcent < 1) {
-            this.changeStep(index + 1)
-            this.monthDate = month.getAttribute('data-month-date')
+          this.changeStep(index + 1)
+          this.monthDate = month.getAttribute('data-month-date')
         } else if (!this.isScrollingUp && offsetTopYPourcent > 0 && offsetTopYPourcent < 1) {
-            this.changeStep(index + 1)
-            this.monthDate = month.getAttribute('data-month-date')
+          this.changeStep(index + 1)
+          this.monthDate = month.getAttribute('data-month-date')
         }
       })
     },
@@ -166,8 +166,8 @@ export default {
     this.monthDate = this.$refs.monthList[0].getAttribute('data-month-date')
   },
   destroyed () {
-     window.removeEventListener('scroll', this.onScroll)
-     window.removeEventListener('wheel', this.onWheel)
+    window.removeEventListener('scroll', this.onScroll)
+    window.removeEventListener('wheel', this.onWheel)
   }
 }
 </script>

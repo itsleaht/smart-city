@@ -83,7 +83,6 @@ export default {
     transform: translateY(-100px)
   }
 
-
   .infos {
     background: $skyBlue;
     font-family: $montserrat;
